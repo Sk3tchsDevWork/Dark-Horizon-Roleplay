@@ -1,0 +1,1 @@
+https://dynyx-scripts.gitbook.io/dynyx-scripts/crafting-system/introduction

@@ -1,0 +1,149 @@
+@import url("fonts/Lufga Font/stylesheet.css");
+@import url("fonts/DIN PRO Font/stylesheet.css");
+
+:root {
+    --main-color: #c6e4b5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bodycam-card {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(1, 1, 1, 0.90);
+    border-radius: 4px;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main card */
+.bodycam-card {
+    width: 400px;
+    height: 150px;
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SVG background */
+.background-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    fill: currentColor;
+    opacity: 0.2;
+    color: var(--main-color);
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Header */
+.bodycam-card header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: var(--main-color);
+    font-family: 'Lufga', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 6px;
+    z-index: 2;
+}
+
+.bodycam-card header img {
+    width: 10px;
+    height: 10px;
+}
+
+/* Main content */
+.information {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 2;
+}
+
+/* Left side text */
+.text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.text-info h2 {
+    font-size: 20px;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.live-cam-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 700;
+    background-color: var(--main-color);
+    color: #010101;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.live-cam-label img {
+    width: 14px;
+    height: 14px;
+}
+
+/* Right side info */
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.player-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'DIN Pro', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.profile-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Responsive shrink */
+@media screen and (max-width: 600px) {
+    .bodycam-card {
+        transform: scale(0.85);
+        transform-origin: top right;
+    }
+}

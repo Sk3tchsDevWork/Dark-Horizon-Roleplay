@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FiveM Crafting System</title>
+    <style>
+      /* Hide the UI by default */
+      #root {
+        display: none;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-C0ahZxaZ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DCpa6bfJ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // FiveM specific functions
+      function GetParentResourceName() {
+        try {
+          return window.GetParentResourceName();
+        } catch (error) {
+          return "dynyx_crafting";
+        }
+      }
+
+      // Listen for messages from the game client
+      window.addEventListener("message", (event) => {
+          if (event.data.action === "openCraftingUI") {
+              document.getElementById("root").style.display = "block";
+          } 
+          else if (event.data.action === "closeCraftingUI") {
+              document.getElementById("root").style.display = "none";
+              
+              fetch(`https://${GetParentResourceName()}/hideFrame`, {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({})
+              }).catch(error => {
+                  console.log("Error closing UI:", error);
+              });
+          }
+      });
+
+      // For development mode only
+      if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+        document.getElementById("root").style.display = "block";
+        console.log("Development mode: UI is visible by default");
+      }
+    </script>
+  </body>
+</html>

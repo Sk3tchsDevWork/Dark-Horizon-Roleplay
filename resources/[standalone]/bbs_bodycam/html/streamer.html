@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/livekit-client/dist/livekit-client.umd.min.js"></script>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: inline;
+    }
+
+    .content-area {
+      position: absolute;
+      top: 0px;
+      width: 252px;
+      height: 375px;
+      background-color: rgb(0, 0, 0);
+      /* border-bottom: solid 2px black; */
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module" src="/script.js"></script>
+  <script src="./Main.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodycam Card</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="./config.js"></script>
+</head>
+
+<body>
+
+
+
+  <div id="bodycam-card" style="display: none;">
+
+    <div class="bodycam-content">
+
+      <svg class="background-logo" viewBox="0 0 134 104" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="1" clip-path="url(#clip0)">
+          <path opacity="0.3"
+            d="M38.379 131.531C40.7645 130.562 43.1145 129.533 45.4455 128.187C58.3205 120.746 67.7548 108.543 71.7134 94.2092L38.3821 75.0111L38.379 131.531ZM31.2555 133.926L31.2338 95.4965L-17.7183 123.759C-10.8696 129.074 -2.89681 132.752 5.59109 134.515C14.079 136.277 22.8574 136.075 31.2555 133.926ZM-4.11263 91.3663L-38.9238 71.305C-40.7112 83.7914 -38.2602 96.5165 -31.9626 107.445C-29.5188 111.678 -26.5325 115.434 -23.2843 118.793L10.0252 99.5621L-4.11263 91.3663ZM73.1482 86.9193C74.9356 74.433 72.4846 61.7079 66.187 50.7788C63.7432 46.5461 60.7569 42.7903 57.5087 39.431L24.1992 58.6622L73.1482 86.9193ZM17.0996 54.582L51.9427 34.4654C45.0839 29.1476 37.0992 25.4698 28.5999 23.7137C20.1006 21.9577 11.3122 22.1698 2.90753 24.3339L2.92928 62.7633L17.0996 54.582ZM-4.12521 66.8362L-4.19001 26.6323C-6.57546 27.6006 -8.95142 28.727 -11.2211 30.0374C-24.594 37.7582 -33.6233 50.169 -37.4276 63.9797L-4.09638 83.1778L-4.12521 66.8362Z" />
+          <path
+            d="M52.5288 140.456C86.3904 120.906 98.0056 77.5571 78.4556 43.6955C61.6327 14.5574 27.2676 1.92691 -3.58138 11.3949L-4.21379 11.4328L-4.2043 11.5909C-9.02959 13.15 -13.7651 15.1479 -18.3045 17.7687C-52.1661 37.3187 -63.7813 80.6672 -44.2313 114.529C-24.6813 148.39 18.6672 160.006 52.5288 140.456ZM45.4455 128.187C43.1145 129.533 40.7644 130.562 38.379 131.531L38.3821 75.0111L71.7134 94.2092C67.7548 108.543 58.3205 120.746 45.4455 128.187ZM66.1869 50.7788C72.739 62.1274 74.8339 74.8224 73.1481 86.9193L24.1378 58.6976L57.4473 39.4664C60.7568 42.7903 63.7432 46.5461 66.1869 50.7788ZM51.9427 34.4654L2.92926 62.7633L2.9075 24.3339C19.9674 19.8826 38.1627 23.7728 51.9427 34.4654ZM-11.2212 30.0374C-8.95145 28.727 -6.57549 27.6006 -4.19004 26.6323L-4.12524 66.8362L-4.09641 83.1778L-37.4277 63.9797C-33.5034 49.6557 -24.0861 37.4584 -11.2212 30.0374ZM-31.9626 107.445C-38.5147 96.097 -40.6095 83.4019 -38.9238 71.305L-4.11266 91.3663L10.0252 99.5621L-23.2843 118.793C-26.5325 115.434 -29.5188 111.678 -31.9626 107.445ZM17.1248 103.642L31.2338 95.4965L31.2555 133.926C22.85 136.079 14.0639 136.286 5.56636 134.53C-2.93114 132.775 -10.9159 129.103 -17.7797 123.794L17.1248 103.642Z" />
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="170" height="170" transform="translate(-99 48) rotate(-30)" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      <div id="l1" class="bodycam-card">
+
+        <header>
+          <img src="images/eclipse.png" alt="Live Icon" />
+          <span id="mode">LIVE</span>
+        </header>
+
+        <div class="information">
+
+          <div class="text-info">
+
+            <h2>BBS BODY CAM</h2>
+
+            <div class="live-cam-label">
+              <img src="images/cam.png" alt="Cam Icon" />
+              <span id="type">LSPD LIVE CAM</span>
+            </div>
+
+          </div>
+
+          <div class="player-info">
+
+            <div class="player-text">
+              <span id="name">BBS SCRIPTS</span>
+              <span id="job">Police Officer</span>
+              <span id="role">Sargent</span>
+            </div>
+
+            <img src="images/player.png" class="profile-img" alt="Profile" id="plyrimg" />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

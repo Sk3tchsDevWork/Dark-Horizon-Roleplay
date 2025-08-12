@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #250c21;
+    --primary-hover: rgba(180, 180, 180, 0.3);
+    --primary-light: rgba(143, 29, 46, 0.1);
+    --surface-base: rgba(22, 22, 22, 0.85);
+    --surface-container: rgba(42, 42, 46, 0.95);
+    --surface-elevated: rgba(60, 60, 60, 0.3);
+    --input-background: rgba(30, 30, 35, 0.9);
+    --input-border: rgba(70, 70, 80, 0.4);
+    --input-focus: rgba(38, 110, 145, 0.8);
+    --border-color: rgba(60, 60, 60, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --success-color: #4ade80;
+    --success-hover: #22c55e;
+    --error-color: #ef4444;
+    --border-radius: 4px;
+    --border-radius-sm: 3px;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 12px;
+    --spacing-lg: 15px;
+    --spacing-xl: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: var(--text-primary);
+    width: 280px;
+    position: fixed;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.progress-container.show {
+    display: block;
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.progress-container.hide {
+    animation: fadeOutDown 0.3s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+#progress-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.3px;
+}
+
+#progress-percentage {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+}
+
+.progress-bar-container {
+    background: rgba(0, 0, 0, 0.4);
+    height: 4px;
+    position: relative;
+    display: block;
+    border-radius: 2px;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#progress-bar {
+    background: linear-gradient(90deg, var(--primary-color), #b8336a);
+    width: 0%;
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease-out;
+    box-shadow: 0 0 12px rgba(145, 38, 79, 0.8);
+    position: relative;
+}
+
+#progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.0) 0%, 
+        rgba(255, 255, 255, 0.3) 50%, 
+        rgba(255, 255, 255, 0.0) 100%);
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .progress-container {
+        width: 250px;
+        bottom: 6%;
+    }
+    
+    #progress-label,
+    #progress-percentage {
+        font-size: 12px;
+    }
+    
+    .progress-bar-container {
+        height: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress-container {
+        width: 220px;
+        bottom: 5%;
+    }
+    
+    #progress-label,
+    #progress-percentage {
+        font-size: 11px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1920px) {
+    .progress-container {
+        width: 320px;
+        bottom: 12%;
+    }
+    
+    #progress-label,
+    #progress-percentage {
+        font-size: 14px;
+    }
+    
+    .progress-bar-container {
+        height: 5px;
+    }
+}
+
+/* 4K Display Adjustments */
+@media (width: 3840px) and (height: 2160px) {
+    .progress-container {
+        width: 400px;
+        bottom: 15%;
+    }
+    
+    #progress-label,
+    #progress-percentage {
+        font-size: 16px;
+    }
+    
+    .progress-bar-container {
+        height: 6px;
+    }
+    
+    .progress-labels {
+        margin-bottom: 8px;
+    }
+}

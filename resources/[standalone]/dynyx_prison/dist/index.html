@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FiveM Prison Jail Menu UI</title>
+    <style>
+      body {
+        background: transparent !important;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+                user-select: none;
+      }
+      #root {
+        height: 100%;
+        display: none;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-14K7h1yJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BKAreTBc.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Initialize imagePath with a default value
+      window.imagePath = "nui://ps-inventory/html/images";
+
+      window.addEventListener('message', function(event) {
+        const root = document.getElementById('root');
+        
+        // Set image path when received from client
+        if (event.data.imagePath) {
+          window.imagePath = event.data.imagePath;
+        }
+        
+        // Set locale data when received from client
+        if (event.data.localeData) {
+          window.localeData = event.data.localeData;
+        }
+        
+        if (event.data.type === "openPrisonManageUI") {
+          root.style.display = event.data.status ? "block" : "none";
+          
+          if (event.data.prisoners) {
+            window.dispatchEvent(new CustomEvent('updatePrisoners', {
+              detail: {
+                prisoners: event.data.prisoners
+              }
+            }));
+          }
+        } else if (event.data.type === "openPrisonJobs") {
+          root.style.display = event.data.status ? "block" : "none";
+          
+          if (event.data.jobs) {
+            window.dispatchEvent(new CustomEvent('updateJobs', {
+              detail: {
+                jobs: event.data.jobs,
+                currentJob: event.data.currentJob
+              }
+            }));
+          }
+        } else if (event.data.type === "openVisitationUI") {
+          root.style.display = event.data.status ? "block" : "none";
+        } else if (event.data.type === "openPrisonShop") {
+          root.style.display = event.data.status ? "block" : "none";
+          
+          if (event.data.items) {
+            window.dispatchEvent(new CustomEvent('updateShopItems', {
+              detail: {
+                items: event.data.items,
+                shopType: 'prison',
+                balance: event.data.balance,
+                CurrentStock: event.data.CurrentStock,
+                imagePath: event.data.imagePath
+              }
+            }));
+          }
+        } else if (event.data.type === "openIllegalShop") {
+          root.style.display = event.data.status ? "block" : "none";
+          
+          if (event.data.items) {
+            window.dispatchEvent(new CustomEvent('updateShopItems', {
+              detail: {
+                items: event.data.items,
+                shopType: 'illegal',
+                balance: event.data.balance,
+                CurrentStock: event.data.CurrentStock,
+                trades: event.data.trades,
+                imagePath: event.data.imagePath
+              }
+            }));
+          }
+        } else if (event.data.type === "openElectricianMinigame") {
+          root.style.display = event.data.status ? "block" : "none";
+        } else if (event.data.type === "openCleaningMinigame") {
+          root.style.display = event.data.status ? "block" : "none";
+        } else if (event.data.type === "openRepairMinigame") {
+          root.style.display = event.data.status ? "block" : "none";
+        } else if (event.data.type === "updatePrisoners") {
+          window.dispatchEvent(new CustomEvent('updatePrisoners', {
+            detail: {
+              prisoners: event.data.prisoners
+            }
+          }));
+        } else if (event.data.type === "updateJobs") {
+          window.dispatchEvent(new CustomEvent('updateJobs', {
+            detail: {
+              jobs: event.data.jobs,
+              currentJob: event.data.currentJob
+            }
+          }));
+        } else if (event.data.type === "updateVisitablePrisoners") {
+          window.dispatchEvent(new CustomEvent('updateVisitablePrisoners', {
+            detail: {
+              prisoners: event.data.prisoners
+            }
+          }));
+        } else if (event.data.type === "visitRequest") {
+          root.style.display = "block";
+          window.dispatchEvent(new CustomEvent('visitRequest', {
+            detail: {
+              visitorName: event.data.visitorName
+            }
+          }));
+          
+          // Ensure NUI focus is set when visit request is received
+          if ('invokeNative' in window) {
+            fetch(`https://${GetParentResourceName()}/registerNuiCallback`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ eventName: 'visitKeyPress' }),
+            });
+          }
+        } else if (event.data.type === "purchaseResult") {
+          window.dispatchEvent(new CustomEvent('purchaseResult', {
+            detail: {
+              success: event.data.success,
+              message: event.data.message
+            }
+          }));
+        } else if (event.data.type === "updateStock") {
+          window.dispatchEvent(new CustomEvent('updateStock', {
+            detail: {
+              stock: event.data.stock
+            }
+          }));
+        } else if (event.data.type === "tradeComplete") {
+          window.dispatchEvent(new CustomEvent('tradeComplete', {
+            detail: {
+              success: event.data.success,
+              message: event.data.message
+            }
+          }));
+        }
+      });
+    </script>
+  </body>
+</html>

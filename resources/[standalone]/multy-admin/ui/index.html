@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multy Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="adminMenu" class="admin-menu" style="display: none;">
+        <div class="menu-header">
+            <h1><img src="https://multy.lol/logo.png" alt="Multy" class="menu-logo"> Multy Admin</h1>
+            <div class="menu-header-buttons">
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme"><i class="fas fa-moon" id="themeIcon"></i></button>
+                <button class="close-btn" onclick="closeMenu()"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        
+        <div class="menu-container">
+            <div class="menu-sidebar">
+                <button class="menu-tab active" data-tab="players"><i class="fas fa-users"></i> Players</button>
+                <button class="menu-tab" data-tab="vehicle"><i class="fas fa-car"></i> Vehicle</button>
+                <button class="menu-tab" data-tab="world"><i class="fas fa-globe"></i> World</button>
+                <button class="menu-tab" data-tab="server"><i class="fas fa-server"></i> Server</button>
+                <button class="menu-tab" data-tab="teleport"><i class="fas fa-map-marker-alt"></i> Teleport</button>
+                <button class="menu-tab" data-tab="developer"><i class="fas fa-code"></i> Developer</button>
+                <button class="menu-tab" data-tab="bans" id="bansTab"><i class="fas fa-ban"></i> Bans</button>
+                <button class="menu-tab" data-tab="reports"><i class="fas fa-flag"></i> Reports <span id="reportCount" class="report-badge" style="display: none;">0</span></button>
+                <button class="menu-tab" data-tab="adminchat" id="adminChatTab" style="display: none;"><i class="fas fa-comments"></i> Admin Chat <span id="adminChatUnread" class="report-badge" style="display: none;">0</span></button>
+            </div>
+            
+            <div class="menu-content">
+                <div id="players" class="tab-content active">
+                    <h2>Player Management</h2>
+                    <div class="search-box">
+                        <input type="text" id="playerSearch" placeholder="Search players...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="player-list" id="playerList"></div>
+                </div>
+                
+                <div id="vehicle" class="tab-content">
+                    <h2>Vehicle Options</h2>
+                    <div class="option-grid">
+                        <button class="option-btn" onclick="spawnVehicle()"><i class="fas fa-plus"></i> Spawn Vehicle</button>
+                        <button class="option-btn danger" onclick="deleteVehicle()"><i class="fas fa-trash"></i> Delete Vehicle</button>
+                        <button class="option-btn success" onclick="repairVehicle()"><i class="fas fa-wrench"></i> Repair Vehicle</button>
+                        <button class="option-btn" onclick="flipVehicle()"><i class="fas fa-undo"></i> Flip Vehicle</button>
+                        <button class="option-btn success" onclick="maxTuneVehicle()"><i class="fas fa-tachometer-alt"></i> Max Tune</button>
+                        <button class="option-btn" onclick="changeVehiclePlate()"><i class="fas fa-id-card"></i> Change Plate</button>
+                    </div>
+                    <div class="vehicle-spawner">
+                        <h3>Vehicle Spawner</h3>
+                        <select id="vehicleCategory" onchange="updateVehicleList()">
+                            <option value="">Select Category</option>
+                        </select>
+                        <select id="vehicleModelSelect">
+                            <option value="">Select Vehicle</option>
+                        </select>
+                        <button class="action-btn" onclick="spawnSelectedVehicle()">Spawn Vehicle</button>
+                    </div>
+                </div>
+                
+                <div id="world" class="tab-content">
+                    <h2>World Options</h2>
+                    <div class="world-section">
+                        <h3>Weather Control</h3>
+                        <div class="weather-grid">
+                            <button class="weather-btn" onclick="setWeather('CLEAR')"><i class="fas fa-sun"></i> Clear</button>
+                            <button class="weather-btn" onclick="setWeather('RAIN')"><i class="fas fa-cloud-rain"></i> Rain</button>
+                            <button class="weather-btn" onclick="setWeather('THUNDER')"><i class="fas fa-bolt"></i> Thunder</button>
+                            <button class="weather-btn" onclick="setWeather('SNOWLIGHT')"><i class="fas fa-snowflake"></i> Snow</button>
+                            <button class="weather-btn" onclick="setWeather('FOGGY')"><i class="fas fa-smog"></i> Fog</button>
+                            <button class="weather-btn" onclick="setWeather('OVERCAST')"><i class="fas fa-cloud"></i> Overcast</button>
+                        </div>
+                    </div>
+                    <div class="world-section">
+                        <h3>Time Control</h3>
+                        <div class="time-control">
+                            <input type="range" id="timeSlider" min="0" max="23" value="12" oninput="updateTimeDisplay()">
+                            <span id="timeDisplay">12:00</span>
+                            <button class="action-btn" onclick="setTime()">Set Time</button>
+                            <button class="action-btn toggle-btn" id="freezeTimeToggle" onclick="toggleFreezeTime()"><i class="fas fa-pause"></i> Freeze Time</button>
+                        </div>
+                        <div class="quick-time">
+                            <button class="time-btn" onclick="setQuickTime(6)">Morning</button>
+                            <button class="time-btn" onclick="setQuickTime(12)">Noon</button>
+                            <button class="time-btn" onclick="setQuickTime(18)">Evening</button>
+                            <button class="time-btn" onclick="setQuickTime(0)">Midnight</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="server" class="tab-content">
+                    <h2>Server Management</h2>
+                    <div class="option-grid">
+                        <button class="option-btn success" id="reviveAllBtn" onclick="reviveAllPlayers()"><i class="fas fa-heart-pulse"></i> Revive All</button>
+                        <button class="option-btn success" id="giveItemAllBtn" onclick="giveItemAll()"><i class="fas fa-gift"></i> Give Item All</button>
+                        <button class="option-btn success" id="giveMoneyAllBtn" onclick="giveMoneyAll()"><i class="fas fa-dollar-sign"></i> Give Money All</button>
+                        <button class="option-btn" id="announceBtn" onclick="announceMessage()"><i class="fas fa-bullhorn"></i> Announcement</button>
+                        <button class="option-btn warning" id="clearAreaBtn" onclick="clearArea()"><i class="fas fa-broom"></i> Clear Area</button>
+                        <button class="option-btn danger" id="clearVehiclesBtn" onclick="clearAllVehicles()"><i class="fas fa-car-burst"></i> Clear All Vehicles</button>
+                        <button class="option-btn" id="refreshJobsBtn" onclick="refreshJobs()"><i class="fas fa-sync"></i> Refresh Jobs</button>
+                        <button class="option-btn" id="refreshItemsBtn" onclick="refreshItems()"><i class="fas fa-box"></i> Refresh Items</button>
+                    </div>
+                    <div class="server-info">
+                        <h3>Server Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Players Online:</span>
+                                <span class="info-value" id="playersOnline">0</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Max Players:</span>
+                                <span class="info-value" id="maxPlayers">0</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Server Uptime:</span>
+                                <span class="info-value" id="serverUptime">0h 0m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="teleport" class="tab-content">
+                    <h2>Teleport Options</h2>
+                    <div class="option-grid">
+                        <button class="option-btn" onclick="teleportToWaypoint()"><i class="fas fa-map-pin"></i> To Waypoint</button>
+                        <button class="option-btn" onclick="teleportToCoords()"><i class="fas fa-location-dot"></i> To Coordinates</button>
+                        <button class="option-btn" onclick="returnLastLocation()"><i class="fas fa-arrow-rotate-left"></i> Return Last</button>
+                    </div>
+                    <div class="teleport-section">
+                        <h3>Quick Locations</h3>
+                        <div class="location-grid">
+                            <!-- Location buttons will be dynamically generated from config -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="developer" class="tab-content">
+                    <h2>Developer Options</h2>
+                    <div class="option-grid">
+                        <button class="option-btn toggle-btn" id="coordsToggle" onclick="toggleCoords()"><i class="fas fa-crosshairs"></i> Toggle Coords</button>
+                        <button class="option-btn toggle-btn" id="noclipToggle" onclick="toggleNoclip()"><i class="fas fa-ghost"></i> NoClip <span style="font-size: 11px; opacity: 0.7;">(F2)</span></button>
+                        <button class="option-btn toggle-btn" id="godModeToggle" onclick="toggleGodMode()"><i class="fas fa-shield"></i> God Mode</button>
+                        <button class="option-btn toggle-btn" id="invisibleToggle" onclick="toggleInvisible()"><i class="fas fa-eye-slash"></i> Invisible</button>
+                        <button class="option-btn toggle-btn" id="infiniteAmmoToggle" onclick="toggleInfiniteAmmo()"><i class="fas fa-infinity"></i> Infinite Ammo</button>
+                        <button class="option-btn" onclick="copyCoords()"><i class="fas fa-copy"></i> Copy Coords</button>
+                        <button class="option-btn" onclick="copyHeading()"><i class="fas fa-compass"></i> Copy Heading</button>
+                        <button class="option-btn toggle-btn" id="entityInfoToggle" onclick="toggleEntityInfo()"><i class="fas fa-info-circle"></i> Entity Info</button>
+                        <button class="option-btn toggle-btn" id="playerBlipsToggle" onclick="togglePlayerBlips()"><i class="fas fa-map-marker"></i> Player Blips</button>
+                        <button class="option-btn toggle-btn" id="playerNamesToggle" onclick="togglePlayerNames()"><i class="fas fa-user-tag"></i> Player Names</button>
+                    </div>
+                </div>
+                
+                <div id="bans" class="tab-content">
+                    <h2>Ban Management</h2>
+                    <div class="ban-controls">
+                        <button class="option-btn success" onclick="showOfflineBan()"><i class="fas fa-user-slash"></i> Offline Ban</button>
+                        <button class="option-btn" onclick="refreshBanList()"><i class="fas fa-sync"></i> Refresh</button>
+                        <input type="text" id="banSearch" placeholder="Search bans..." onkeyup="searchBans()" class="ban-search">
+                    </div>
+                    <div class="ban-list" id="banList">
+                        <div class="loading">Loading bans...</div>
+                    </div>
+                </div>
+                
+                <div id="reports" class="tab-content">
+                    <h2>Report Management</h2>
+                    <div class="reports-container">
+                        <div class="reports-sidebar">
+                            <div class="reports-filter">
+                                <select id="reportFilter" onchange="filterReports()">
+                                    <option value="all">All Reports</option>
+                                    <option value="open">Open</option>
+                                    <option value="claimed">Claimed</option>
+                                    <option value="closed">Closed</option>
+                                </select>
+                            </div>
+                            <div class="reports-list" id="reportsList">
+                                <!-- Reports will be dynamically loaded here -->
+                            </div>
+                        </div>
+                        <div class="report-details" id="reportDetails" style="display: none;">
+                            <div class="report-header">
+                                <h3><span id="reportType"></span> - <span id="reportSubject"></span></h3>
+                                <div class="report-meta">
+                                    <span class="report-id">ID: <span id="reportId"></span></span>
+                                    <span class="report-status" id="reportStatus"></span>
+                                </div>
+                            </div>
+                            <div class="report-info">
+                                <div class="info-row">
+                                    <label>Reporter:</label>
+                                    <span id="reporterName"></span>
+                                </div>
+                                <div class="info-row" id="reportedPlayerRow" style="display: none;">
+                                    <label>Reported Player:</label>
+                                    <span id="reportedPlayerName"></span>
+                                </div>
+                                <div class="info-row" id="claimedByRow" style="display: none;">
+                                    <label>Claimed by:</label>
+                                    <span id="claimedByName"></span>
+                                </div>
+                                <div class="info-row">
+                                    <label>Created:</label>
+                                    <span id="reportCreated"></span>
+                                </div>
+                            </div>
+                            <div class="report-chat">
+                                <div class="chat-messages" id="reportMessages">
+                                    <!-- Messages will be loaded here -->
+                                </div>
+                                <div class="chat-input">
+                                    <input type="text" id="reportReply" placeholder="Type your response..." onkeypress="handleReportReply(event)">
+                                    <button onclick="sendReportReply()"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                            <div class="report-actions">
+                                <button class="action-btn" id="claimBtn" onclick="claimReport()"><i class="fas fa-hand-paper"></i> Claim</button>
+                                <button class="action-btn" onclick="gotoReporter()"><i class="fas fa-arrow-right"></i> Go to Player</button>
+                                <button class="action-btn" onclick="bringReporter()"><i class="fas fa-arrow-left"></i> Bring Player</button>
+                                <button class="action-btn" onclick="sendReporterBack()"><i class="fas fa-undo"></i> Send Back</button>
+                                <button class="action-btn" onclick="healReporter()"><i class="fas fa-heart"></i> Heal</button>
+                                <button class="action-btn" onclick="freezeReporter()"><i class="fas fa-snowflake"></i> Freeze</button>
+                                <button class="action-btn action-btn-success" onclick="closeReport()"><i class="fas fa-check"></i> Close</button>
+                                <button class="action-btn action-btn-danger" onclick="deleteReport()"><i class="fas fa-trash"></i> Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="adminchat" class="tab-content">
+                    <h2>Admin Chat</h2>
+                    <div class="admin-chat-container">
+                        <div class="admin-chat-messages" id="adminChatMessages">
+                            <!-- Admin chat messages will be loaded here -->
+                        </div>
+                        <div class="admin-chat-input">
+                            <input type="text" id="adminChatInput" placeholder="Type your message..." onkeypress="handleAdminChatInput(event)">
+                            <button onclick="sendAdminChatMessage()"><i class="fas fa-paper-plane"></i></button>
+                            <button class="admin-chat-clear" onclick="clearAdminChat()" title="Clear chat (Admin only)"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay" style="display: none;">
+        <div class="modal">
+            <h3 id="modalTitle">Title</h3>
+            <div id="modalContent">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn modal-btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="modal-btn modal-btn-primary" id="modalConfirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Announcement UI -->
+    <div id="announcementContainer" class="announcement-container" style="display: none;">
+        <div class="announcement-box">
+            <div class="announcement-icon">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="announcement-content">
+                <h3 class="announcement-title" id="announcementTitle">SERVER ANNOUNCEMENT</h3>
+                <p class="announcement-message" id="announcementText"></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Player Options Panel (floating outside admin menu) -->
+    <div id="playerOptions" class="player-options-floating" style="display: none;">
+        <div class="player-options-header">
+            <h3><i class="fas fa-user"></i> <span id="selectedPlayerName"></span></h3>
+            <button class="close-panel" onclick="closePlayerOptions()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="player-options-content">
+            <div class="option-grid">
+                <button class="option-btn" onclick="showPlayerInfo()"><i class="fas fa-info-circle"></i> Player Info</button>
+                <button class="option-btn" onclick="spectatePlayer()"><i class="fas fa-eye"></i> Spectate</button>
+                <button class="option-btn" onclick="teleportToPlayer()"><i class="fas fa-arrow-right"></i> Teleport To</button>
+                <button class="option-btn" onclick="bringPlayer()"><i class="fas fa-arrow-left"></i> Bring</button>
+                <button class="option-btn" onclick="sendPlayerBack()"><i class="fas fa-undo"></i> Send Back</button>
+                <button class="option-btn warning" onclick="freezePlayer()"><i class="fas fa-snowflake"></i> Freeze</button>
+                <button class="option-btn success" onclick="revivePlayer()"><i class="fas fa-heart"></i> Revive</button>
+                <button class="option-btn danger" onclick="killPlayer()"><i class="fas fa-skull"></i> Kill</button>
+                <button class="option-btn" onclick="screenshotPlayer()"><i class="fas fa-camera"></i> Screenshot</button>
+                <button class="option-btn warning" onclick="warnPlayer()"><i class="fas fa-exclamation-triangle"></i> Warn</button>
+                <button class="option-btn danger" onclick="kickPlayer()"><i class="fas fa-user-slash"></i> Kick</button>
+                <button class="option-btn danger" onclick="banPlayer()"><i class="fas fa-ban"></i> Ban</button>
+                <button class="option-btn success" onclick="giveItem()"><i class="fas fa-gift"></i> Give Item</button>
+                <button class="option-btn success" onclick="giveMoney()"><i class="fas fa-dollar-sign"></i> Give Money</button>
+                <button class="option-btn success" onclick="giveCar()"><i class="fas fa-car"></i> Give Car</button>
+                <button class="option-btn success" onclick="fixPlayerCar()"><i class="fas fa-wrench"></i> Fix Car</button>
+                <button class="option-btn" onclick="giveClothingMenu()"><i class="fas fa-tshirt"></i> Give Clothing Menu</button>
+                <button class="option-btn danger" onclick="removePlayerCar()"><i class="fas fa-trash"></i> Remove Player Car</button>
+                <button class="option-btn" onclick="setJob()"><i class="fas fa-briefcase"></i> Set Job</button>
+                <button class="option-btn" onclick="setGang()"><i class="fas fa-users"></i> Set Gang</button>
+                <button class="option-btn" onclick="openInventory()"><i class="fas fa-box-open"></i> Open Inventory</button>
+                <button class="option-btn danger" onclick="clearInventory()"><i class="fas fa-trash"></i> Clear Inventory</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Report Form Modal -->
+    <div id="reportFormModal" class="report-form-modal" style="display: none;">
+        <div class="report-form">
+            <div class="report-form-header">
+                <h2><i class="fas fa-flag"></i> Submit Report</h2>
+                <button class="close-btn" onclick="closeReportForm()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="report-form-content">
+                <div class="form-group">
+                    <label>Report Type</label>
+                    <div class="report-type-buttons" id="reportTypeButtons">
+                        <!-- Report types will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="form-group" id="targetPlayerGroup" style="display: none;">
+                    <label>Select Player</label>
+                    <select id="targetPlayerSelect">
+                        <option value="">Select a player...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" id="reportSubjectInput" placeholder="Brief description..." maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="reportMessageInput" placeholder="Describe your report in detail..." rows="5"></textarea>
+                    <div class="char-counter"><span id="charCount">0</span> / <span id="maxChars">500</span></div>
+                </div>
+                <div class="form-buttons">
+                    <button class="form-btn form-btn-secondary" onclick="closeReportForm()" id="reportCancelBtn">Cancel</button>
+                    <button class="form-btn form-btn-primary" onclick="submitReport()" id="reportSubmitBtn">Submit Report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Include modal.js content inline since external file isn't loading
+        let currentModalCallback = null;
+
+        function showModal(title, content, callback) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalContent').innerHTML = content;
+            document.getElementById('modalOverlay').style.display = 'flex';
+            currentModalCallback = callback;
+            
+            // Update modal button translations
+            if (window.t) {
+                document.querySelector('.modal-btn-secondary').textContent = window.t('cancel', 'Cancel');
+                document.querySelector('.modal-btn-primary').textContent = window.t('confirm', 'Confirm');
+            }
+            
+            // Focus first input if exists
+            setTimeout(() => {
+                const firstInput = document.querySelector('#modalContent input, #modalContent textarea, #modalContent select');
+                if (firstInput) {
+                    firstInput.focus();
+                }
+            }, 100);
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+            currentModalCallback = null;
+        }
+
+        document.getElementById('modalConfirm').addEventListener('click', function() {
+            if (currentModalCallback) {
+                currentModalCallback();
+            }
+            closeModal();
+        });
+
+        // Handle keyboard events in modal
+        document.addEventListener('keydown', function(event) {
+            const modalVisible = document.getElementById('modalOverlay').style.display === 'flex';
+            
+            if (modalVisible) {
+                if (event.key === 'Escape') {
+                    closeModal();
+                } else if (event.key === 'Enter') {
+                    // Don't submit on Enter in textarea
+                    if (event.target.tagName !== 'TEXTAREA') {
+                        event.preventDefault();
+                        document.getElementById('modalConfirm').click();
+                    }
+                }
+            }
+        });
+
+        // Modal Templates
+        // modalTemplates is now defined in script.js with translation support
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

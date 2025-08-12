@@ -1,0 +1,16 @@
+{
+  "name": "bbs_bodycam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "livekit-server-sdk": "^1.2.3"
+  }
+}
