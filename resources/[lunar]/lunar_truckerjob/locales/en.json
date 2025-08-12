@@ -1,0 +1,11 @@
+{
+    "show_offers": "Show offers",
+    "destinations": "Available destinations",
+    "reward": "Payment: %s$",
+    "deliver_to_end": "Deliver the vehicle to the destination.",
+    "deliver": "[E] - Deliver",
+    "destination": "Destination",
+    "lost_trailer": "Your trailer got disconnected!",
+    "30s_warn": "You have 30 seconds to connect the trailer.",
+    "job_canceled": "Delivery has been canceled."
+}

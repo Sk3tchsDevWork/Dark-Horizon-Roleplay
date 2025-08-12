@@ -1,0 +1,50 @@
+---@meta
+
+---**`Job`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/item)
+---
+---#### Framework Job
+---
+---@class Job
+---**`Job`**
+---
+---#### Job Name
+---
+---@field name string
+---**`Job`**
+---
+---#### Job Label
+---
+---@field label string
+---**`Job`**
+---
+---#### Job Grades
+---
+---@field grades table<number, JobGrade>
+
+---**`Job Grade`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/item)
+---
+---#### Framework Job Grade
+---
+---@class JobGrade
+---**`Job Grade`**
+---
+---#### Grade Name
+---
+---@field name string
+---**`Job Grade`**
+---
+---#### Grade Label
+---
+---@field label string
+---**`Job Grade`**
+---
+---#### Grade Boss
+---
+---@field boss boolean
+---**`Job Grade`**
+---
+---#### Grade Payment
+---
+---@field payment number

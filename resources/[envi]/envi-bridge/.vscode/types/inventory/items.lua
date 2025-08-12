@@ -1,0 +1,63 @@
+---@meta
+
+---**`Item`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/item)
+---
+---#### Inventory Item
+---
+---@class Item
+---**`Item`**
+---
+---#### Item Name
+---
+---@field name string
+---**`Item`**
+---
+---#### Item Label
+---
+---@field label string
+---**`Item`**
+---
+---#### Item Weight
+---
+---@field weight number
+---**`Item`**
+---
+---#### Item Slot
+---
+---@field slot number
+---**`Item`**
+---
+---#### Item Count
+---
+---@field count number
+---**`Item`**
+---
+---#### Item Type
+---
+---@field type string
+---**`Item`**
+---
+---#### Item Metadata
+---
+---@field metadata { [string]: any } 
+---**`Item`**
+---
+---#### Item Image
+---
+---@field image? string
+---**`Item`**
+---
+---#### Item Description
+---
+---@field description? string
+---**`Item`**
+---
+---#### Item Stack
+---
+---@field stack? boolean
+---**`Item`**
+---
+---#### Item Close
+---
+---@field close? boolean

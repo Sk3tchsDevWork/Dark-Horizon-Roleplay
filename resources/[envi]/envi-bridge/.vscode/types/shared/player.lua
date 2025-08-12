@@ -1,0 +1,368 @@
+---@meta
+
+---**`Player Job`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#job)
+---
+---@class PlayerJob
+---**`Player Job`**
+---
+---#### Job Name
+---
+---@field Name string
+---**`Player Job`**
+---
+---#### Job Label
+---
+---@field Label string
+---**`Player Job`**
+---
+---#### Job Duty
+---
+---@field Duty boolean
+---**`Player Job`**
+---
+---#### Job Boss
+---
+---@field Boss boolean
+---**`Player Job`**
+---
+---#### Job Grade
+---
+---@field Grade Grade
+
+---**`Player Gang`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#gang)
+---
+---@class PlayerGang
+---**`Player Gang`**
+---
+---#### Gang Name
+---
+---@field Name string
+---**`Player Gang`**
+---
+---#### Gang Label
+---
+---@field Label string
+---**`Player Gang`**
+---
+---#### Gang Boss
+---
+---@field Boss boolean
+---**`Player Gang`**
+---
+---#### Gang Grade
+---
+---@field Grade Grade
+
+---@class Grade
+---**`Grade`**
+---
+---#### Grade Name
+---
+---@field Name string 
+---**`Grade`**
+---
+---#### Grade Level
+---
+---@field Level number
+
+---**`Player`**
+---#### Player
+---@class Player
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#identifier)
+---
+---#### Player Identifier
+---
+---@field Identifier string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#name)
+---
+---#### Player Name
+---
+---@field Name string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#firstname)
+---
+---#### Player Firstname
+---
+---@field Firstname string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#lastname)
+---
+---#### Player Lastname
+---
+---@field Lastname string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#dateofbirth)
+---
+---#### Player Date Of Birth
+---
+---@field DateOfBirth string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#gender)
+---
+---#### Player Gender
+---
+---@field Gender string
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#job)
+---
+---#### Player Job
+---
+---@field Job Job
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#gang)
+---
+---#### Player Gang
+---
+---@field Gang Gang
+---**`Player` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#metadata)
+---
+---#### Player Metadata
+---
+---@field Metadata table
+
+---**`Player` `client`**
+---#### Player
+---@class PlayerClient : Player
+---**`Player` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#accounts)
+---
+---#### Gets Player Account Balance
+---
+---```lua
+----- Cash
+---Framework.Player.Accounts['cash']
+----- Bank
+---Framework.Player.Accounts['bank']
+----- Other
+---Framework.Player.Accounts['crypto']
+---```
+---
+---@field Accounts { [string]: number }
+
+---**`Player` `server`**
+---#### Player
+---@class PlayerServer : Player
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#source)
+---
+---#### Player Source
+---
+---@field source number
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#setjob)
+---
+---#### Set Player job
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.SetJob('police', '0)
+---```
+---
+---@field SetJob fun(job: string, grade: string | number) : boolean
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#setgang)
+---
+---#### Set Player Gang
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.SetGang('mygang', '0)
+---```
+---
+---@field SetGang fun(gang: string, grade: string | number) : boolean
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#addmoney)
+---
+---#### Add Player Money
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.AddMoney('cash', 100)
+---```
+---
+---@field AddMoney fun(type: 'cash' | 'bank' | 'other', amount: string | number) : boolean
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#removemoney)
+---
+---#### Remove Player Money
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.RemoveMoney('cash', 100)
+---```
+---
+---@field RemoveMoney fun(type: 'cash' | 'bank' | 'other', amount: string | number) : boolean
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#getmoney)
+---
+---#### Get Player Money
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.GetMoney('cash')
+---```
+---
+---@field GetMoney fun(type: 'cash' | 'bank' | 'other') : number
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#getstatus)
+---
+---#### Get Player Status
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.GetStatus('hunger')
+---```
+---
+---@field GetStatus fun(key: string) : number
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#setstatus)
+---
+---#### Set Player Status
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.SetStatus('hunger', 100)
+---```
+---
+---@field SetStatus fun(key: string, value: number)
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#getmetaData)
+---
+---#### Get Player Metadata
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---
+----- Get All Metadata
+---player.GetMetaData()
+---
+----- Get Specific Metadata key
+---player.GetMetaData('mykey')
+---```
+---
+---@field GetMetaData fun(key?: string) : any
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#setmetaData)
+---
+---#### Set Player Metadata
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.SetMetaData('mykey', 'myvalue')
+---```
+---
+---@field SetMetaData fun(key: string, value: any)
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#haslicense)
+---
+---#### Check If Player Has License
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.HasLicense('driver')
+---```
+---
+---@field HasLicense fun(name: string) : boolean
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#getlicenses)
+---
+---#### Get Player Licenses
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.GetLicenses()
+---```
+---
+---@field GetLicenses fun() : table<string, boolean>
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#addlicense)
+---
+---#### Add License To Player
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.AddLicense('driver')
+---```
+---
+---@field AddLicense fun(name: string)
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#removelicense)
+---
+---#### Remove License From Player
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.RemoveLicense('driver')
+---```
+---
+---@field RemoveLicense fun(name: string)
+---**`Player` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#setduty)
+---
+---#### Set Player Job Duty
+---
+---```lua
+---local player = Framework.GetPlayer(source)
+---player.SetDuty(true)
+---```
+---
+---@field SetDuty fun(duty: boolean)
+
+---**`Framework` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#hasjob)
+---
+---#### Check if player has job and or grade
+---
+---**`client`** 
+---```lua
+---Framework.HasJob('police', Framework.Player)
+---
+---Framework.HasJob({ ['police'] = 1 }, Framework.Player)
+---
+---Framework.HasJob('police', Framework.Player, true)
+---```
+---**`server`**
+---```lua
+---local player = Framework.GetPlayer(source)
+---Framework.HasJob('police', player)
+---
+---Framework.HasJob({ ['police'] = 1 }, player)
+---
+---Framework.HasJob('police', player, true)
+---```
+---
+---@param job string 
+---@param player Player
+---@param duty? boolean
+---@return boolean
+function Framework.HasJob(job, player, duty) end
+
+---**`Framework` `server` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/player#hasgang)
+---
+---#### Check if player has gang and or grade
+---
+---**`client`** 
+---```lua
+---Framework.HasGang('mygang', Framework.Player)
+---
+---Framework.HasGang({ ['mygang'] = 1 }, Framework.Player)
+---
+---```
+---**`server`**
+---```lua
+---local player = Framework.GetPlayer(source)
+---Framework.HasGang('mygang', player)
+---
+---Framework.HasGang({ ['mygang'] = 1 }, player)
+---```
+---
+---@param gang string 
+---@param player Player
+---@return boolean
+function Framework.HasGang(gang, player) end

@@ -1,0 +1,191 @@
+---@meta
+
+---**`Database` `server`**
+---#### Database Module
+---@class Database
+Database = {}
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/insert)
+---
+---#### Insert new row into table
+---
+---**`Promise`**
+---```lua
+---local id = Database.insert('INSERT INTO `table` (column1, column2) VALUES (?, ?)', { 'value1', 'value2' })
+---
+---print(id)
+---```
+---
+---**`Callback`**
+---```lua
+---Database.insert('INSERT INTO `table` (column1, column2) VALUES (?, ?)', { 'value1', 'value2' }, function(id)
+---    print(id)
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(id : number)
+---@return number?
+function Database.insert(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/prepare)
+---
+---#### Prepare query for optimizing performance and frequently called queries
+---
+---**`Promise`**
+---```lua
+---local result = Database.prepare('SELECT `column1`, `column2` FROM `table` WHERE `column3` = ?', { 'value1' })
+---
+---print(json.encode(result))
+---```
+---
+---**`Callback`**
+---```lua
+---Database.prepare('SELECT `column1`, `column2` FROM `table` WHERE `column3` = ?', { 'value1' }, function(result)
+---    print(json.encode(result))
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result : table)
+---@return table?
+function Database.prepare(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/query)
+---
+---#### Returns all
+---
+---**`Promise`**
+---```lua
+---local result = Database.query('SELECT * FROM `table` WHERE `column3` = ?', { 'value1' })
+---
+---print(json.encode(result))
+---```
+---
+---**`Callback`**
+---```lua
+---Database.query('SELECT * FROM `table` WHERE `column3` = ?', { 'value1' }, function(result)
+---    print(json.encode(result))
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result : table)
+---@return table?
+function Database.query(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/scalar)
+---
+---#### Returns the first column for a single row
+---
+---**`Promise`**
+---```lua
+---local column1 = Database.scalar('SELECT `column1` FROM `table` WHERE `column3` = ? LIMIT 1' , { 'value1' })
+---
+---print(column1)
+---```
+---
+---**`Callback`**
+---```lua
+---Database.scalar('SELECT `column1` FROM `table` WHERE `column3` = ? LIMIT 1' , { 'value1' }, function(columm1)
+---    print(column1)
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result : any)
+---@return any?
+function Database.scalar(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/single)
+---
+---#### Returns all selected columns for a single row
+---
+---**`Promise`**
+---```lua
+---local result = Database.single('SELECT `column1`, `column2` FROM `table` WHERE `column3` = ? LIMIT 1' , { 'value1' })
+---
+---print(result.column1, result.column2)
+---```
+---
+---**`Callback`**
+---```lua
+---Database.single('SELECT `column1`, `column2` FROM `table` WHERE `column3` = ? LIMIT 1' , { 'value1' }, function(result)
+---    print(result.column1, result.column2)
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result : table)
+---@return table?
+function Database.single(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/transaction)
+---
+---#### Transaction executes multiple queries and commits them only if all succeed
+---
+---**`Promise`**
+---```lua
+---local queries = {
+---    { 'INSERT INTO `table` (column1) VALUES (?)', { 'value1' } },
+---    { 'INSERT INTO `table` (column1, column2) VALUES (?, ?)', { 'value1', 'value2' } },
+---}
+---
+---local result = Database.transaction(queries)
+---
+---print(result)
+---```
+---
+---**`Callback`**
+---```lua
+---local queries = {
+---    { 'INSERT INTO `table` (column1) VALUES (?)', { 'value1' } },
+---    { 'INSERT INTO `table` (column1, column2) VALUES (?, ?)', { 'value1', 'value2' } },
+---}
+---
+---Database.transaction(queries, function(result)
+---    print(result)
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result : boolean)
+---@return boolean?
+function Database.transaction(query, data, cb) end
+
+---**`Database` `server`**
+---[Documentation](https://dev.reflow-store.com/bridge/database/update)
+---
+---#### Returns the number of rows affected by the query
+---
+---**`Promise`**
+---```lua
+---local result = Database.update('UPDATE `table` SET `column1` = ? WHERE `column2` = ?' , { 'value1', 'value2' })
+---
+---print(result)
+---```
+---
+---**`Callback`**
+---```lua
+---Database.update('UPDATE `table` SET `column1` = ? WHERE `column2` = ?' , { 'value1', 'value2' }, function(result)
+---    print(result)
+---end)
+---```
+---
+---@param query string 
+---@param data? table
+---@param cb? fun(result? : number)
+---@return number?
+function Database.update(query, data, cb) end

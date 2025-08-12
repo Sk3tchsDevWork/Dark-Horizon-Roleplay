@@ -1,0 +1,11 @@
+{
+    "show_offers": "Otevřít nabídku",
+    "destinations": "Dostupné destinace",
+    "reward": "Výplata: %s$",
+    "deliver_to_end": "Doruč vozidlo do cílové destinace.",
+    "deliver": "[E] - Doručit",
+    "destination": "Cílová Destinace",
+    "lost_trailer": "Přívěs byl odpojen!",
+    "30s_warn": "Do 30 sekund ho připoj nebo bude zakázka zrušena.",
+    "job_canceled": "Zakázka byla zrušena."
+}

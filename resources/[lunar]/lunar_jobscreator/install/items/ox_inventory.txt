@@ -1,0 +1,561 @@
+['handcuffs'] = {
+    label = 'Handcuffs',
+    weight = 200,
+    stack = true,
+},
+
+['zipties'] = {
+    label = 'Zipties',
+    weight = 20,
+    stack = true,
+},
+
+['blueprint_advancedrifle'] = {
+    label = 'Blueprint - Advanced Rifle',
+    description = 'Blueprint for the advanced rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_appistol'] = {
+    label = 'Blueprint - APPistol',
+    description = 'Blueprint for the APPistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_assaultrifle'] = {
+    label = 'Blueprint - Assault Rifle',
+    description = 'Blueprint for the Assault Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_assaultrifle_mk2'] = {
+    label = 'Blueprint - Assault Rifle MK2',
+    description = 'Blueprint for the Assault Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_assaultshotgun'] = {
+    label = 'Blueprint - Assault Shotgun',
+    description = 'Blueprint for the Assault Shotgun.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_assaultsmg'] = {
+    label = 'Blueprint - Assault SMG',
+    description = 'Blueprint for the Assault SMG.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_bullpuprifle'] = {
+    label = 'Blueprint - Bullpup Rifle',
+    description = 'Blueprint for the Bullpup Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_bullpuprifle_mk2'] = {
+    label = 'Blueprint - Bullpup Rifle MK2',
+    description = 'Blueprint for the Bullpup Rifle MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_bullpupshotgun'] = {
+    label = 'Blueprint - Bullpup Shotgun',
+    description = 'Blueprint for the Bullpup Shotgun.',
+    weight = 100,
+    stack = false
+},
+
+
+['blueprint_carbinerifle'] = {
+    label = 'Blueprint - Carbine Rifle',
+    description = 'Blueprint for the Carbine Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_carbinerifle_mk2'] = {
+    label = 'Blueprint - Carbine Rifle MK2',
+    description = 'Blueprint for the Carbine Rifle MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_combatmg'] = {
+    label = 'Blueprint - Combat MG',
+    description = 'Blueprint for the Combat MG.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_combatmg_mk2'] = {
+    label = 'Blueprint - Combat MG MK2',
+    description = 'Blueprint for the Combat MG MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_combatpdw'] = {
+    label = 'Blueprint - Combat PDW',
+    description = 'Blueprint for the Combat PDW.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_combatpistol'] = {
+    label = 'Blueprint - Combat Pistol',
+    description = 'Blueprint for the Combat Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_combatshotgun'] = {
+    label = 'Blueprint - Combat Shotgun',
+    description = 'Blueprint for the Combat Shotgun.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_compactrifle'] = {
+    label = 'Blueprint - Compact Rifle',
+    description = 'Blueprint for the Compact Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_digiscanner'] = {
+    label = 'Blueprint - Digiscanner',
+    description = 'Blueprint for the Digiscanner.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_gusenberg'] = {
+    label = 'Blueprint - Gusenberg',
+    description = 'Blueprint for the Gusenberg.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_heavypistol'] = {
+    label = 'Blueprint - Heavy Pistol',
+    description = 'Blueprint for the Heavy Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_heavyrifle'] = {
+    label = 'Blueprint - Heavy Rifle',
+    description = 'Blueprint for the Heavy Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_heavyshotgun'] = {
+    label = 'Blueprint - Heavy Shotgun',
+    description = 'Blueprint for the Heavy Shotgun.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_heavysniper'] = {
+    label = 'Blueprint - Heavy Sniper',
+    description = 'Blueprint for the Heavy Sniper.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_heavysniper_mk2'] = {
+    label = 'Blueprint - Heavy Sniper MK2',
+    description = 'Blueprint for the Heavy Sniper MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_machinepistol'] = {
+    label = 'Blueprint - Machine Pistol',
+    description = 'Blueprint for the Machine Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_marksmanpistol'] = {
+    label = 'Blueprint - Marksman Pistol',
+    description = 'Blueprint for the Marksman Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_marksmanrifle'] = {
+    label = 'Blueprint - Marksman Rifle',
+    description = 'Blueprint for the Marksman Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_marksmanrifle_mk2'] = {
+    label = 'Blueprint - Marksman Rifle MK2',
+    description = 'Blueprint for the Marksman Rifle MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_metaldetector'] = {
+    label = 'Blueprint - Metal Detector',
+    description = 'Blueprint for the Metal Detector.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_mg'] = {
+    label = 'Blueprint - MG',
+    description = 'Blueprint for the MG.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_militaryrifle'] = {
+    label = 'Blueprint - Military Rifle',
+    description = 'Blueprint for the Military Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_minismg'] = {
+    label = 'Blueprint - Mini SMG',
+    description = 'Blueprint for the Mini SMG.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_musket'] = {
+    label = 'Blueprint - Musket',
+    description = 'Blueprint for the Musket.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_pistol'] = {
+    label = 'Blueprint - Pistol',
+    description = 'Blueprint for the Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_pistol_mk2'] = {
+    label = 'Blueprint - Pistol MK2',
+    description = 'Blueprint for the Pistol MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_pistol50'] = {
+    label = 'Blueprint - Pistol .50',
+    description = 'Blueprint for the Pistol .50.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_precisionrifle'] = {
+    label = 'Blueprint - Precision Rifle',
+    description = 'Blueprint for the Precision Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_pumpshotgun'] = {
+    label = 'Blueprint - Pump Shotgun',
+    description = 'Blueprint for the Pump Shotgun.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_pumpshotgun_mk2'] = {
+    label = 'Blueprint - Pump Shotgun MK2',
+    description = 'Blueprint for the Pump Shotgun MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_revolver'] = {
+    label = 'Blueprint - Revolver',
+    description = 'Blueprint for the Revolver.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_revolver_mk2'] = {
+    label = 'Blueprint - Revolver MK2',
+    description = 'Blueprint for the Revolver MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_smg'] = {
+    label = 'Blueprint - SMG',
+    description = 'Blueprint for the SMG.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_smg_mk2'] = {
+    label = 'Blueprint - SMG MK2',
+    description = 'Blueprint for the SMG MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_snspistol'] = {
+    label = 'Blueprint - SNS Pistol',
+    description = 'Blueprint for the SNS Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_specialcarbine'] = {
+    label = 'Blueprint - Special Carbine',
+    description = 'Blueprint for the Special Carbine.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_specialcarbine_mk2'] = {
+    label = 'Blueprint - Special Carbine MK2',
+    description = 'Blueprint for the Special Carbine MK2.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_tacticalrifle'] = {
+    label = 'Blueprint - Tactical Rifle',
+    description = 'Blueprint for the Tactical Rifle.',
+    weight = 100,
+    stack = false
+},
+
+['blueprint_tecpistol'] = {
+    label = 'Blueprint - Tec Pistol',
+    description = 'Blueprint for the Tec Pistol.',
+    weight = 100,
+    stack = false
+},
+
+['red_grapes'] = {
+    label = 'Red grapes',
+    weight = 200,
+    stack = true
+},
+
+['white_grapes'] = {
+    label = 'White grapes',
+    weight = 200,
+    stack = true
+},
+
+['white_wine_juice'] = {
+    label = 'White wine juice',
+    weight = 1000,
+    stack = true
+},
+
+['red_wine_juice'] = {
+    label = 'Red wine juice',
+    weight = 1000,
+    stack = true
+},
+
+['empty_bottle'] = {
+    label = 'Empty wine bottle',
+    weight = 200,
+    stack = true
+},
+
+['white_wine'] = {
+    label = 'White wine',
+    weight = 1200,
+    stack = true
+},
+
+['red_wine'] = {
+    label = 'Red wine',
+    weight = 1200,
+    stack = true
+},
+
+['grape_snips'] = {
+    label = 'Grape snips',
+    weight = 200,
+    stack = false
+},
+
+['burger_bleeder'] = {
+    label = 'Bleeder burger',
+    weight = 300,
+},
+
+['burger_heartstopper'] = {
+    label = 'Heart stopper burger',
+    weight = 500,
+},
+
+['burger_torpedo'] = {
+    label = 'Torpedo Sandwich',
+    weight = 200,
+},
+
+['burger_meatfree'] = {
+    label = 'Meat free burger',
+    weight = 200,
+},
+
+['burger_moneyshot'] = {
+    label = 'Money shot burger',
+    weight = 300,
+},
+
+['burger_chickenwrap'] = {
+    label = 'Chicken wrap',
+    weight = 200,
+},
+
+['burger_donut'] = {
+    label = 'Donut',
+    weight = 300,
+},
+
+['burger_applepie'] = {
+    label = 'Apple pie',
+    weight = 300,
+},
+
+['burger_fries'] = {
+    label = 'Freedom fries',
+    weight = 200,
+},
+
+['burger_coffee'] = {
+    label = 'Coffee',
+    weight = 250,
+},
+
+['burger_ecola'] = {
+    label = 'eCola',
+    weight = 500,
+},
+
+['burger_sprunk'] = {
+    label = 'Sprunk',
+    weight = 500,
+},
+
+['burger_emptycup'] = {
+    label = 'Empty cup',
+    weight = 50,
+},
+
+['bacon'] = {
+    label = 'Bacon',
+    weight = 50
+},
+
+['bun'] = {
+    label = 'Burger bun',
+    weight = 50
+},
+
+['baguette'] = {
+    label = 'Baguette',
+    weight = 50
+},
+
+['cheddar'] = {
+    label = 'Cheddar cheese',
+    weight = 20
+},
+
+['raw_chicken'] = {
+    label = 'Raw chicken',
+    weight = 150
+},
+
+['chicken_strips'] = {
+    label = 'Chicken strips',
+    weight = 150
+},
+
+['cooked_patty'] = {
+    label = 'Cooked patty',
+    weight = 150
+},
+
+['patty'] = {
+    label = 'Patty',
+    weight = 150
+},
+
+['sliced_onion'] = {
+    label = 'Sliced onion',
+    weight = 30
+},
+
+['lettuce'] = {
+    label = 'Fresh salad',
+    weight = 50
+},
+
+['tomato'] = {
+    label = 'Tomato',
+    weight = 50
+},
+
+['wrap'] = {
+    label = 'Tortilla wrap',
+    weight = 50
+},
+
+['sliced_potato'] = {
+    label = 'Potato',
+    weight = 200
+},
+
+['mojito'] = {
+    label = 'Mojito',
+    weight = 300
+},
+
+['vodka'] = {
+    label = 'Vodka',
+    weight = 300
+},
+
+['champagne'] = {
+    label = 'Champagne',
+    weight = 300
+},
+
+['tequila'] = {
+    label = 'Tequila',
+    weight = 300
+},
+
+['martini'] = {
+    label = 'Martini',
+    weight = 300
+},
+
+['icetea'] = {
+    label = 'Icetea',
+    weight = 300
+},
+
+['lemonade'] = {
+    label = 'Lemonade',
+    weight = 300
+},

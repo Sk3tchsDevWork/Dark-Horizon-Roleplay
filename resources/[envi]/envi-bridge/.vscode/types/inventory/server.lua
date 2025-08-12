@@ -1,0 +1,250 @@
+---@meta
+
+---**`Inventory` `server`**
+---
+---#### Add Item To Inventory
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#additem)
+---
+---```lua
+----- To Player
+---Framework.AddItem(source, 'water_bottle', 1, { quality = 100 })
+---
+----- To Stash
+---Framework.AddItem('mystash', 'water_bottle', 1, { quality = 100 })
+---```
+---
+---@param inventory number | string
+---@param item string
+---@param count number
+---@param metadata? table
+---@param slot? number
+---@return boolean
+function Framework.AddItem(inventory, item, count, metadata, slot) end
+---**`Inventory` `server`**
+---
+---#### Remove Item From Inventory
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#removeitem)
+---
+---```lua
+----- To Player
+---Framework.AddItem(source, 'water_bottle', 1, { quality = 100 })
+---
+----- To Stash
+---Framework.AddItem('mystash', 'water_bottle', 1, { quality = 100 })
+---```
+---
+---@param inventory number | string
+---@param item string
+---@param count number
+---@param metadata? table
+---@param slot? number
+---@return boolean
+function Framework.RemoveItem(inventory, item, count, metadata, slot) end
+---**`Inventory` `server`**
+---
+---#### Get Item From Inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#getitem)
+---```lua
+----- Get Item From Player Inventory
+---Framework.GetItem(source, 'water_bottle')
+----- Get Item From Stash
+---Framework.GetItem('mystash', 'water_bottle')
+---```
+---
+---@param inventory number | string
+---@param item string
+---@param metadata? table
+---@param strict? boolean
+---@return table<number, Item>
+function Framework.GetItem(inventory, item, metadata, strict) end
+---**`Inventory` `server`**
+---
+---#### Get Item Count From Inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#getitemcount)
+---```lua
+----- Get Item Count From Player Inventory
+---Framework.GetItemCount(source, 'water_bottle')
+----- Get Item Count From Stash
+---Framework.GetItemCount('mystash', 'water_bottle')
+---```
+---
+---@param inventory number | string
+---@param item string
+---@param metadata? table
+---@param strict? boolean
+---@return number
+function Framework.GetItemCount(inventory, item, metadata, strict) end
+---**`Inventory` `server`**
+---
+---#### Check if a player has an item or items
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#hasitem)
+---
+---Check if inventory has item
+---```lua
+----- Player
+---Framework.HasItem(source, 'water_bottle', 1)
+--- 
+----- Stash
+---Framework.HasItem('mystash', 'water_bottle', 1)
+---```
+---Check if inventory has item with metadata
+---```lua
+----- Player
+---Framework.HasItem(source, 'water_bottle', 1, { quality = 100 })
+--- 
+----- Stash
+---Framework.HasItem('mystash', 'water_bottle', 1, { quality = 100 })
+---```
+---Check if inventory has multiple items
+---```lua
+----- Player
+---Framework.HasItem(source, {'water_bottle', 'burger' }, 1)
+--- 
+----- Stash
+---Framework.HasItem('mystash', {'water_bottle', 'burger' }, 1)
+---```
+---Framework.HasItem(source, {'water_bottle', 'burger' }, 1)
+---```lua
+----- Player
+---Framework.HasItem(source, {['water_bottle'] = 1, ['burger'] = 2})
+--- 
+----- Stash
+---Framework.HasItem('mystash', {['water_bottle'] = 1, ['burger'] = 2})
+---```
+---
+---@param inventory number | string
+---@param items string | string[] | table<string, number>
+---@param count? number
+---@param metadata? table
+---@param strict? boolean
+---@return boolean
+function Framework.HasItem(inventory, items, count, metadata, strict) end
+---**`Inventory` `server`**
+---
+---#### Get Item Metadata
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#getitemmetadata)
+---```lua
+-----Player
+---Framework.GetItemMetadata(source, 1)
+----- Stash
+---Framework.GetItemMetadata('mystash', 1)
+---```
+---
+---@param inventory number | string
+---@param slot number
+---@return table
+function Framework.GetItemMetadata(inventory, slot) end
+---**`Inventory` `server`**
+---
+---#### Set Item Metadata
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#setitemmetadata)
+---```lua
+-----Player
+---Framework.SetItemMetadata(source, 1, { quality = 100 })
+----- Stash
+---Framework.SetItemMetadata('mystash', 1, { quality = 100 })
+---```
+---
+---@param inventory number | string
+---@param slot number
+---@param metadata table
+function Framework.SetItemMetadata(inventory, slot, metadata) end
+---**`Inventory` `server`**
+---
+---#### Returns Inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#getinventory)
+---```lua
+-----Player
+---Framework.GetInventory(source)
+----- Stash
+---Framework.GetInventory('mystash')
+---```
+---
+---@param inventory number | string
+---@return table<number, Item>
+function Framework.GetInventory(inventory) end
+---**`Inventory` `server`**
+---
+---#### Clear Inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#clearinventory)
+---```lua
+-----Player
+---Framework.ClearInventory(source)
+---Framework.ClearInventory(source, 'water_bottle')
+---Framework.ClearInventory(source, { 'water_bottle', 'tosti' })
+----- Stash
+---Framework.ClearInventory('mystash')
+---Framework.ClearInventory('mystash', 'water_bottle')
+---Framework.ClearInventory('mystash', { 'water_bottle', 'tosti' })
+---```
+---
+---@param inventory number | string
+---@param keep? string | string[]
+function Framework.ClearInventory(inventory, keep) end
+---**`Inventory` `server`**
+---
+---#### Register Stash
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#registerstash)
+---```lua
+-----Register stash without owner or groups
+---Framework.RegisterStash('mystash', 10, 5000)
+-----Register stash unique to each player
+---Framework.RegisterStash('mystash', 10, 5000, true)
+-----Register stash with player as the owner
+---Framework.RegisterStash('mystash', 10, 5000, 'ZWZ34061')
+-----Register stash with groups
+---Framework.RegisterStash('mystash', 10, 5000, nil, { ['police'] = 0, ['ambulance'] = 0 })
+---Framework.RegisterStash('mystash', 10, 5000, nil, { ['mygang'] = 0 })
+---```
+---
+---@param name string
+---@param slots number
+---@param weight number
+---@param owner? string | boolean
+---@param groups? table<string, number>
+function Framework.RegisterStash(name, slots, weight, owner, groups) end
+---**`Inventory` `server`**
+---
+---#### Register Shop
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#registershop)
+---```lua
+---Framework.RegisterShop('myshop', {
+---     name = 'My Shop',
+---     items = {
+---         { name = 'water_bottle', price = 10, count = 99, metadata = { quality = 50 }}
+---     },
+---     groups = {
+---         police = 0,
+---         mygang = 0
+---     }
+---})
+---```
+---
+---@param name string
+---@param data { name: string, items : table<number, {name: string, price: number, count? : number, metadata? : table[]}>, groups?: string | string[] | table<string, number> }
+function Framework.RegisterShop(name, data) end
+---**`Inventory` `server`**
+---
+---#### Clears a players inventory and saves it to return later
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#confiscateinventory)
+---
+---@param source number
+function Framework.ConfiscateInventory(source) end
+---**`Inventory` `server`**
+---
+---#### Returns players confiscated inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#returninventory)
+---
+---@param source number
+function Framework.ReturnInventory(source) end

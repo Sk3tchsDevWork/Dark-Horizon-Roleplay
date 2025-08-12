@@ -1,0 +1,43 @@
+{
+    "title": "Recycling",
+    "inventoryTitle": "Recycling Inventory",
+    "drawtext": {
+        "controls": "[E] - Place Recycler  \n [Q] - Delete Recycler  \n [Scroll Wheel] Rotate Recycler"
+    },
+    "progress": {
+        "placing_recycler": "Placing Recycler",
+        "removing_recycler": "Removing Recycler",
+        "taking_empty_crate": "Taking Empty Crate",
+        "getting_materials": "Getting Materials"
+    },
+    "target": {
+        "buy_items": "Buy Items",
+        "open_recycler": "Open Recycler",
+        "activate_recycler": "Activate Recycler",
+        "remove_recycler": "Remove Recycler",
+        "get_materials": "Get Materials",
+        "take_empty_crate": "Take Empty Crate"
+    },
+    "notifications": {
+        "no_access_to_warehouse": "You do not have access to this warehouse",
+        "cant_carry_empty_crate": "You can't carry an empty crate",
+        "cant_carry_full_crate": "You can't carry a full crate",
+        "took_empty_crate": "You got an empty crate",
+        "cancelled_action": "Cancelled.",
+        "got_materials": "You got materials, this crate will restock soon",
+        "invalid_crate": "Invalid crate",
+        "pallet_on_cooldown": "This pallet is currently empty",
+        "pallet_busy": "Pallet is currently busy",
+        "no_space": "You do not have enough space in your inventory",
+        "to_far": "You are to far away.",
+        "no_empty_crate": "You do not have an empty crate",
+        "recycler_doesnt_exist": "Recycler does not exist",
+        "recycler_removed": "Recycler has been removed",
+        "recycler_couldnt_remove": "Recycler could not be removed",
+        "no_recycler": "You do not have a recycler",
+        "recycler_active": "Recycler is now active",
+        "recycler_no_items": "Recycler does not have any items to recycle",
+        "recycler_already_active": "Recycler is already active",
+        "wrong_job": "You do not have the required job to recycle %s"
+    }
+}

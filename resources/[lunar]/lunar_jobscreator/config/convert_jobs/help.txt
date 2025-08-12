@@ -1,0 +1,2 @@
+You can place all of the jobs from Unijob V2 to convert them to this system.
+Use the /convertjobs command in the server console to initiate the conversion.

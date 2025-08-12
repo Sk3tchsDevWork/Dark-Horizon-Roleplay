@@ -1,0 +1,11 @@
+{
+    "show_offers": "Rodyti pasiūlymus",
+    "destinations": "Galimos paskirties vietos",
+    "reward": "Mokėjimas: %s€",
+    "deliver_to_end": "Pristatykite transporto priemonę į paskirties vietą.",
+    "deliver": "[E] - Pristatyti",
+    "destination": "Kelionės tikslas",
+    "lost_trailer": "Jūsų priekaba buvo atjungta!",
+    "30s_warn": "Turite 30 sekundžių priekabai prijungti.",
+    "job_canceled": "Pristatymas atšauktas."
+}

@@ -1,0 +1,91 @@
+---@meta
+
+---**`Inventory` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#openstash)
+---
+---#### Opens stash registered using RegisterStash
+---
+---```lua
+---Framework.OpenStash('mystash')
+---```
+---
+---@param name string
+function Framework.OpenStash(name) end
+
+---**`Inventory` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#openshop)
+---
+---#### Open named shop registered using RegisterShop
+---
+---```lua
+---Framework.OpenShop('myshop')
+---```
+---
+---@param name string
+function Framework.OpenShop(name) end
+---**`Inventory` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#closeinventory)
+---
+---#### Close Inventory
+---
+---```lua
+---Framework.CloseInventory()
+---```
+---
+function Framework.CloseInventory() end
+---**`Inventory` `client`**
+---
+---#### Get Item From Player Inventory
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#getitem)
+---```lua
+---Framework.GetItem('water_bottle')
+---```
+---
+---@param item string
+---@param metadata? table
+---@param strict? boolean
+---@return table<number, Item>
+function Framework.GetItem(item, metadata, strict) end
+---**`Inventory` `client`**
+---
+---#### Check if a player has an item or items
+---
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#hasitem)
+---```lua
+--- --Checking a single item
+--- Framework.HasItem('water_bottle', 1)
+--- --Checking a single item with metadata
+--- Framework.HasItem('water_bottle', 1, { quality = 100 })
+--- --Checking multiple items
+--- Framework.HasItem({'water_bottle', 'burger' }, 1)
+--- --Checking multiple items with different quantity
+--- Framework.HasItem({['water_bottle'] = 1, ['burger'] = 2})
+---```
+---
+---@param items string | string[] | table<string, number>
+---@param count? number
+---@param metadata? table
+---@param strict? boolean
+---@return boolean
+function Framework.HasItem(items, count, metadata, strict) end
+---**`Inventory` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#lockinventory)
+---
+---#### Locks Inventory
+---
+---```lua
+---Framework.LockInventory()
+---```
+---
+function Framework.LockInventory() end
+---**`Inventory` `client`**
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#unlockinventory)
+---
+---#### Unlocks Inventory
+---
+---```lua
+---Framework.UnlockInventory()
+---```
+---
+function Framework.UnlockInventory() end

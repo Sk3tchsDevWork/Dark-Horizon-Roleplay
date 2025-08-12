@@ -1,0 +1,70 @@
+---@meta
+
+---**`Store` `client`**
+---@class Store
+---@field [string] any
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#playerid)
+--- 
+---Stored version of PlayerId()
+---
+---@field PlayerId number | boolean
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#serverid)
+---
+---Stored version of GetPlayerServerId()
+---
+---@field ServerId number | boolean
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#ped)
+---
+---Stored version of PlayerPedId()
+---
+---@field Ped number | boolean
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#vehicle)
+---
+---Stored version of GetVehiclePedIsIn()
+---
+---@field Vehicle number | boolean
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#weapon)
+---
+---Stored version of GetCurrentPedWeapon()
+---
+---@field Weapon number | boolean
+Store = {}
+
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#set)
+--- 
+---Register custom Store key/value pair this will trigger the Store event handler when it's registered and updated
+---
+---```lua
+---Store.Set("Test", "My Value")
+---  
+---print(Store.Test)
+---```
+---
+---@param key string 
+---@param value any
+function Store.Set(key, value) end
+
+---**`Store` `client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/store/client#on)
+---
+---Register Store event handler that triggers when a Stored value is registered or updated
+---
+---```lua
+---Store.On("Weapon", function(value, oldvalue)
+---    if value then
+---        print("Weapon Equipped", value)
+---    else
+---        print("Weapon UnEquipped")
+---    end
+---end)
+---```
+---
+---@param key string 
+---@param cb fun(value : any, oldvalue : any)
+function Store.On(key, cb) end

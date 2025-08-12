@@ -1,0 +1,28 @@
+---@meta
+
+---**`Bridge` `client` `server`**
+---
+---[Documentation](https://dev.reflow-store.com/bridge/core)  
+---@class Bridge
+---@field Resource string Current Resource Name
+---@field Name string Bridge Resource Name
+---@field Version string Current Bridge Version
+---@field Context 'server' | 'client' Current Context
+---@field DebugMode boolean Is Bridge In Debug Mode
+---@field Locale string Bridge Locale
+---@field Disabled? { [string]: boolean } Bridge Disabled Modules
+---@field Framework? string Bridge Framework
+---@field FrameworkName? string Bridge Framework Name
+---@field FrameworkEvent? string Bridge Framework Event
+---@field FrameworkPrefix? string Bridge Framework Prefix
+---@field Inventory? string Bridge Inventory
+---@field InventoryName? string Bridge Inventory Name
+---@field InventoryEvent? string Bridge Inventory Event
+---@field InventoryImagePath? string Bridge Inventory Image Path
+---@field Target? string Bridge Target
+---@field TargetName? string Bridge Target Name
+---@field Zone? string Bridge Zone
+---@field ZoneName? string Bridge Zone Name
+---@field Database? string Bridge Database
+---@field DatabaseName? string Bridge Database Name
+Bridge = {}

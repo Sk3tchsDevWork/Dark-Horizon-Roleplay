@@ -1,0 +1,35 @@
+/** 
+    Here's the extracted colors, most of them are the same shade but just different opacities,
+    so make sure to keep the opacities the same to make sure the UI looks good
+**/
+
+:root {
+    --primary-color: #A0A0FF;
+    --primary-2-color: #A0A0FF88;
+    --primary-3-color: #A0A0FF33;
+    --primary-4-color: #b3b3ff75;
+    --secondary-color: #C4C4FF;
+    --secondary-2-color: #4D4D71;
+    --secondary-3-color: #4D4D7145;
+    --transparent-color: #3c3c5800;
+    --border-color: #CACAFF80;
+    --border-2-color: #3C3C58;
+    --background-color: #3c3c58f2;
+    --background-2-color: #3c3c5880;
+    --background-3-color: #3C3C5845;
+    --background-4-color: #26263861;
+    --background-5-color: #262638f2;
+    --background-6-color: #202029BF;
+    --background-7-color: #2626388A;
+    --background-8-color: #37374933;
+    --progress-color: #26264d3e;
+    --progress-2-color: #32325a26;
+    --progress-3-color: #1313263e;
+    --progress-4-color: #14142426;
+    --progress-5-color: #1919248a;
+    --button-color: #53537A;
+    --button-2-color: #3E3E71;
+    --button-3-color: #262638;
+    --button-4-color: #62628e26;
+    --button-5-color: #4f4f92e6;
+}

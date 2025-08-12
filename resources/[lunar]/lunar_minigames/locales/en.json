@@ -1,0 +1,20 @@
+{
+    "keys_title": "Keys Minigame",
+    "keys_description": "Press the keys in the correct order!",
+    "lockpick_title": "Lockpick Minigame",
+    "lockpick_description": "Unlock each individual lock",
+    "lockpick_left": "Rotate left",
+    "lockpick_right": "Rotate Right",
+    "lockpick_unlock": "Unlock",
+    "pincracker_title": "Pin Cracker Minigame",
+    "pincracker_description": "Find the correct combination",
+    "pincracker_crack": "Crack",
+    "sort_title": "Sort Minigame",
+    "sort_description": "Click the numbers in the ascending order",
+    "terminal_title": "Terminal Minigame",
+    "terminal_description": "Replicate the shown sequence",
+    "words_title": "Words Minigame",
+    "words_description": "Memorize the words displayed",
+    "words_seen": "Seen",
+    "words_new": "New"
+}

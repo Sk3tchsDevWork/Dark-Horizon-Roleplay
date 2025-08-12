@@ -1,0 +1,46 @@
+<Dat54>
+  <Version value="7314721" />
+  <ContainerPaths>
+    <Item>audiodirectory\chopshop</Item>
+  </ContainerPaths>
+  <Items>
+    <Item type="SimpleSound">
+      <Name>impactdrill_sp</Name>
+      <Header>
+        <Flags value="0x00008004" />
+        <Volume value="2000" />
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/chopshop</ContainerName>
+      <FileName>impactdrill</FileName>
+      <WaveSlotNum value="0" />
+    </Item>
+    <Item type="SimpleSound">
+      <Name>saw_sp</Name>
+      <Header>
+        <Flags value="0x00008004" />
+        <Volume value="1000" />
+        <Category>scripted</Category>
+      </Header>
+      <ContainerName>audiodirectory/chopshop</ContainerName>
+      <FileName>saw</FileName>
+      <WaveSlotNum value="0" />
+    </Item>
+    <Item type="SoundSet">
+      <Name>envi_chopshop</Name>
+      <Header>
+        <Flags value="0xAAAAAAAA" />
+      </Header>
+      <SoundSets>
+        <Item>
+          <ScriptName>impactdrill</ScriptName>
+          <ChildSound>impactdrill_sp</ChildSound>
+        </Item>
+        <Item>
+          <ScriptName>saw</ScriptName>
+          <ChildSound>saw_sp</ChildSound>
+        </Item>
+      </SoundSets>
+    </Item>
+  </Items>
+</Dat54>

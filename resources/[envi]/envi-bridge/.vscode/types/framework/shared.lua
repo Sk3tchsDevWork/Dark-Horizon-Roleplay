@@ -1,0 +1,135 @@
+---@meta
+
+---**`Framework` `server` `client`**
+---#### Framework Module
+---@class Framework
+---**`Framework` `server` `client`**
+---
+---#### Items
+---
+---```lua
+---Framework.Items["water_bottle"]
+---```
+---
+---@field Items table<number, Item> | { [string]: Item }
+---**`Framework` `server` `client`**
+---
+---#### Function gets called when the player loads into the server
+---
+---**`client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/framework/client#onplayerloaded)
+---```lua
+---Framework.OnPlayerLoaded = function()
+---    -- Player Loaded Into The Server
+---end
+---```
+---**`server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/server#onplayerloaded)
+---```lua
+---Framework.OnPlayerLoaded = function(source)
+---    -- Player Loaded Into The Server
+---end
+---```
+---
+---@field OnPlayerLoaded fun() | fun(source: number)
+---**`Framework` `server` `client`**
+---
+---#### Function gets called when the player leaves the server
+---
+---**`client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/framework/client#onplayerunload)
+---```lua
+---Framework.OnPlayerUnload = function()
+---    -- Player Left The Server
+---end
+---```
+---**`server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/server#onplayerunload)
+---```lua
+---Framework.OnPlayerUnload = function(source)
+---    -- Player Left The Server
+---end
+---```
+---
+---@field OnPlayerUnload fun() | fun(source: number)
+---**`Framework` `server` `client`**
+---
+---#### Function gets called when the players job changes
+---
+---**`client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/framework/client#onjobupdate)
+---```lua
+---Framework.OnJobUpdate = function()
+---    -- Player Job Changed
+---end
+---```
+---**`server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/server#onjobupdate)
+---```lua
+---Framework.OnJobUpdate = function(source)
+---    -- Player Job Changed
+---end
+---```
+---
+---@field OnJobUpdate fun() | fun(source: number)
+---**`Framework` `server` `client`**
+---
+---#### Function gets called when the players job duty changes
+---
+---**`client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/framework/client#onjobdutyupdate)
+---```lua
+---Framework.OnJobDutyUpdate = function()
+---    -- Player Job Duty Changed
+---end
+---```
+---**`server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/server#onjobdutyupdate)
+---```lua
+---Framework.OnJobDutyUpdate = function(source, duty)
+---    -- Player Job Duty Changed
+---end
+---```
+---
+---@field OnJobDutyUpdate fun() | fun(source: number, duty: boolean)
+---**`Framework` `server` `client`**
+---
+---#### Function gets called when the players gang changes
+---
+---**`client`** 
+---[Documentation](https://dev.reflow-store.com/bridge/framework/client#ongangupdate)
+---```lua
+---Framework.OnGangUpdate = function()
+---    -- Player Gang Changed
+---end
+---```
+---**`server`**
+---[Documentation](https://dev.reflow-store.com/bridge/framework/server#ongangupdate)
+---```lua
+---Framework.OnGangUpdate = function(source)
+---    -- Player Gang Changed
+---end
+---```
+---
+---@field OnGangUpdate fun() | fun(source: number)
+---**`Framework` `server` `client`**
+---
+---**`client`** 
+---#### Get Item From Player Inventory
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/client#getitem)
+---```lua
+---Framework.GetItem('water_bottle')
+---```
+---**`server`**
+---#### Get Item From Inventory
+---[Documentation](https://dev.reflow-store.com/bridge/inventory/server#getitem)
+---```lua
+----- Get Item From Player Inventory
+---Framework.GetItem(source, 'water_bottle')
+---
+----- Get Item From Stash
+---Framework.GetItem('mystash', 'water_bottle')
+---```
+---
+---@field GetItem (fun(inventory : number | string, item : string, metadata? : table, strict? : boolean) : table<number, Item> | fun(item : string, metadata? : table, strict? : boolean) : table<number, Item>)
+Framework = {}
