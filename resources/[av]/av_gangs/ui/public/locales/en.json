@@ -1,0 +1,111 @@
+{
+  "search": "Search...",
+  "identifier": "Identifier",
+  "location": "Location",
+  "actions": "Actions",
+  "confirm": "Confirm",
+  "removeMember": "Remove Member",
+  "cancel": "Close",
+  "open": "Open",
+  "closed": "Closed",
+  "playerId": "Player ID",
+  "save": "Save",
+  "send": "Send",
+  "buy": "Buy",
+  "price": "Price",
+  "create": "Create",
+  "return": "Return",
+  "classified": "Classified",
+  "requiredLevel": "Requires Level",
+  "home": {
+    "members": "Members",
+    "settings": "Settings",
+    "missions": "Missions",
+    "blackmarket": "Blackmarket",
+    "properties": "Properties",
+    "locked": "LOCKED",
+    "noPermissions": "You don't have permissions"
+  },
+  "leftPanel": {
+    "activeMembers": "Active members in your organization.",
+    "strain": "Strain",
+    "strainName": "Strain Name",
+    "graffitis": "Graffitis",
+    "graffitisCount": "Graffitis placed around Los Santos."
+  },
+  "admin": {
+    "gangsTab": "Gangs",
+    "newGangTab": "New Gang",
+    "members": "Members",
+    "properties": "Properties",
+    "graffitis": "Graffitis",
+    "peds": "Peds",
+    "settings": "Settings",
+    "deleteGang": "Delete Gang",
+    "graffitiPreview": "Graffiti Preview:",
+    "addPedModel": "Add ped model",
+    "deleteProperty": "Delete Property",
+    "newBoss": "Set New Boss",
+    "setXP": "Set Gang XP",
+    "sendSpray": "Send Spray Item",
+    "territory": "Territory Color",
+    "selectGang": "Select Gang",
+    "createGang": "Create Gang",
+    "gangName": "Gang Name",
+    "warning": "Don't use any special characters",
+    "bossId": "Boss ID",
+    "notValid": "Not a valid URL",
+    "imageSize": "Image size must be 1920px x 1080px"
+  },
+  "header": {
+    "influence": "Influence",
+    "level": "Level",
+    "daily": "Daily Limit"
+  },
+  "members": {
+    "name": "Name",
+    "rank": "Rank",
+    "joined": "Joined",
+    "invite": "Invite player",
+    "editMember": "Edit Member",
+    "leave": "Leave Gang",
+    "remove": "Remove Member",
+    "photo": "Photo",
+    "permissions": "Permissions",
+    "removeConfirmation": "Are you sure you want to remove"
+  },
+  "missions": {
+    "start": "Start Mission",
+    "started": "Busy"
+  },
+  "properties": {
+    "security": "Security",
+    "production": "Production",
+    "stash": "Stash",
+    "name": "Name",
+    "type": "Type",
+    "nextCook": "Next Cook",
+    "upgrades": "Upgrades",
+    "panel": {
+      "upgrades": "Upgrades",
+      "stash": "[Stash]: ",
+      "stash2": "Increases the available stash slots and weight for your property.",
+      "production": "[Production]: ",
+      "production2": "Increases the production, faster production = more and better products",
+      "security": "[Security]: ",
+      "security2": "Makes it more difficult for police/gangs to raid your property."
+    }
+  },
+  "blackmarket": {
+    "info": {
+      "header": "Important",
+      "entrance": "[Entrance]: ",
+      "entranceText": "Property entrance will be generated in the coordinates where you are standing in the moment you buy this property, make sure to be on the street and standing in front of a door.",
+      "admin": "If you generate the entrance in the wrong zone, administration will remove it."
+    }
+  },
+  "settings": {
+    "logo": "Gang Logo",
+    "update": "Update"
+  }
+}

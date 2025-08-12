@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  background-color: rgba(30, 30, 36, 0.99);
+  height: 45vh;
+  width: 80vh;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tabs {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}

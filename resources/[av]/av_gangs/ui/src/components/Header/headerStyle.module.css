@@ -1,0 +1,58 @@
+.header {
+  background: radial-gradient(
+    circle,
+    rgba(129, 131, 138, 0.1) 0%,
+    rgba(63, 65, 74, 0.15) 90%
+  );
+
+  width: 100%;
+  border-radius: 6px;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.name {
+  line-height: 1.15;
+  width: 100px;
+  max-height: 55px;
+  font-weight: 500;
+  overflow: hidden;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.bar {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(85.25vh);
+}
+
+@media (min-width: 700px) {
+  .bar {
+    width: calc(65vh);
+  }
+}
+
+@media (min-width: 1016px) {
+  .bar {
+    width: calc(80vh);
+  }
+}
+
+@media (min-width: 1220px) {
+  .bar {
+    width: calc(95vh);
+  }
+}
+
+@media (min-width: 1600px) {
+  .bar {
+    width: calc(120vh);
+  }
+}
+
+@media (min-width: 1700px) {
+  .bar {
+    width: calc(130vh);
+  }
+}

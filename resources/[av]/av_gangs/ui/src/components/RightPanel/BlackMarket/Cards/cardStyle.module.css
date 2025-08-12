@@ -1,0 +1,69 @@
+.grid {
+  width: 100%;
+  height: 82%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.card {
+  position: relative;
+  background: radial-gradient(
+    circle,
+    rgba(129, 131, 138, 0.1) 0%,
+    rgba(63, 65, 74, 0.15) 90%
+  );
+  height: 390px;
+}
+
+.image {
+  position: relative;
+  opacity: 0.8;
+}
+
+.description {
+  height: 90px;
+  overflow: auto;
+}
+
+.title {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.buttonBox {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  margin-left: auto;
+}
+
+.help {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.helpIcon {
+  color: rgb(250, 219, 160);
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+.helpIcon:hover {
+  cursor: pointer;
+}

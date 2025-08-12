@@ -1,0 +1,6 @@
+All graffitis should be 512x512px png with transparent background
+
+OpenIV: https://openiv.com/
+GIMP: https://www.gimp.org/
+
+Tutorial: https://docs.av-scripts.com/laptop-pack-v3/gangs/graffitis

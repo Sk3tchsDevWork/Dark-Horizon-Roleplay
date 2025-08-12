@@ -1,0 +1,25 @@
+.wrapper {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.box {
+  background-color: rgba(80, 80, 80, 0.025);
+  backdrop-filter: blur(10px);
+  width: 15vw;
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}

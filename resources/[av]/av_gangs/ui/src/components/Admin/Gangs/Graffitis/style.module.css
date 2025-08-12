@@ -1,0 +1,48 @@
+.th {
+  padding: 0;
+}
+
+.control {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+}
+
+.icon {
+  width: rem(21px);
+  height: rem(21px);
+  border-radius: rem(21px);
+}
+
+.option:hover {
+  background-color: rgba(155, 155, 155, 0.15);
+}
+
+.input {
+  background: radial-gradient(
+    circle,
+    rgba(129, 131, 138, 0.1) 0%,
+    rgba(63, 65, 74, 0.15) 90%
+  );
+}
+
+.members {
+  overflow: auto;
+}
+
+@media (min-height: 500px) {
+  .members {
+    height: 70%;
+  }
+}
+
+@media (min-height: 560px) {
+  .members {
+    height: 73%;
+  }
+}
+
+@media (min-height: 950px) {
+  .members {
+    height: 82%;
+  }
+}

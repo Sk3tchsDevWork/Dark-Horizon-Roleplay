@@ -1,0 +1,6 @@
+import{c as v,R as h,b as d,r as a,j as e,al as f,A as x,w as m,f as r}from"./index-DQOIXfH8.js";import{T as y}from"./Textarea-DduUfxP0.js";/**
+ * @license @tabler/icons-react v3.19.0 - MIT
+ *
+ * This source code is licensed under the MIT license.
+ * See the LICENSE file in the root directory of this source tree.
+ */var g=v("outline","device-floppy","IconDeviceFloppy",[["path",{d:"M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2",key:"svg-0"}],["path",{d:"M12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",key:"svg-1"}],["path",{d:"M14 4l0 4l-6 0l0 -4",key:"svg-2"}]]);const _="_input_1yl7w_1",j="_save_1yl7w_19",i={input:_,save:j},S=()=>{const o=h(d),[p,t]=a.useState(!1),[s,n]=a.useState(""),u=async()=>{t(!1),await r("av_laptop","saveNotes",{identifier:o.serial,content:s}),setTimeout(()=>{t(!0)},500)};return a.useEffect(()=>{(async()=>{const l=await r("av_laptop","getNotes",o.serial);l&&n(l),setTimeout(()=>{t(!0)},100)})()},[]),e.jsx(f,{h:470,type:"hover",scrollbars:"y",scrollbarSize:7,bg:"#3A3A3C",children:p?e.jsxs(e.Fragment,{children:[e.jsx(x,{className:i.save,radius:50,color:"#636366",onClick:()=>{u()},children:e.jsx(g,{style:{width:"18px",height:"18px"},stroke:1.5})}),e.jsx(y,{classNames:i,autosize:!0,minRows:20,value:s,onChange:c=>{s.length>1e3||n(c.target.value)}})]}):e.jsx(m,{})})};export{S as default};

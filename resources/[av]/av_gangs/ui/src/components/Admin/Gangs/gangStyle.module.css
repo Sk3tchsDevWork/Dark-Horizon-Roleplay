@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+}
+
+.input {
+  background-color: rgba(155, 155, 155, 0.05);
+}
+
+.dropdown {
+  background-color: rgba(39, 43, 54, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+.option:hover {
+  background-color: rgba(155, 155, 155, 0.05);
+}
