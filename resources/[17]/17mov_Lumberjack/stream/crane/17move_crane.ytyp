@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions/>
+  <archetypes>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_base</name>
+  <textureDictionary>17mov_base</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_base</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_base</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_boom</name>
+  <textureDictionary>17mov_boom</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_boom</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_boom</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_hook</name>
+  <textureDictionary>17mov_hook</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_hook</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_hook</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_stick_1</name>
+  <textureDictionary>17mov_stick_1</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_stick_1</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_stick_1</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_stick_2</name>
+  <textureDictionary>17mov_stick_2</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_stick_2</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_stick_2</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_stick_3</name>
+  <textureDictionary>17mov_stick_3</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_stick_3</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_stick_3</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_grab_1</name>
+  <textureDictionary>17mov_grab_1</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_grab_1</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_grab_1</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_grab_2</name>
+  <textureDictionary>17mov_grab_2</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_grab_2</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_grab_2</assetName>
+  <extensions/>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+  <lodDist value="300.00000000"/>
+  <flags value="0"/>
+  <specialAttribute value="0"/>
+  <bbMin x="-13.07768825" y="-13.03843416" z="-13.10890120"/>
+  <bbMax x="13.07806713" y="13.03833046" z="13.10858550"/>
+  <bsCentre x="13.00018944" y="-13.00005185" z="-13.00015788"/>
+  <bsRadius value="13.13915190"/>
+  <hdTextureDist value="300.00000000"/>
+  <name>17mov_radiocontrol</name>
+  <textureDictionary>17mov_radiocontrol</textureDictionary>
+  <clipDictionary/>
+  <drawableDictionary/>
+  <physicsDictionary>17mov_radiocontrol</physicsDictionary>
+  <assetType>ASSET_TYPE_DRAWABLE</assetType>
+  <assetName>17mov_radiocontrol</assetName>
+  <extensions/>
+</Item>
+   </archetypes>
+  <name>0x0AD225D7</name>
+  <dependencies/>
+  <compositeEntityTypes/>
+</CMapTypes>
