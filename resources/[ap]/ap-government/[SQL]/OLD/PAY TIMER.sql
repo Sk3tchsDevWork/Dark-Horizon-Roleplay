@@ -1,0 +1,2 @@
+ALTER TABLE `ap_tax`
+ADD IF NOT EXISTS `pay_timer` INT(11) NULL DEFAULT '0';

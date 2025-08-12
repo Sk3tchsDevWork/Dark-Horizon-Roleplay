@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom NUI Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background: transparent;
+    }
+    #menu, #dialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      max-width: 90vw;
+      background: #2c2f33;
+      border-radius: 12px;
+      padding: 25px;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      display: none;
+      animation: fadeSlideIn 0.35s ease-out;
+    }
+    .menu-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+    }
+    .menu-option {
+      padding: 14px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.3s ease;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background: #3a3d42;
+    }
+    .menu-option span {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .menu-option:hover:not(.disabled) {
+      background: #4e5259;
+    }
+    .menu-option.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: default;
+    }
+    .menu-icon {
+      margin-right: 8px;
+    }
+    .menu-description {
+      font-size: 13px;
+      color: #b0b0b0;
+      margin-top: 6px;
+    }
+    #menu-footer {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #444;
+      display: flex;
+      justify-content: center;
+    }
+    #menu-back-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #4e9cff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #menu-back-button:hover {
+      background: #317be2;
+    }
+    #dialog input,
+    #dialog select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border-radius: 6px;
+      border: 1px solid #555;
+      background-color: #202225;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    #dialog select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23ffffff' d='M6 8L0 0h12L6 8z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+      cursor: pointer;
+      padding-right: 35px; 
+    }
+    #dialog select:hover {
+      background-color: #2a2d31;
+    }
+    #dialog select:focus {
+      border-color: #4e9cff;
+      outline: none;
+    }
+    #dialog-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    #dialog-buttons button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin: 0 5px;
+      background: #4e9cff;
+      color: white;
+      font-weight: bold;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    #dialog-buttons button:hover {
+      background: #317be2;
+    }
+    .custom-select {
+      position: relative;
+      width: 100%;
+      user-select: none;
+    }
+    .custom-select-display {
+      background: #202225;
+      color: white;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .custom-select-display::after {
+      content: '\f107'; 
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 15px;
+    }
+    .custom-select-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #2c2f33;
+      border: 1px solid #555;
+      border-radius: 6px;
+      margin-top: 4px;
+      z-index: 10;
+      display: none;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .custom-select-options div {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #444;
+    }
+    .custom-select-options div:last-child {
+      border-bottom: none;
+    }
+    .custom-select-options div:hover {
+      background: #4e9cff;
+      color: white;
+    }
+    .context-menu {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    #menu-options::-webkit-scrollbar {
+      width: 8px;
+    }
+    #menu-options::-webkit-scrollbar-track {
+      background: #1e1f22;
+      border-radius: 8px;
+    }
+    #menu-options::-webkit-scrollbar-thumb {
+      background-color: #4e9cff;
+      border-radius: 8px;
+      border: 2px solid #1e1f22;
+    }
+    #menu-options::-webkit-scrollbar-thumb:hover {
+      background-color: #317be2;
+    }
+    #menu-filter {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #555;
+      border-radius: 6px;
+      background-color: #202225;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+    #menu-filter::placeholder {
+      color: #aaa;
+    }
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translate(-50%, -45%) scale(0.98); }
+      to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div class="menu-title" id="menu-title"></div>
+    <input type="text" id="menu-filter" placeholder="Filter options..." />
+    <div id="menu-options"></div>
+    <div id="menu-footer" style="display:none;"></div>
+  </div>
+
+  <div id="dialog">
+    <div class="menu-title" id="dialog-title"></div>
+    <form id="dialog-form"></form>
+    <div id="dialog-buttons">
+      <button id="dialog-ok" type="button" onclick="submitDialog()">OK</button>
+      <button id="dialog-cancel" type="button" onclick="cancelDialog()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/lawyerID.js"></script>
+
+  <script>
+    let currentDialogFields = []
+    let returnAction = null
+    let menuStack = []
+    let filteringEnabled = false
+    let allMenuOptions = []
+
+    window.addEventListener("message", (event) => {
+      const data = event.data
+      if (data.action === "showContext") showMenu(data.id, data.data, data.returnAction, data.scroll, data.filter)
+      if (data.action === "showDialog") showDialog(data.title, data.fields, data.returnAction)
+    })
+
+    function showMenu(title, options, returnAction = null, scrollLimit = null, enableFilter = false) {
+      filteringEnabled = enableFilter
+      menuStack.push({ title, options, returnAction, scrollLimit, enableFilter })
+      renderMenu(title, options, returnAction, scrollLimit)
+    }
+
+    function renderMenu(title, options, returnAction = null, scrollLimit = null) {
+      const menu = document.getElementById("menu")
+      const titleEl = document.getElementById("menu-title")
+      const container = document.getElementById("menu-options")
+      const footer = document.getElementById("menu-footer")
+
+      titleEl.innerHTML = title
+      container.innerHTML = ""
+
+      const filterInput = document.getElementById("menu-filter")
+
+      if (filteringEnabled) {
+        filterInput.style.display = "block"
+        filterInput.value = ""
+        filterInput.oninput = () => {
+          const query = filterInput.value.toLowerCase()
+          const filtered = allMenuOptions.filter(opt => 
+            (opt.title && opt.title.toLowerCase().includes(query)) || 
+            (opt.description && opt.description.toLowerCase().includes(query))
+          )
+          updateMenuOptions(filtered)
+        }
+      } else {
+        filterInput.style.display = "none"
+      }
+
+      footer.innerHTML = ""
+      footer.style.display = "none"
+
+      if (scrollLimit && options.length > scrollLimit) {
+        container.style.maxHeight = `${scrollLimit * 300}px`
+        container.style.overflowY = "auto"
+      } else {
+        container.style.maxHeight = "unset"
+        container.style.overflowY = "unset"
+      }
+
+      allMenuOptions = options
+
+      options.forEach((opt, index) => {
+        const el = document.createElement("div")
+        el.className = "menu-option"
+        if (opt.disabled) el.classList.add("disabled")
+
+        el.innerHTML = `
+          <div style="display:flex; align-items:center;">
+            <i class="fa ${opt.icon || ''} menu-icon"></i> <span>${opt.title}</span>
+          </div>
+          ${opt.description ? `<div class='menu-description'>${opt.description}</div>` : ""}`
+
+        if (!opt.disabled) {
+          el.addEventListener("click", () => {
+            fetch(`https://${GetParentResourceName()}/menuSelect`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                index,
+                event: opt.event,
+                isServer: opt.isServer,
+                args: opt.args || null
+              })
+            })
+            closeMenu()
+          })
+        }
+
+        container.appendChild(el)
+      })
+
+      if (returnAction || menuStack.length > 1) {
+        const backBtn = document.createElement("button")
+        backBtn.id = "menu-back-button"
+        backBtn.textContent = "Back"
+
+        backBtn.addEventListener("click", () => {
+          if (returnAction) {
+            fetch(`https://${GetParentResourceName()}/cancel`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ returnAction })
+            })
+            closeMenu()
+          } else {
+            menuStack.pop()
+            const prev = menuStack[menuStack.length - 1]
+            renderMenu(prev.title, prev.options, prev.returnAction)
+          }
+        })
+
+        footer.appendChild(backBtn)
+        footer.style.display = "flex"
+      }
+
+      menu.style.display = "block"
+    }
+
+    function updateMenuOptions(options) {
+      const container = document.getElementById("menu-options")
+      container.innerHTML = ""
+
+      options.forEach((opt, index) => {
+        const el = document.createElement("div")
+        el.className = "menu-option"
+        if (opt.disabled) el.classList.add("disabled")
+
+        el.innerHTML = `
+          <div style="display:flex; align-items:center;">
+            <i class="fa ${opt.icon || ''} menu-icon"></i> <span>${opt.title}</span>
+          </div>
+          ${opt.description ? `<div class='menu-description'>${opt.description}</div>` : ""}`
+
+        if (!opt.disabled) {
+          el.addEventListener("click", () => {
+            fetch(`https://${GetParentResourceName()}/menuSelect`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                index,
+                event: opt.event,
+                isServer: opt.isServer,
+                args: opt.args || null
+              })
+            })
+            closeMenu()
+          })
+        }
+
+        container.appendChild(el)
+      })
+    }
+
+    function showDialog(titleText, fields, ret) {
+      currentDialogFields = fields
+      returnAction = ret
+
+      const dialog = document.getElementById("dialog")
+      const form = document.getElementById("dialog-form")
+      document.getElementById("dialog-title").textContent = titleText
+      form.innerHTML = ""
+
+      const cancelBtn = document.getElementById("dialog-cancel")
+      cancelBtn.textContent = ret && ret.event ? "Back" : "Cancel"
+
+      fields.forEach((field, idx) => {
+        const id = `f${idx}`
+        const wrapper = document.createElement("div")
+        wrapper.style.marginBottom = "15px"
+
+        const label = document.createElement("label")
+        label.htmlFor = id
+        label.style.display = "flex"
+        label.style.alignItems = "center"
+        label.style.gap = "8px"
+        label.style.fontWeight = "500"
+        label.style.marginBottom = "6px"
+
+        const icon = document.createElement("i")
+        icon.className = `fa ${field.icon || "fa-circle-info"} fa-fw`
+        icon.style.color = "#4e9cff"
+
+        label.appendChild(icon)
+        label.appendChild(document.createTextNode(field.label || ""))
+        wrapper.appendChild(label)
+
+        let input
+
+        switch (field.type) {
+          case 'text':
+          case 'number':
+          case 'password':
+          case 'date':
+          case 'time':
+            input = document.createElement("input")
+            input.type = field.type
+            input.value = field.default || ""
+            break
+          case 'range':
+            input = document.createElement("input")
+            input.type = "range"
+            input.min = field.min || 0
+            input.max = field.max || 100
+            input.step = field.step || 1
+            input.value = field.default || input.min
+            const valueDisplay = document.createElement("span")
+            valueDisplay.textContent = input.value
+            valueDisplay.style.marginLeft = "10px"
+            valueDisplay.style.fontWeight = "bold"
+            input.oninput = () => {
+              valueDisplay.textContent = input.value
+            }
+            wrapper.appendChild(valueDisplay)
+            break
+          case 'select':
+            const selectWrapper = document.createElement("div")
+            selectWrapper.className = "custom-select"
+            input = document.createElement("input")
+            input.type = "hidden"
+            input.id = id
+            input.required = !!field.required
+
+            const display = document.createElement("div")
+            display.className = "custom-select-display"
+            display.textContent = field.options.find(opt => opt.value === field.default)?.label || "Select..."
+
+            const optionsList = document.createElement("div")
+            optionsList.className = "custom-select-options"
+
+            field.options.forEach(opt => {
+              const optionDiv = document.createElement("div")
+              optionDiv.textContent = opt.label
+              optionDiv.dataset.value = opt.value
+              optionDiv.addEventListener("click", () => {
+                input.value = opt.value
+                display.textContent = opt.label
+                optionsList.style.display = "none"
+              })
+              optionsList.appendChild(optionDiv)
+            })
+
+            display.addEventListener("click", () => {
+              const visible = optionsList.style.display === "block"
+              document.querySelectorAll(".custom-select-options").forEach(el => el.style.display = "none")
+              optionsList.style.display = visible ? "none" : "block"
+            })
+
+            document.addEventListener("click", (e) => {
+              if (!selectWrapper.contains(e.target)) {
+                optionsList.style.display = "none"
+              }
+            })
+
+            if (field.default) {
+              input.value = field.default
+            }
+
+            selectWrapper.appendChild(display)
+            selectWrapper.appendChild(optionsList)
+            wrapper.appendChild(input)
+            wrapper.appendChild(selectWrapper)
+            break
+          default:
+            return
+        }
+
+        input.id = id
+        input.required = !!field.required
+        input.style.width = "100%"
+        input.style.padding = "10px"
+        input.style.borderRadius = "6px"
+        input.style.border = "1px solid #555"
+        input.style.background = "#202225"
+        input.style.color = "#fff"
+
+        wrapper.appendChild(input)
+
+        if (field.description) {
+          const desc = document.createElement("div")
+          desc.textContent = field.description
+          desc.style.fontSize = "12px"
+          desc.style.color = "#aaa"
+          desc.style.marginTop = "5px"
+          wrapper.appendChild(desc)
+        }
+
+        form.appendChild(wrapper)
+      })
+
+      dialog.style.display = "block"
+    }
+
+    function submitDialog() {
+      const values = []
+      const inputs = document.querySelectorAll("#dialog-form input, #dialog-form select")
+      let valid = true
+
+      inputs.forEach((el, idx) => {
+        const field = currentDialogFields[idx]
+        const val = el.value
+        if (field.required && !val) valid = false
+        if (field.type === "number" && (val < field.min || val > field.max)) valid = false
+        values.push(val)
+      })
+
+      if (!valid) {
+        return
+      }
+
+      fetch(`https://${GetParentResourceName()}/dialogResult`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values)
+      })
+      closeDialog()
+    }
+
+    function cancelDialog() {
+      closeDialog()
+      fetch(`https://${GetParentResourceName()}/cancel`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ returnAction })
+      })
+    }
+
+    function closeMenu() {
+      document.getElementById("menu").style.display = "none"
+      menuStack = []
+    }
+
+    function closeDialog() {
+      document.getElementById("dialog").style.display = "none"
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeMenu()
+        closeDialog()
+        fetch(`https://${GetParentResourceName()}/cancel`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({}) 
+        })
+      }
+    })
+  </script>
+</body>
+</html>

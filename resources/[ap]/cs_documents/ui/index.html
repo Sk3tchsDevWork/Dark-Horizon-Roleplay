@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="vertical-document">
+            <div class="vertical-header">
+                <div class="vertical-header-title-cont">
+                    <div class="vertical-header-title"></div>
+                    <div class="vertical-header-date-cont"></div>
+                    <div class="vertical-header-from-cont"></div>
+                </div>
+                <div class="vertical-logo-cont">
+                    <img src="image/NBA.png" class="vertical-server-logo horizontal-server-logo">
+                </div>
+            </div> 
+            <div class="vertical-first-middle-cont">
+                <div class="issued-by-title-cont">Issued By</div>
+                <div class="issued-by-value-cont">XX XXXX</div>
+            </div>
+            <div class="vertical-second-middle-cont">
+                <div class="vertical-second-middle-heading part1Heading-doc"></div>
+                <div class="vertical-input-fields-cont">
+                    <div class="fields-container">
+                        <div class="fields-name">First</div>
+                        <input type="text" class="vertical-input animate__animated">
+                    </div>
+                    <div class="fields-container">
+                        <div class="fields-name">Second</div>
+                        <input type="text" class="vertical-input animate__animated">
+                    </div>
+                    <div class="fields-container">
+                        <div class="fields-name">Third</div>
+                        <input type="text" class="vertical-input animate__animated">
+                    </div>
+                    <div class="fields-container">
+                        <div class="fields-name">Fourth</div>
+                        <input type="text" class="vertical-input animate__animated">
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-third-middle-cont">
+                <div class="vertical-second-middle-heading part2Heading-doc"></div>
+                <div class="vertical-testimony-cont">
+                    <textarea class="vertical-testimony-textarea animate__animated" maxlength="2000"></textarea>
+                </div>
+            </div>  
+            <div class="vertical-footer">
+                <div class="vertical-footer-heading-text">Terms and Confirmation</div>
+                <div class="vertical-terms-sign-cont">
+                    <div class="vertical-terms-cont">
+                        <span>• This document, when signed, becomes an official legal document.</span>
+                        <span>• By signing this document you are legally bound for its context and accept every legal consequence it may generate</span>
+                        <span>• Every copy of this document, is equal in value in its original. Be extra carefull when giving copies.</span>
+                    </div>
+                    <div class="vertical-sign-cont signBox animate__animated">
+                        <div class="signBtn disableSign">Signature Box</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-buttons-cont">
+                <div class="create-doc-btn horizontal-create-doc-btn">Create</div>
+                <div class="cancel-doc-btn horizontal-cancel-doc-btn">Cancel</div>
+                <div class="close-doc-btn horizontal-close-doc-btn">Close</div>
+
+                <div class="approval-btns accept-doc-btn horizontal-accept-doc-btn" style="display: none;">Accept</div>
+                <div class="approval-btns reject-doc-btn horizontal-reject-doc-btn" style="display: none;">Reject</div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="document-management-container">
+                <div class="doc-manage-header myDoc-head">
+                    <div class="doc-manage-title-cont">
+                        <div class="doc-manage-name-title myDoc-title">My Documents</div>
+                    </div>
+                    <div class="doc-manage-header-right">
+                        <div class="doc-manage-search-btn">
+                            <i class="fa-solid fa-magnifying-glass search-icon" style="display: flex;"></i>
+                            <input type="search" placeholder="Search" class="searchBar search-my-document" id="myDocumentSearch" style="outline: none; border: none;">
+                        </div>
+                        <div class="exit-buttons">
+                            <div class="exit-btn">Exit</div>
+                            <div class="escape-btn">Escape</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-manage-main-cont">
+                    <div class="doc-manage-left-nav">
+                        <div class="doc-manage-nav-icons">
+                            <div class="doc-manage-nav-box manage-doc-button selected-category">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+                            <div class="doc-manage-nav-box create-doc-button">
+                                <i class="fa-solid fa-folder-plus"></i>
+                            </div>
+                            <div class="doc-manage-nav-box template-button">
+                                <i class="fa-solid fa-file"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-manage-right-cont">
+                        <div class="my-documents-container"></div>
+                        <div class="no-documents-container">No documents</div>
+                    </div>
+                </div>
+            </div>
+            <div class="document-create-container">
+                <div class="doc-manage-header createDoc-head">
+                    <div class="doc-manage-title-cont">
+                        <div class="doc-manage-name-title create-doc-title"></div>
+                    </div>
+                    <div class="doc-manage-header-right">
+                        <div class="doc-manage-search-btn">
+                            <i class="fa-solid fa-magnifying-glass search-icon" style="display: flex;"></i>
+                            <input type="search" placeholder="Search" class="searchBar create-my-document" id="createDocumentSearch" style="outline: none; border: none;">
+                        </div>
+                        <div class="create-new-btn">Create New</div>
+                        <div class="create-go-back-btn">Go Back</div>
+                    </div>
+                </div>
+                <div class="doc-manage-main-cont">
+                    <div class="doc-manage-left-nav">
+                        <div class="doc-create-nav-icons">
+                            <div class="doc-manage-nav-box public-doc selected-category">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+                            <div class="doc-manage-nav-box job-doc">
+                                <i class="fa-solid fa-file-shield"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-manage-right-cont">
+                        <div class="my-documents-container"></div>
+                        <div class="no-documents-container">No documents</div>
+                    </div>
+                </div>  
+                <div class="create-doc-popup-cont">
+                    <div class="create-doc-popup-box">
+                        <div class="create-doc-manage-header">Documents List</div>
+                        <div class="cancel-doc-create-btn">Close</div>
+                    </div>
+                </div>
+            </div>
+            <div class="document-template-container">
+                <div class="doc-manage-header template-manage-head">
+                    <div class="doc-manage-title-cont">
+                        <div class="doc-manage-name-title template-doc-title"></div>
+                    </div>
+                    <div class="doc-manage-header-right">
+                        <div class="doc-manage-search-btn">
+                            <i class="fa-solid fa-magnifying-glass search-icon" style="display: flex;"></i>
+                            <input type="search" placeholder="Search" class="searchBar template-my-document" id="templateSearch" style="outline: none; border: none;">
+                        </div>
+                        <div class="create-template-btn">Create Template</div>
+                        <div class="doc-template-go-back-btn">Go Back</div>
+                    </div>
+                </div>
+                <div class="doc-manage-main-cont">
+                    <div class="doc-manage-left-nav">
+                        <div class="doc-create-nav-icons">
+                            <div class="doc-manage-nav-box public-template selected-category">
+                                <i class="fa-solid fa-file-code"></i>
+                            </div>
+                            <div class="doc-manage-nav-box job-template">
+                                <i class="fa-solid fa-file-zipper"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-manage-right-cont">
+                        <div class="my-documents-container"></div>
+                        <div class="no-documents-container">No Templates</div>
+                    </div>
+                </div>
+                <div class="template-popup-cont">
+                    <div class="template-popup-box">
+                        <div class="template-header">
+                            <div>Template Editor</div>
+                            <div class="template-header-btns-cont">
+                                <div class="template-create-btn">Create</div>
+                                <div class="template-close-popup-btn">Go Back</div>
+                            </div>
+                        </div>
+                        <div class="template-mid-box">
+                            <div class="vertical-template">
+                                <div class="vertical-template-header">
+                                    <div class="vertical-template-header-name">
+                                        <div class="vertical-template-title-cont">
+                                            <input type="text" placeholder="Document Title" style="outline: none; border: none;" class="verticle-template-tite-input animate__animated">
+                                        </div>
+                                        <div class="vertical-template-date-cont"></div>
+                                        <div class="vertical-template-from-cont"></div>
+                                        <div class="vertical-template-issued-cont">
+                                            <div class="issued-by-title-cont" style="font-size: 1.3vh; align-items: end;">Issued By</div>
+                                            <div class="issued-by-value-cont" style="font-size: 1.1vh;">XX XXXX</div>
+                                        </div>
+                                    </div>
+                                    <div class="vertical-template-header-logo">
+                                        <img src="image/NBA.png" style="height: 70%;" class="template-logo">
+                                    </div>
+                                </div>
+                                <div class="vertical-template-mid-cont">
+                                    <div class="vertical-input-heading-cont">
+                                        <i class="fa-solid fa-circle-xmark delete-field-icon" id="part1-delete-btn"></i>
+                                        <input type="text" placeholder="Part I Field Heading" style="outline: none; border: none;" class="vertical-field-heading part1Heading animate__animated">
+                                    </div>
+                                    <div class="vertical-fields-cont">
+                                        <div class="vertical-template-field-box">
+                                            <input type="text" placeholder="Field Title" style="outline: none;" class="vertical-template-field-box-input animate__animated">
+                                            <i class="fa-solid fa-trash delete-field-option-icon"></i>
+                                        </div>
+                                        <div class="vertical-template-field-box">
+                                            <input type="text" placeholder="Field Title" style="outline: none;" class="vertical-template-field-box-input animate__animated">
+                                            <i class="fa-solid fa-trash delete-field-option-icon"></i>
+                                        </div>
+                                        <div class="vertical-template-field-box">
+                                            <input type="text" placeholder="Field Title" style="outline: none;" class="vertical-template-field-box-input animate__animated">
+                                            <i class="fa-solid fa-trash delete-field-option-icon"></i>
+                                        </div>
+                                        <div class="vertical-template-field-box">
+                                            <input type="text" placeholder="Field Title" style="outline: none;" class="vertical-template-field-box-input animate__animated">
+                                            <i class="fa-solid fa-trash delete-field-option-icon"></i>
+                                        </div>
+                                        <div class="vertical-template-field-box" id="add-field-container">
+                                            <div class="vertical-add-field-btn"><i class="fa-solid fa-plus"></i>Add Field</div>
+                                            <i class="fa-solid fa-trash add-field-option-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-template-mid-cont vertical-template-textarea-field">
+                                    <div class="vertical-input-heading-cont">
+                                        <i class="fa-solid fa-circle-xmark delete-field-icon" id="part2-delete-btn"></i>
+                                        <input type="text" placeholder="Part II Field Heading" style="outline: none; border: none;" class="vertical-field-heading part2Heading animate__animated">
+                                    </div>
+                                    <div class="vertical-template-textarea-cont">
+                                        <textarea class="vertical-template-textarea" disabled></textarea>
+                                    </div>
+                                </div>
+                                <div class="vertical-template-mid-cont" style="display: none;">
+                                    <div class="vertical-input-heading-cont">
+                                        <div class="vertical-field-heading">Terms and Confirmation</div>
+                                    </div>
+                                    <div class="vertical-template-terms-cont">
+                                        <div class="vertical-terms-cont" style="font-size: 1vh; padding-right: 3px;">
+                                            <span>• This document, when signed, becomes an official legal document.</span>
+                                            <span>• By signing this document you are legally bound for its context and accept every legal consequence it may generate</span>
+                                            <span>• Every copy of this document, is equal in value in its original. Be extra carefull when giving copies.</span>
+                                        </div>
+                                        <div class="vertical-sign-cont"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="template-footer-box">
+                            <div class="template-footer-options">
+                                <div class="template-footer-header">Choose Layout</div>
+                                <div class="template-footer-main">
+                                    <div class="template-footer-main-options vertical-btn selected-layout-btn">Vertical</div>
+                                    <div class="template-footer-main-options horizontal-btn">Horizontal</div>
+                                </div>
+                            </div>
+                            <div class="template-footer-options">
+                                <div class="template-footer-header">Choose Color Palette</div>
+                                <div class="template-footer-main">
+                                    <div class="template-footer-main-options template-white-color white"></div>
+                                    <div class="template-footer-main-options template-yellow-color yellow"></div>
+                                    <div class="template-footer-main-options template-green-color green"></div>
+                                    <div class="template-footer-main-options template-red-color red"></div>
+                                    <div class="template-footer-main-options template-gray-color gray"></div>
+                                </div>
+                            </div>
+                            <div class="template-footer-options">
+                                <div class="template-footer-header">Receiver Approval</div>
+                                <div class="template-footer-main">
+                                    <div class="template-footer-main-options required-btn">Required</div>
+                                    <div class="template-footer-main-options notrequired-btn selected-third-party-btn">Not Required</div>
+                                </div>
+                            </div>
+                            <div class="template-footer-options rankSelect" style="display: none;">
+                                <div class="template-footer-header">Allowed Rank</div>
+                                <div class="template-footer-main">
+                                    <input required="" type="text" name="text" autocomplete="off" class="rankInput animate__animated">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert-container">
+                <div class="alert-icon-cont">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div class="alert-main-title-cont">Alert!</div>
+                <div class="alert-main-sub-title-cont"></div>
+                <div class="alert-btns-cont">
+                    <div class="alert-yes-btn">Yes</div>
+                    <div class="alert-no-btn">No</div>
+                </div>
+            </div>
+            <div class="notification-container animate__animated">
+                <div class="noti-icon-cont">
+                    <img src="image/message.png" style="height: 5vh;">
+                </div>
+                <div class="notification-content">
+                    <div class="notification-content-title">Alert</div>
+                    <div class="notification-content-message"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nearby-players-container">
+            <div class="nearby-players-box">
+                <div class="nearby-player-header">Nearby Players</div>
+                <div class="cancel-players-btn">Close</div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+            // Sanitize function to santize text before inserting into database //
+
+            // function sanitize(input) {
+            //     const allowedChars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()[]';
+            //     let sanitizedInput = '';
+            //     for (let i = 0; i < input.length; i++) {
+            //         if (allowedChars.includes(input[i])) {
+            //             sanitizedInput += input[i];
+            //         }
+            //     }
+            //     return sanitizedInput;
+            // }
+            function sanitize(input) {
+                return input;
+            }
+        </script>        
+        <script src="main.js"></script>
+    </body>
+</html>
