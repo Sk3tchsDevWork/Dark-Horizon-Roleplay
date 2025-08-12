@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>BIT-Licenses</title>
+		<link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	</head>
+	<body id="body">
+		<main id="app">
+			<section class="cards">
+				<div id="idcard" class="three-d-wrapper" style="display: none">
+					<div class="card idcard animated">
+						<div class="idcard__title">
+							<span>LOS SANTOS IDENTITY</span>
+						</div>
+						<img id="idcard-photo" src="https://randomuser.me/api/portraits/men/32.jpg" alt="idcard__photo" class="idcard__photo" />
+						<div class="idcard__front">
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">NAME</span>
+								<span id="idcard-name" class="idcard__text"></span>
+							</div>
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">LASTNAME</span>
+								<span id="idcard-lastname" class="idcard__text"></span>
+							</div>
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">STATE</span>
+								<span id="idcard-state" class="idcard__text"></span>
+							</div>
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">BIRTH</span>
+								<span id="idcard-birth" class="idcard__text"></span>
+							</div>
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">GENDER</span>
+								<span id="idcard-gender" class="idcard__text"></span>
+							</div>
+							<div class="idcard__subdivision">
+								<span class="idcard__subtitle">IDENTITY</span>
+								<span id="idcard-identifier" class="idcard__text"></span>
+							</div>
+						</div>
+						<div class="meow-script-regular idcard__sign">
+							<span id="idcard-sign"></span>
+						</div>
+					</div>
+				</div>
+				<div id="lspd" class="three-d-wrapper" style="display: none">
+					<div class="card lspd animated">
+						<div class="lspd__front">
+							<div class="lspd__title">
+								<span style="font-weight: 800; color: #000; font-size: 18px">LOS SANTOS</span>
+								<span style="font-weight: 800; color: #000; font-size: 10px">POLICE DEPARTMENT</span>
+							</div>
+							<img src="https://randomuser.me/api/portraits/men/80.jpg" class="lspd__photo" alt="lspd__photo" id="lspd-photo" />
+							<div style="margin-top: 35%">
+								<span style="font-weight: 800; color: #000; font-size: 15px">NAME</span>
+								<span id="lspd-name" style="font-size: 12px"></span>
+							</div>
+							<div>
+								<span style="font-weight: 800; color: #000; font-size: 15px">GRADE</span>
+								<span id="lspd-grade" style="font-size: 12px"></span>
+							</div>
+							<div>
+								<span style="font-weight: 800; color: #000; font-size: 15px">NUM.</span>
+								<span id="lspd-identifier" style="font-size: 12px"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="lssd" class="three-d-wrapper" style="display: none">
+					<div class="card lssd animated">
+						<div class="lssd__front">
+							<div class="lssd__title">
+								<span style="font-weight: 800; color: #000; font-size: 18px">LOS SANTOS</span>
+								<span style="font-weight: 800; color: #000; font-size: 10px">SHERIFF DEPARTMENT</span>
+							</div>
+							<img src="https://randomuser.me/api/portraits/men/79.jpg" class="lssd__photo" alt="lssd__photo" id="lssd-photo" />
+							<div style="margin-top: 35%">
+								<span style="font-weight: 800; color: #000; font-size: 15px">NAME</span>
+								<span id="lssd-name" style="font-size: 12px"></span>
+							</div>
+							<div>
+								<span style="font-weight: 800; color: #000; font-size: 15px">GRADE</span>
+								<span id="lssd-grade" style="font-size: 12px"></span>
+							</div>
+							<div>
+								<span style="font-weight: 800; color: #000; font-size: 15px">NUM.</span>
+								<span id="lssd-identifier" style="font-size: 12px"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="press" class="three-d-wrapper" style="display: none">
+					<div class="card press animated">
+						<div class="press__front">
+							<div class="press__title">
+								<span style="font-weight: 800; color: #ffffff; font-size: 23px">INTERNATIONAL PRESS CARD</span>
+							</div>
+							<img src="https://randomuser.me/api/portraits/men/78.jpg" class="press__photo" alt="press__photo" id="press-photo" />
+							<div class="press__info">
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">NAME</span>
+									<span id="press-name" style="font-size: 12px"></span>
+								</div>
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">GRADE</span>
+									<span id="press-grade" style="font-size: 12px"></span>
+								</div>
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">NUM.</span>
+									<span id="press-identifier" style="font-size: 12px"></span>
+								</div>
+							</div>
+							<div class="meow-script-regular press__sign">
+								<span id="press-sign"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ems" class="three-d-wrapper" style="display: none">
+					<div class="card ems animated">
+						<div class="ems__front">
+							<div class="ems__title">
+								<span style="font-weight: 800; color: #ffffff; font-size: 20px">EMERGENCY MEDICAL TECHNICIAN</span>
+							</div>
+							<img src="https://randomuser.me/api/portraits/men/76.jpg" class="ems__photo" alt="ems__photo" id="ems-photo" />
+							<div class="ems__info">
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">NAME</span>
+									<span id="ems-name" style="font-size: 12px"></span>
+								</div>
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">GRADE</span>
+									<span id="ems-grade" style="font-size: 12px"></span>
+								</div>
+								<div style="display: flex; flex-direction: column; gap: 5px">
+									<span style="font-weight: 800; color: #000; font-size: 15px">NUM.</span>
+									<span id="ems-identifier" style="font-size: 12px"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="dlic" class="three-d-wrapper" style="display: none">
+					<div class="card dlic animated">
+						<div class="dlic__front">
+							<img src="https://randomuser.me/api/portraits/men/76.jpg" class="dlic__photo" alt="dlic__photo" id="dlic-photo" />
+							<div class="idcard__front" style="position: absolute; top: 100px; left: 134px">
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">NAME</span>
+									<span id="dlic-name" class="idcard__text"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">LASTNAME</span>
+									<span id="dlic-lastname" class="idcard__text"></span>
+								</div>
+
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">BIRTH</span>
+									<span id="dlic-birth" class="idcard__text"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">GENDER</span>
+									<span id="dlic-gender" class="idcard__text"></span>
+								</div>
+							</div>
+							<div class="dlic__licenses">
+								<div id="dlic_car" class="car" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-car">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+										<path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+										<path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+									</svg>
+								</div>
+								<div id="dlic_motorcycle" class="motorcycle" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-motorbike">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M5 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+										<path d="M19 16m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+										<path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+										<path d="M13 6h2l1.5 3l2 4" />
+									</svg>
+								</div>
+								<div id="dlic_truck" class="truck" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-truck">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+										<path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+										<path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+									</svg>
+								</div>
+								<div id="dlic_boat" class="boat" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-speedboat">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M2 17h14.4a3 3 0 0 0 2.5 -1.34l3.1 -4.66h-6.23a4 4 0 0 0 -1.49 .29l-3.56 1.42a4 4 0 0 1 -1.49 .29h-5.73z" />
+										<path d="M6 13l1.5 -5" />
+										<path d="M6 8h8l2 3" />
+									</svg>
+								</div>
+								<div id="dlic_plane" class="plane" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plane">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
+									</svg>
+								</div>
+								<div id="dlic_helicopter" class="helicopter" style="color: #adadad">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-helicopter">
+										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+										<path d="M3 10l1 2h6" />
+										<path d="M12 9a2 2 0 0 0 -2 2v3c0 1.1 .9 2 2 2h7a2 2 0 0 0 2 -2c0 -3.31 -3.13 -5 -7 -5h-2z" />
+										<path d="M13 9l0 -3" />
+										<path d="M5 6l15 0" />
+										<path d="M15 9.1v3.9h5.5" />
+										<path d="M15 19l0 -3" />
+										<path d="M19 19l-8 0" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="wlic" class="three-d-wrapper" style="display: none">
+					<div class="card wlic animated">
+						<div class="wlic__front">
+							<img src="https://randomuser.me/api/portraits/men/76.jpg" class="wlic__photo" alt="wlic__photo" id="wlic-photo" />
+							<div class="idcard__front" style="position: absolute; top: 100px; left: 134px">
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">NAME</span>
+									<span id="wlic-name" class="idcard__text"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">LASTNAME</span>
+									<span id="wlic-lastname" class="idcard__text"></span>
+								</div>
+
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">BIRTH</span>
+									<span id="wlic-birth" class="idcard__text"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span class="idcard__subtitle">IDENTITY</span>
+									<span id="wlic-identity" class="idcard__text"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="fishing" class="three-d-wrapper" style="display: none">
+					<div class="card fishing animated">
+						<div class="fishing__front">
+							<div>
+								<span class="fishing__subtitle">NAME</span>
+								<span id="fishing-name" class="idcard__text"></span>
+							</div>
+							<div>
+								<span class="fishing__subtitle">IDENTITY</span>
+								<span id="fishing-identity" class="idcard__text"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="hunting" class="three-d-wrapper" style="display: none">
+					<div class="card hunting animated">
+						<div class="hunting__front">
+							<div>
+								<span class="hunting__subtitle">NAME</span>
+								<span id="hunting-name" class="idcard__text"></span>
+							</div>
+							<div>
+								<span class="hunting__subtitle">IDENTITY</span>
+								<span id="hunting-identity" class="idcard__text"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="fire" class="three-d-wrapper" style="display: none">
+					<div class="card fire animated">
+						<div class="fire__front">
+							<img src="https://randomuser.me/api/portraits/men/76.jpg" class="fire__photo" alt="fire__photo" id="fire-photo" />
+							<div class="idcard__front" style="position: absolute; top: 150px; left: 134px">
+								<div class="idcard__subdivision">
+									<span style="color: white; font-weight: 800">NAME</span>
+									<span id="fire-name" style="color: white; font-size: 14px"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span style="color: white; font-weight: 800">LASTNAME</span>
+									<span id="fire-lastname" style="color: white; font-size: 14px"></span>
+								</div>
+
+								<div class="idcard__subdivision">
+									<span style="color: white; font-weight: 800">GRADE</span>
+									<span id="fire-grade" style="color: white; font-size: 14px"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span style="color: white; font-weight: 800">IDENTITY</span>
+									<span id="fire-identity" style="color: white; font-size: 14px"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="taxi" class="three-d-wrapper" style="display: none">
+					<div class="card taxi animated">
+						<div class="taxi__front">
+							<img src="https://randomuser.me/api/portraits/men/76.jpg" class="taxi__photo" alt="taxi__photo" id="taxi-photo" />
+							<div class="idcard__front" style="position: absolute; top: 110px; left: 110px">
+								<div class="idcard__subdivision">
+									<span style="color: black; font-weight: 800">NAME</span>
+									<span id="taxi-name" style="color: black; font-size: 14px"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span style="color: black; font-weight: 800">LASTNAME</span>
+									<span id="taxi-lastname" style="color: black; font-size: 14px"></span>
+								</div>
+
+								<div class="idcard__subdivision">
+									<span style="color: black; font-weight: 800">GRADE</span>
+									<span id="taxi-grade" style="color: black; font-size: 14px"></span>
+								</div>
+								<div class="idcard__subdivision">
+									<span style="color: black; font-weight: 800">IDENTITY</span>
+									<span id="taxi-identity" style="color: black; font-size: 14px"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<style class="hover"></style>
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

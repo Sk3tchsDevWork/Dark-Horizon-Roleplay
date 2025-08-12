@@ -1,0 +1,809 @@
+:root {
+	--color1: rgb(0, 231, 255);
+	--color2: rgb(255, 0, 231);
+	--idcard1: #fac;
+	--idcard2: #ddccaa;
+	--idcardfront: url("../img/idcard.png");
+	--lspd1: rgb(172, 170, 255);
+	--lspd2: #aaabdd;
+	--lspdfront: url("../img/lspd.png");
+	--lssd1: rgb(172, 170, 255);
+	--lssd2: #aaabdd;
+	--lssdfront: url("../img/lssd.png");
+	--press1: rgb(172, 170, 255);
+	--press2: #aaabdd;
+	--pressfront: url("../img/press.png");
+	--ems1: rgb(245, 89, 89);
+	--ems2: #ee6f6f;
+	--emsfront: url("../img/ems.png");
+	--dlic1: rgb(172, 170, 255);
+	--dlic2: #aaabdd;
+	--dlicfront: url("../img/dlic.png");
+	--wlic1: rgb(172, 170, 255);
+	--wlic2: #aaabdd;
+	--wlicfront: url("../img/wlic.png");
+	--fishing1: rgb(172, 170, 255);
+	--fishing2: #aaabdd;
+	--fishingfront: url("../img/fishing.png");
+	--hunting1: rgb(172, 170, 255);
+	--hunting2: #aaabdd;
+	--huntingfront: url("../img/hunting.png");
+	--fire1: rgb(172, 170, 255);
+	--fire2: #aaabdd;
+	--firefront: url("../img/fire.png");
+	--taxi1: rgb(172, 170, 255);
+	--taxi2: #aaabdd;
+	--taxifront: url("../img/taxi.png");
+}
+
+body {
+	display: none;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100vh;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+.card {
+	width: 71.5vw;
+	height: 100vw;
+	position: relative;
+	overflow: hidden;
+	margin: 20px;
+	overflow: hidden;
+	z-index: 10;
+	touch-action: none;
+	isolation: isolate;
+	border-radius: 10px;
+	transition: transform 0.5s ease, box-shadow 0.2s ease;
+	will-change: transform, filter;
+	background-color: transparent;
+	background-image: var(--front);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	transform-origin: center;
+}
+@media screen and (min-width: 600px) {
+	.card {
+		height: 300px;
+		width: 480px;
+	}
+}
+.card.idcard {
+	--color1: var(--idcard1);
+	--color2: var(--idcard2);
+	--front: var(--idcardfront);
+}
+
+.idcard__front {
+	display: grid;
+	position: absolute;
+	top: 35px;
+	left: 150px;
+	grid-template-columns: auto auto;
+	column-gap: 0.1em;
+	grid-template-rows: 0fr 0fr;
+	align-items: left;
+	padding: 20px 15%;
+	width: 250px;
+	height: 100%;
+	gap: 0.3em;
+}
+
+.idcard__photo {
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 70px;
+	left: 50px;
+	border: 2px solid #868686;
+}
+
+.idcard__title {
+	font-weight: 800;
+	color: #7aadbe;
+	font-size: 20px;
+	margin-top: 3px;
+	margin-left: 130px;
+}
+
+.idcard__subdivision {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	gap: 2px;
+}
+
+.idcard__text {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.idcard__subtitle {
+	font-weight: 800;
+	color: #3c626f;
+}
+
+.idcard__sign {
+	position: absolute;
+	bottom: 5%;
+	right: 20%;
+}
+
+.meow-script-regular {
+	font-family: "Meow Script", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3.5vh;
+}
+
+.card.lspd {
+	--color1: var(--lspd1);
+	--color2: var(--lspd2);
+	--front: var(--lspdfront);
+}
+
+.lspd__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.lspd__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 28%;
+	position: absolute;
+	top: 30px;
+	left: 35px;
+}
+
+.lspd__photo {
+	width: 80px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 80px;
+	left: 72px;
+	border: 2px solid #868686;
+}
+
+.card.lssd {
+	--color1: var(--lssd1);
+	--color2: var(--lssd2);
+	--front: var(--lssdfront);
+}
+
+.lssd__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.lssd__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 28%;
+	position: absolute;
+	top: 30px;
+	left: 35px;
+}
+
+.lssd__photo {
+	width: 80px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 80px;
+	left: 72px;
+	border: 2px solid #868686;
+}
+
+.card.press {
+	--color1: var(--press1);
+	--color2: var(--press2);
+	--front: var(--pressfront);
+}
+
+.press__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.press__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+}
+
+.press__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 80px;
+	left: 200px;
+	gap: 0.5em;
+}
+
+.press__sign {
+	position: absolute;
+	top: 240px;
+	left: 40%;
+}
+
+.press__photo {
+	width: 80px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 80px;
+	left: 72px;
+	border: 2px solid #868686;
+}
+
+.card.ems {
+	--color1: var(--ems1);
+	--color2: var(--ems2);
+	--front: var(--emsfront);
+}
+
+.ems__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.ems__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 170px;
+}
+
+.ems__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	left: 330px;
+	gap: 0.5em;
+}
+
+.ems__photo {
+	width: 80px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 30px;
+	left: 200px;
+	border: 2px solid #868686;
+}
+
+.card.dlic {
+	--color1: var(--dlic1);
+	--color2: var(--dlic2);
+	--front: var(--dlicfront);
+}
+
+.dlic__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.dlic__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.dlic__photo {
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	border: 2px solid #868686;
+}
+
+.dlic__licenses {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	gap: 0.5em;
+	top: 253px;
+	left: 230px;
+}
+
+.card.wlic {
+	--color1: var(--wlic1);
+	--color2: var(--wlic2);
+	--front: var(--wlicfront);
+}
+
+.wlic__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.wlic__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.wlic__photo {
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	border: 2px solid #868686;
+}
+
+.wlic__licenses {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	gap: 0.5em;
+	top: 253px;
+	left: 290px;
+}
+
+.card.fishing {
+	--color1: var(--fishing1);
+	--color2: var(--fishing2);
+	--front: var(--fishingfront);
+}
+
+.fishing__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: absolute;
+	top: 210px;
+}
+
+.fishing__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.fishing__subtitle {
+	color: black;
+	font-weight: 800;
+}
+
+.card.hunting {
+	--color1: var(--hunting1);
+	--color2: var(--hunting2);
+	--front: var(--huntingfront);
+}
+
+.hunting__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: absolute;
+	top: 210px;
+}
+
+.hunting__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.hunting__subtitle {
+	color: black;
+	font-weight: 800;
+}
+
+.card.fire {
+	--color1: var(--fire1);
+	--color2: var(--fire2);
+	--front: var(--firefront);
+}
+
+.fire__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.fire__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.fire__photo {
+	width: 120px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	border: 2px solid #868686;
+}
+
+.fire__licenses {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	gap: 0.5em;
+	top: 253px;
+	left: 290px;
+}
+
+.card.taxi {
+	--color1: var(--taxi1);
+	--color2: var(--taxi2);
+	--front: var(--taxifront);
+}
+
+.taxi__front {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: left;
+	padding: 25px 10%;
+	width: 100%;
+	height: 100%;
+	gap: 0.3em;
+	position: relative;
+}
+
+.taxi__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	left: 220px;
+	gap: 0.5em;
+}
+
+.taxi__photo {
+	width: 130px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	border: 2px solid #868686;
+}
+
+.taxi__licenses {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: left;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	gap: 0.5em;
+	top: 253px;
+	left: 290px;
+}
+
+.card:before,
+.card:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	mix-blend-mode: color-dodge;
+	transition: all 0.33s ease;
+}
+
+.card:before {
+	background-position: 50% 50%;
+	background-size: 300% 300%;
+	background-image: linear-gradient(115deg, transparent 0%, var(--color1) 25%, transparent 47%, transparent 53%, var(--color2) 75%, transparent 100%);
+	opacity: 0.5;
+	filter: brightness(0.5) contrast(1);
+	z-index: 1;
+}
+
+.card:after {
+	opacity: 1;
+
+	background-position: 50% 50%;
+	background-size: 160%;
+	background-blend-mode: overlay;
+	z-index: 2;
+	filter: brightness(1) contrast(1);
+	transition: all 0.33s ease;
+	mix-blend-mode: color-dodge;
+	opacity: 0.75;
+}
+
+.card.active:after,
+.card:hover:after {
+	filter: brightness(1) contrast(1);
+	opacity: 1;
+}
+
+.card.active,
+.card:hover {
+	-webkit-animation: none;
+	animation: none;
+	transition: box-shadow 0.1s ease-out;
+}
+
+.card.active:before,
+.card:hover:before {
+	-webkit-animation: none;
+	animation: none;
+	background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
+	background-position: 50% 50%;
+	background-size: 250% 250%;
+	opacity: 0.88;
+	filter: brightness(0.66) contrast(1.33);
+	transition: none;
+}
+
+.card.active:before,
+.card:hover:before,
+.card.active:after,
+.card:hover:after {
+	-webkit-animation: none;
+	animation: none;
+	transition: none;
+}
+
+.card.animated {
+	transition: none;
+	-webkit-animation: holoCard 12s ease 0s 1;
+	animation: holoCard 12s ease 0s 1;
+}
+.card.animated:before {
+	transition: none;
+	-webkit-animation: holoGradient 12s ease 0s 1;
+	animation: holoGradient 12s ease 0s 1;
+}
+.card.animated:after {
+	transition: none;
+	-webkit-animation: holoSparkle 12s ease 0s 1;
+	animation: holoSparkle 12s ease 0s 1;
+}
+
+.cards .three-d-wrapper {
+	perspective: 750px;
+	isolation: isolate;
+	transform: translate3d(0.1px, 0.1px, 0.1px);
+}
+
+#app {
+	position: relative;
+}
+
+@media screen and (min-width: 600px) {
+	.cards {
+		flex-direction: row;
+	}
+}
+.cards .card:nth-child(2),
+.cards .card:nth-child(2):before,
+.cards .card:nth-child(2):after {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+.cards .card:nth-child(3),
+.cards .card:nth-child(3):before,
+.cards .card:nth-child(3):after {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+.cards .card:nth-child(4),
+.cards .card:nth-child(4):before,
+.cards .card:nth-child(4):after {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	padding: 1em;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top: 0;
+	-webkit-animation: rubberBand 1.5s linear 3s 1;
+	animation: rubberBand 1.5s linear 3s 1;
+}
+
+p a {
+	color: cyan;
+}
+
+@-webkit-keyframes rubberBand {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes rubberBand {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
