@@ -1,0 +1,29 @@
+{
+    "airplaneMode": false,
+    "streamerMode": false,
+    "doNotDisturb": false,
+    "display": {
+        "brightness": 1.0,
+        "theme": "light"
+    },
+    "locale": "en",
+    "wallpaper": {
+        "background": "gradient",
+        "blur": false
+    },
+    "time": {
+        "twelveHourClock": false
+    },
+    "sound": {
+        "volume": 0.5,
+        "silent": false
+    },
+    "lockscreen": {
+        "color": "gradient",
+        "fontStyle": 1
+    },
+    "apps": [
+        ["Notes", "Mail", "Camera", "Photos"],
+        ["Settings", "Browser", "Maps", "Ambulance", "Police", "Calculator", "Apps", "VoiceMemo", "Services", "Clock", "Registration"]
+    ]
+}

@@ -1,0 +1,1597 @@
+{
+    "LABEL": "Nederlands",
+    "SEARCH": "Zoeken",
+    "CANCEL": "Annuleren",
+    "NOW": "nu",
+    "D": "d",
+    "H": "u",
+    "M": "m",
+    "S": "s",
+
+    "APP_NAMES": {
+        "Police": "Politie",
+        "Ambulance": "Ambulance",
+        "Registration": "Registratie",
+        "Notes": "Notities",
+        "Browser": "Browser",
+        "Settings": "Instellingen",
+        "Photos": "Foto's",
+        "Camera": "Camera",
+        "Calculator": "Rekenmachine",
+        "Apps": "Apps",
+        "Clock": "Klok",
+        "Maps": "Kaarten",
+        "Mail": "E-mail",
+        "Services": "Diensten",
+        "VoiceMemo": "Spraakmemos"
+    },
+
+    "APPS": {
+        "SETTINGS": {
+            "TITLE": "Instellingen",
+            "BACK": "Terug",
+            "DONE": "Klaar",
+            "EDIT": "Bewerken",
+            "AIRPLANE_MODE": "Vliegtuigmodus",
+            "AIRPLANE_MODE_DESCRIPTION": "Schakel oproepen, mobiele data etc. uit.",
+            "STREAMER_MODE": "Streamermodus",
+            "STREAMER_MODE_DESCRIPTION": "Vervaagt gevoelige informatie",
+            "GENERAL": "Algemeen",
+            "GENERAL_DESCRIPTION": "Algemene instellingen voor je tablet",
+            "ABOUT": "Over",
+            "NAME": "Naam",
+            "VERSION": "Versie",
+            "MODEL_NAME": "Modelnaam",
+            "SERIAL_NUMBER": "Serienummer",
+            "DEVELOPED_BY": "Ontwikkeld door",
+            "PURCHASE_AT": "Aangeschaft bij",
+            "SONGS": "Muziek",
+            "VIDEOS": "Video's",
+            "PHOTOS": "Foto's",
+            "APPLICATIONS": "Applicaties",
+            "CAPACITY": "Capaciteit",
+            "AVAILABLE": "Beschikbaar",
+            "SOFTWARE_UPDATE": "Software-update",
+            "AUTOMATIC_UPDATES": "Automatische Updates",
+            "DATE_TIME": "Datum & Tijd",
+            "24_HOUR_TIME": "24-uurs Tijd",
+            "SET_AUTOMATICALLY": "Automatisch Instellen",
+            "TIME_ZONE": "Tijdzone",
+            "LANGUAGE_REGION": "Taal & Regio",
+            "LANGUAGE": "Taal",
+            "TEMPERATURE": "Temperatuur",
+            "CELCIUS": "Celsius",
+            "FAHRENHEIT": "Fahrenheit",
+            "BATTERY": "Batterij",
+            "BATTERY_DESCRIPTION": "Bekijk batterijduur en gebruik",
+            "SOUND_HAPTICS": "Geluid & Haptiek",
+            "SOUND_HAPTICS_DESCRIPTION": "Pas geluiden en trillingen aan",
+            "SOUND_HAPTICS_PATTERNS": "Geluid en haptiekpatronen",
+            "RINGTONE": "Beltoon",
+            "RINGTONE_VOLUME": "Beltoonvolume",
+            "TEXT_TONE": "Teksttoon",
+            "DEFAULT": "Standaard",
+            "PHONE_STORAGE": "Tabletopslag",
+            "STORAGE": "Opslag",
+            "USED": "Gebruikt",
+            "OF": "van",
+            "DISPLAY_BRIGHTNESS": "Weergave & Helderheid",
+            "DISPLAY_BRIGHTNESS_DESCRIPTION": "Pas weergave en helderheid aan",
+            "DARK": "Donker",
+            "LIGHT": "Licht",
+            "APPEARANCE": "Weergave",
+            "AUTOMATIC": "Automatisch",
+            "BRIGHTNESS": "Helderheid",
+            "FRAME_COLOR": "Kleur Frame",
+            "TABLET_SCALE": "Tablet Grote",
+            "WALLPAPER": "Achtergrond",
+            "WALLPAPER_DESCRIPTION": "Wijzig achtergrond en andere achtergrondinstellingen",
+            "WALLPAPERS": "Achtergronden",
+            "CHOOSE_NEW_WALLPAPER": "Kies een Nieuwe Achtergrond",
+            "NOTIFICATIONS": "Meldingen",
+            "NOTIFICATIONS_DESCRIPTION": "Kies welke apps meldingen mogen sturen",
+            "ALLOW_NOTIFICATIONS": "Sta Meldingen Toe",
+            "SOUNDS": "Geluiden",
+            "CLOUD_BACKUP": "Cloudback-up",
+            "YOUR_PROFILE": "Jouw Profiel",
+            "SUCCESS": "Succes",
+            "SUCCESS_TEXT": "Tablet wordt opnieuw opgestart over 5 seconden...",
+            "OK": "OK",
+            "ON": "Aan",
+            "OFF": "Uit",
+
+            "RESET_POPUP": {
+                "TITLE": "Tablet Resetten",
+                "TEXT": "Weet je zeker dat je je tablet wilt resetten? [DIT VERWIJDERT ALLES]",
+                "CANCEL": "Annuleren",
+                "CONFIRM": "Resetten"
+            },
+            "UP_TO_DATE": "Je tablet is up-to-date",
+            "BLUR_HOMESCREEN": "Startscherm Vervagen"
+        },
+        "NOTES": {
+            "TITLE": "Notities",
+            "SEARCH_PLACEHOLDER": "Zoeken",
+            "FOOTER": "{amount} Notities",
+            "NEW_NOTE": "Nieuwe Notitie",
+            "LAST_EDITED": "Laatst bewerkt: {date}",
+            "DELETE_TITLE": "{title} verwijderen",
+            "DELETE_TEXT": "Weet je zeker dat je '{title}' wilt verwijderen?",
+            "BUTTON_CANCEL": "Annuleren",
+            "BUTTON_DELETE": "Verwijderen"
+        },
+        "CLOCK": {
+            "WORLDCLOCK": {
+                "TITLE": "Wereldklok",
+                "TODAY": "Vandaag",
+                "TOMORROW": "Morgen",
+                "YESTERDAY": "Gisteren",
+                "LOCAL_TIME": "Lokale tijd",
+                "HRS": "{time} uur"
+            },
+            "ALARM": {
+                "TITLE": "Alarm",
+                "ADD": "Alarm toevoegen",
+                "CANCEL": "Annuleren",
+                "EDIT": "Bewerken",
+                "DONE": "Klaar",
+                "SAVE": "Opslaan",
+                "LABEL": "Label",
+                "SOUND": "Geluid",
+                "SNOOZE": "Sluimeren",
+                "DELETE_TITLE": "Alarm verwijderen",
+                "DELETE_TEXT": "Weet je zeker dat je dit alarm wilt verwijderen?",
+                "BUTTON_CANCEL": "Annuleren",
+                "BUTTON_DELETE": "Verwijderen",
+                "ALARMS": "Alarmen",
+                "NEW_ALARM": "Nieuw alarm",
+                "EDIT_ALARM": "Alarm bewerken"
+            },
+            "STOPWATCH": {
+                "TITLE": "Stopwatch",
+                "START": "Starten",
+                "STOP": "Stoppen",
+                "RESET": "Resetten",
+                "LAP": "Ronde",
+                "TIME": "Tijd",
+                "TOTAL": "Totaal",
+                "NO_LAPS": "Geen rondes"
+            },
+            "TIMER": {
+                "TITLE": "Timer",
+                "START": "Starten",
+                "STOP": "Stoppen",
+                "CANCEL": "Annuleren",
+                "HOURS": "Uren",
+                "MINUTES": "Minuten",
+                "SECONDS": "Seconden",
+                "NO_RECENTS": "Geen recente"
+            },
+            "ALERT": {
+                "STOP": "Stoppen",
+                "RESTART": "Opnieuw starten"
+            }
+        },
+        "CAMERA": {
+            "VIDEO": "Video",
+            "PHOTO": "Foto",
+            "LANDSCAPE": "Landschap",
+            "UPLOADING": "Uploaden"
+        },
+        "APPSTORE": {
+            "TITLE": "Apps",
+            "SEARCH": "Zoek",
+            "GET": "Downloaden",
+            "OPEN": "Openen",
+            "TODAY": "Vandaag",
+            "POPULAR_APPS": "Populaire Apps",
+            "GAMES": "Spellen",
+            "APPS": "Apps",
+            "WHAT_WE_PLAYING": "Wat spelen we",
+            "INFORMATION": "Informatie",
+            "PROVIDER": "Aanbieder",
+            "SIZE": "Grootte",
+            "COMPATIBILITY": "Compatibiliteit",
+            "IN_APP_PURCHASES": "In-app Aankopen",
+            "WORKS_WITH_PHONE": "Werkt met deze tablet",
+            "NO": "Nee",
+            "YES": "Ja",
+            "PURCHASE_APP_POPUP": {
+                "TITLE": "App Kopen",
+                "DESCRIPTION": "Wil je {app} kopen voor {price}?",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Kopen"
+            }
+        },
+        "PHOTOS": {
+            "TITLE": "Foto's",
+            "SELECT": "Selecteren",
+            "CANCEL": "Annuleren",
+            "EDIT": "Bewerken",
+            "DONE": "Klaar",
+            "DELETE": "Verwijderen",
+            "SELECT_ITEMS": "Items selecteren",
+            "SELECTED_COUNT": "{count} Items geselecteerd",
+
+            "PHOTOS": "Foto's",
+            "ALBUMS": "Albums",
+            "LIBRARY": "Bibliotheek",
+            "GALLERY": "Galerij",
+            "MY_ALBUMS": "Mijn albums",
+            "MEDIA_TYPES": "Mediatypes",
+            "NEW_ALBUM_POPUP": {
+                "TITLE": "Nieuw album",
+                "DESCRIPTION": "Voer een naam in voor dit album",
+                "PLACEHOLDER": "Titel",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Opslaan"
+            },
+            "REMOVE_ALBUM": {
+                "TITLE": "\"{name}\" verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je het album \"{name}\" wilt verwijderen? De foto's worden niet verwijderd.",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Verwijderen"
+            },
+            "RENAME_ALBUM_POPUP": {
+                "TITLE": "Album hernoemen",
+                "DESCRIPTION": "Voer een nieuwe naam in voor dit album",
+                "PLACEHOLDER": "Nieuwe albumnaam",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "DELETE_IMAGE_POPUP": {
+                "TITLE": "Afbeelding verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je deze afbeelding wilt verwijderen?",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Verwijderen"
+            },
+            "IMPORT_IMAGE_POPUP": {
+                "TITLE": "Importeren naar album",
+                "DESCRIPTION": "Importeer een afbeelding in dit album",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Importeren",
+                "PLACEHOLDER": "Afbeeldings-URL"
+            },
+
+            "NO_PHOTOS": "Geen foto's of video's",
+            "NO_PHOTOS_INSTRUCTIONS": "Je kunt foto's en video's maken met de camera",
+            "PHOTO_COUNT": "{amount} Foto's",
+            "VIDEO_COUNT": "{amount} Video's",
+
+            "DELETE_CONTEXT_TITLE": "Wil je {type} verwijderen of alleen uit dit album verwijderen?",
+            "THESE_PHOTOS": "deze foto's",
+            "THIS_PHOTO": "deze foto",
+            "REMOVE_FROM_ALBUM": "Verwijderen uit album",
+            "ADD_TO_ALBUM": "Toevoegen aan album",
+            "ADD_TO_FAVOURITES": "Toevoegen aan favorieten",
+            "REMOVE_FROM_FAVOURITES": "Verwijderen uit favorieten",
+            "VIDEOS": "Video's",
+            "SELFIES": "Selfies",
+            "SCREENSHOTS": "Schermafbeeldingen",
+            "IMPORTS": "Importeren",
+            "DUPLICATES": "Duplicaten",
+            "YEARS": "Jaren",
+            "MONTHS": "Maanden",
+            "DAYS": "Dagen",
+            "ALL_PHOTOS": "Alle foto's",
+
+            "FAVOURITES": "Favorieten",
+            "RECENTS": "Recent"
+        },
+        "MAIL": {
+            "TITLE": "E-mail",
+            "YOU": "Jij",
+            "UPDATED_NOW": "Net bijgewerkt",
+            "NEW_MESSAGE": "Nieuw bericht",
+            "INBOX": "Postvak IN",
+            "TO": "Aan",
+            "FROM": "Van",
+            "SUBJECT": "Onderwerp",
+            "MESSAGE": "Bericht",
+            "CANCEL": "Annuleren",
+            "SEND": "Verzenden",
+            "EMAIL": "E-mail",
+            "EMAIL_INVALID": "Ongeldig e-mailadres",
+            "EMAIL_EXISTS": "E-mailadres bestaat al",
+            "PASSWORD": "Wachtwoord",
+            "WRONG_PASSWORD": "Onjuist wachtwoord",
+            "LOGIN": "Inloggen",
+            "NO_EMAIL": "Heb je geen e-mailadres?",
+            "CREATE_ONE": "Maak er een",
+            "UNREAD": "Ongelezen",
+            "CREATE_MAIL": "E-mail aanmaken",
+            "ALREADY_HAVE": "Heb je al een e-mailadres?",
+            "ADD_EMAIL": "E-mail toevoegen",
+            "RE": "Re: {subject}",
+            "CHANGE_ACCOUNT": "Account wijzigen",
+            "CHANGE_PASSWORD": "Wachtwoord wijzigen",
+            "DELETE_ACCOUNT": "Account verwijderen",
+            "SIGN_OUT_POPUP": {
+                "TITLE": "Uitloggen",
+                "DESCRIPTION": "Weet je zeker dat je wilt uitloggen?",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "DELETE_MAIL_POPUP": {
+                "TITLE": "E-mail verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je deze e-mail wilt verwijderen?",
+                "CANCEL": "Annuleren",
+                "DELETE": "Verwijderen"
+            }
+        },
+        "VOICEMEMO": {
+            "TITLE": "Spraakmemo",
+            "VOICE_RECORDINGS": "Spraakopnames",
+            "SEARCH_RECORDINGS": "Zoek opnames",
+            "DEFAULT_NAME": "Nieuwe Opname",
+            "DELETE_POPUP": {
+                "TITLE": "Spraakmemo verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je deze spraakmemo wilt verwijderen?",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "NO_MICROPHONE_POPUP": {
+                "TITLE": "Geen Microfoon",
+                "DESCRIPTION": "We hebben geen toegang tot je microfoon, zorg ervoor dat er een is aangesloten en accepteer de popup rechtsboven op je scherm",
+                "OK": "OK"
+            },
+            "EMPTY_RECORDING_POPUP": {
+                "TITLE": "Lege Opname",
+                "DESCRIPTION": "Je kunt geen opname opslaan zonder audio",
+                "OK": "OK"
+            }
+        },
+        "SERVICES": {
+            "ACTIONS": "Acties",
+            "COMPANIES": "Bedrijven",
+            "MESSAGES": "Berichten",
+            "SETTINGS": "Instellingen",
+
+            "CLOSED": "Gesloten",
+            "YOUR_MESSAGES": "Jouw Berichten",
+            "JOB_MESSAGES": "Werkberichten",
+
+            "DUTY": "Dienst",
+            "DUTY_DESCRIPTION": "Schakel je dienststatus in of uit",
+            "GO_ON_DUTY": "Ga In Dienst",
+            "GO_OFF_DUTY": "Ga Uit Dienst",
+            "JOB_CALLS": "Werkoproepen",
+            "JOB_CALLS_DESCRIPTION": "{toggle} oproepen ontvangen van klanten.",
+
+            "ENABLE": "Inschakelen",
+            "DISABLE": "Uitschakelen",
+
+            "DISABLE_CALLS": "Oproepen Uitschakelen",
+            "ENABLE_CALLS": "Oproepen Inschakelen",
+            "BALANCE": "Balans",
+            "CURRENT_BALANCE": "Huidige balans van het bedrijf",
+            "MANAGE_EMPLOYEES": "Beheer Werknemers",
+            "HIRE": "Aannemen",
+            "SET_GRADE": "Stel Rang In",
+            "UNEMPLOYED": "Je bent werkloos",
+
+            "ALL": "Alles",
+            "AVAILABLE": "Beschikbaar",
+            "SEARCH_EMPLOYEES": "Zoek Werknemers",
+
+            "PERSONAL": "Persoonlijk",
+            "JOB": "Baan",
+            "PLACEHOLDER": "Tekstbericht",
+            "NOT_DELIVERED": "Niet bezorgd",
+            "SENT_LOCATION": "Deelde hun locatie, klik om te openen in Kaarten",
+            "SENT_LOCATION_SHORT": "Deelde hun locatie",
+            "SEND_LOCATION_POPUP": {
+                "TITLE": "Locatie Delen",
+                "TEXT": "Wil je je locatie delen?",
+                "CANCEL": "Annuleren",
+                "SEND": "Verzenden"
+            },
+            "DELETE_CONVERSATION": {
+                "TITLE": "Gesprek Verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je dit gesprek wilt verwijderen?",
+                "CANCEL": "Annuleren",
+                "DELETE": "Verwijderen"
+            },
+
+            "DEPOSIT_POPUP": {
+                "TITLE": "Storten",
+                "DESCRIPTION": "Stort geld op de bedrijfsrekening",
+                "AMOUNT": "Bedrag",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "WITHDRAW_POPUP": {
+                "TITLE": "Opnemen",
+                "DESCRIPTION": "Neem geld op van de bedrijfsrekening",
+                "NOT_ENOUGH_MONEY": "Er is niet genoeg geld op de bedrijfsrekening",
+                "AMOUNT": "Bedrag",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "HIRE_POPUP": {
+                "TITLE": "Aannemen",
+                "DESCRIPTION": "Neem een nieuwe werknemer aan",
+                "PLACEHOLDER": "ID",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "FIRE_POPUP": {
+                "TITLE": "Ontslaan",
+                "DESCRIPTION": "Weet je zeker dat je {name} wilt ontslaan?",
+                "PLACEHOLDER": "ID",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            }
+        },
+        "POLICE": {
+            "CANCEL": "Annuleren",
+            "CLOSE": "Sluiten",
+            "BACK": "Terug",
+            "EDIT": "Bewerken",
+            "DELETE": "Verwijderen",
+            "REMOVE": "Verwijderen",
+            "SAVE": "Opslaan",
+            "CREATE": "Aanmaken",
+            "OK": "OK",
+            "ADD": "Toevoegen",
+            "NEW": "Nieuw",
+            "PROCEED": "Doorgaan",
+
+            "SEARCH": "Zoeken",
+            "SEARCH_FOR": "Zoek naar {query} om te beginnen",
+            "NO_RESULTS_FOR": "Geen resultaten gevonden voor '{query}'",
+            "CLEAR_HISTORY": "Geschiedenis Wissen",
+
+            "HOME": {
+                "TITLE": "Startpagina",
+                "CREATE": "Aanmaken",
+
+                "RECENT_REPORTS": "Recente Rapporten",
+                "REPORT_FOOTER": "{timestamp} - {author}",
+                "BULLETIN_BOARD": "Bulletinbord",
+                "PIN": "Vastpinnen",
+                "UNPIN": "Losmaken",
+                "SEARCH_BULLETIN": "Zoek Bulletin",
+                "SEARCH_UNITS": "Zoek Eenheden",
+                "ADD_BULLETIN": {
+                    "TITLE": "Bulletin Toevoegen",
+                    "DESCRIPTION": "Maak een nieuw bulletinbericht",
+                    "PLACEHOLDER": "Titel",
+                    "CONTENT": "Inhoud",
+                    "CANCEL": "Annuleren",
+                    "PROCEED": "Doorgaan"
+                },
+                "DELETE_BULLETIN": {
+                    "TITLE": "Bulletin Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je dit bulletinbericht wilt verwijderen?",
+                    "CANCEL": "Annuleren",
+                    "DELETE": "Verwijderen"
+                },
+                "RECENT_WARRANTS": "Recente Bevelen",
+                "ACTIVE_UNITS": "Actieve Eenheden"
+            },
+
+            "DISPATCH": {
+                "TITLE": "Meldkamer",
+                "TOGGLE_OFFICERS": "Schakel Agenten In/Uit",
+                "TOGGLE_ALARMS": "Schakel Alarmen In/Uit",
+                "OFFICERS": "Agenten",
+                "ALARMS": "Alarmen",
+
+                "RESPOND": "Reageren",
+                "RESPONDED": "Gereageerd",
+                "COLLAPSE": "Samenvouwen",
+                "EXPAND": "Uitvouwen",
+                "DISMISS": "Negeren",
+                "VIEW_IN_TABLET": "Bekijk in Tablet",
+                "SET_WAYPOINT": "Waypoint Instellen",
+
+                "PRIORITY": {
+                    "HIGH": "Hoog",
+                    "MEDIUM": "Gemiddeld",
+                    "LOW": "Laag"
+                },
+
+                "JUST_NOW": "Zojuist",
+                "MINUTES_AGO": "{minutes}m geleden",
+                "HOURS_AGO": "{hours}u geleden",
+                "REMOVE_ALARM": {
+                    "TITLE": "Alarm verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je het alarm wilt verwijderen? (Dit zal de verzending voor alle medewerkers verwijderen)",
+                    "CANCEL": "Annuleren",
+                    "REMOVE": "Intrekken"
+                }
+            },
+
+            "PROFILES": {
+                "TITLE": "Profiel",
+                "PERSON": "Persoon",
+                "SEARCH": "Zoek Profielen",
+                "REMOVE_AVATAR": "Avatar Verwijderen",
+                "IDENTIFIER": "Identificatie",
+                "FINGERPRINT": "Vingerafdruk",
+                "DOB": "Geboortedatum",
+                "PHONE_NR": "Telefoonnummer",
+                "GENDER": "Geslacht",
+                "JOB": "Beroep",
+                "MALE": "Man",
+                "FEMALE": "Vrouw",
+                "NOTES": "Notities",
+                "NOTES_PLACEHOLDER": "Voer hier notities in...",
+
+                "LICENSES": {
+                    "TITLE": "Licenties",
+                    "ADD_LICENSE": "Licentie Toevoegen",
+                    "ADD": "Toevoegen",
+                    "NO_LICENSES": "Geen Licenties",
+                    "REVOKE_LICENSE": {
+                        "TITLE": "Licentie Intrekken",
+                        "DESCRIPTION": "Weet je zeker dat je de licentie {license} wilt intrekken?",
+                        "CANCEL": "Annuleren",
+                        "REVOKE": "Intrekken"
+                    }
+                },
+
+                "ADD_AVATAR": {
+                    "TITLE": "Avatar Toevoegen",
+                    "SET_PHOTO": "Foto Instellen",
+                    "PASTE_URL": "Plak URL",
+                    "PASTE_URL_DESCRIPTION": "Voer een URL naar een afbeelding in",
+                    "PASTE_URL_PLACEHOLDER": "Afbeeldings-URL",
+
+                    "INVALID_URL": "Ongeldige URL",
+                    "INVALID_URL_DESCRIPTION": "De ingevoerde URL is geen geldige afbeeldings-URL",
+                    "OK": "OK"
+                },
+
+                "VEHICLES": "Voertuigen",
+                "NO_VEHICLES": "Geen Voertuigen",
+                "PROPERTIES": "Eigendommen",
+                "NO_PROPERTIES": "Geen Eigendommen",
+                "REPORTS": "Rapporten",
+                "NO_REPORTS": "Geen Rapporten",
+                "CASES": "Zaken",
+                "NO_CASES": "Geen Zaken",
+                "WEAPONS": "Wapens",
+                "NO_WEAPONS": "Geen wapens"
+            },
+
+            "VEHICLES": {
+                "TITLE": "Voertuigen",
+                "VEHICLE": "Voertuig",
+                "SEARCH": "Zoek Voertuigen",
+                "REMOVE_PICTURE": "Foto Verwijderen",
+                "DETAILS": "Details",
+
+                "ADD_PHOTO": {
+                    "TITLE": "Foto Toevoegen",
+                    "SELECT_PHOTO": "Foto Selecteren",
+                    "PASTE_URL": "Plak URL",
+                    "PASTE_URL_DESCRIPTION": "Voer een URL naar een afbeelding in",
+                    "PASTE_URL_PLACEHOLDER": "Afbeeldings-URL",
+
+                    "INVALID_URL": "Ongeldige URL",
+                    "INVALID_URL_DESCRIPTION": "De ingevoerde URL is geen geldige afbeeldings-URL",
+                    "OK": "OK"
+                },
+                "MODEL": "Model",
+                "PLATE": "Kenteken",
+                "COLOR": "Kleur",
+                "LOCATION": "Locatie",
+                "OWNER": "Eigenaar",
+                "NOTES": "Notities",
+                "NOTES_PLACEHOLDER": "Voer hier notities in...",
+                "SET_WAYPOINT": "Waypoint Instellen",
+                "OPEN_IN_MAPS": "Openen in Kaarten",
+                "WAYPOINT_SET": "Waypoint ingesteld",
+                "WAYPOINT_SET_DESCRIPTION": "Het waypoint is ingesteld op de locatie van het voertuig",
+                "CASES": "Zaken",
+                "NO_CASES": "Geen Zaken"
+            },
+            "PROPERTIES": {
+                "TITLE": "Eigendommen",
+                "PROPERTY": "Eigendom",
+                "SEARCH": "Zoek Eigendommen",
+                "REMOVE_PICTURE": "Verwijder Foto",
+                "DETAILS": "Details",
+                "ADD_PHOTO": {
+                    "TITLE": "Foto Toevoegen",
+                    "SELECT_PHOTO": "Selecteer Foto",
+                    "PASTE_URL": "Plak URL",
+                    "PASTE_URL_DESCRIPTION": "Voer een URL naar een afbeelding in",
+                    "PASTE_URL_PLACEHOLDER": "Afbeeldings-URL",
+
+                    "INVALID_URL": "Ongeldige URL",
+                    "INVALID_URL_DESCRIPTION": "De URL die je hebt ingevoerd is geen geldige afbeeldings-URL",
+                    "OK": "OK"
+                },
+                "LABEL": "Label",
+                "ADDRESS": "Adres",
+                "OWNER": "Eigenaar",
+                "LOCATION": "Locatie",
+                "OPEN_IN_MAPS": "Openen in Kaarten",
+                "NOTES": "Notities",
+                "NOTES_PLACEHOLDER": "Voer hier notities in..."
+            },
+            "WEAPONS": {
+                "TITLE": "Wapens",
+                "WEAPON": "Wapen",
+                "SEARCH": "Zoek Wapens",
+                "REMOVE_PICTURE": "Verwijder Foto",
+                "DETAILS": "Details",
+                "ADD_PHOTO": {
+                    "TITLE": "Foto Toevoegen",
+                    "SELECT_PHOTO": "Selecteer Foto",
+                    "PASTE_URL": "Plak URL",
+                    "PASTE_URL_DESCRIPTION": "Voer een URL naar een afbeelding in",
+                    "PASTE_URL_PLACEHOLDER": "Afbeeldings-URL",
+
+                    "INVALID_URL": "Ongeldige URL",
+                    "INVALID_URL_DESCRIPTION": "De URL die je hebt ingevoerd is geen geldige afbeeldings-URL",
+                    "OK": "OK"
+                },
+                "MODEL_MAKE": "Model / Merk",
+                "SERIAL_NUMBER": "Serienummer",
+                "NOTES": "Notities",
+                "NOTES_PLACEHOLDER": "Voer hier notities in...",
+                "LINKED_REPORTS": "Gekoppelde Rapporten",
+                "NO_LINKED_REPORTS": "Geen Gekoppelde Rapporten",
+                "LINKED_CASES": "Gekoppelde Zaken",
+                "NO_LINKED_CASES": "Geen Gekoppelde Zaken",
+                "UNREGISTERED": "Niet Geregistreerd",
+                "OWNER": "Eigenaar",
+                "SELECT_MODEL": "Model selecteren",
+                "SELECT_OWNER": "Eigenaar selecteren"
+            },
+
+            "REPORTS": {
+                "TITLE": "Rapporten",
+                "REPORT": "Rapport",
+                "SEARCH": "Zoek Rapporten",
+                "FOOTER": "{author} - Rapport-ID: {id}",
+                "NEW_REPORT_TITLE": "Nieuw Rapport",
+                "TYPE": "Type",
+                "DESCRIPTION": "Beschrijving",
+                "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in...",
+                "GALLERY": "Galerij",
+                "NO_ATTACHMENTS": "Geen Bijlagen",
+                "WEAPONS_INVOLVED": "Betrokken Wapens",
+                "NO_WEAPONS_INVOLVED": "Geen Betrokken Wapens",
+                "REMOVE_WEAPON": {
+                    "TITLE": "Wapen Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je het wapen uit het rapport wilt verwijderen?"
+                },
+                "OFFICERS_INVOLVED": "Betrokken Agenten",
+                "NO_OFFICERS_INVOLVED": "Geen Betrokken Agenten",
+                "REMOVE_OFFICER": {
+                    "TITLE": "Agent Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} uit het rapport wilt verwijderen?"
+                },
+                "CIVILLIANS_INVOLVED": "Betrokken Burgers",
+                "NO_CIVILLIANS_INVOLVED": "Geen Betrokken Burgers",
+                "REMOVE_CIVILIAN": {
+                    "TITLE": "Burger Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} uit het rapport wilt verwijderen?"
+                },
+                "SUSPECTS_INVOLVED": "Betrokken Verdachten",
+                "NO_SUSPECTS_INVOLVED": "Geen Betrokken Verdachten",
+                "REMOVE_SUSPECT": {
+                    "TITLE": "Verdachte Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} uit het rapport wilt verwijderen?"
+                },
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "NO_TYPE": "Je moet een rapporttype selecteren",
+                    "TITLE_LENGTH": "De titel moet minimaal 3 tekens lang zijn",
+                    "DESCRIPTION_LENGTH": "De beschrijving moet minimaal 10 tekens lang zijn"
+                }
+            },
+
+            "CASES": {
+                "TITLE": "Zaken",
+                "SEARCH": "Zoek Zaken",
+                "CASE": "Zaak",
+                "FOOTER": "{author} - Zaak-ID: {id}",
+                "TITLE_PLACEHOLDER": "Nieuwe Zaak",
+                "DESCRIPTION": "Beschrijving",
+                "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in...",
+                "EVIDENCE": "Bewijs",
+                "NO_EVIDENCE": "Geen Bewijsstukken Bijgevoegd",
+                "OPEN_STASH": "Open Bewijskluis",
+                "VEHICLES_INVOLVED": "Betrokken Voertuigen",
+                "NO_VEHICLES_INVOLVED": "Geen Betrokken Voertuigen",
+                "REMOVE_VEHICLE": {
+                    "TITLE": "Voertuig Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je het voertuig uit de zaak wilt verwijderen?"
+                },
+                "OFFICERS_INVOLVED": "Betrokken Agenten",
+                "NO_OFFICERS_INVOLVED": "Geen Betrokken Agenten",
+                "REMOVE_OFFICER": {
+                    "TITLE": "Agent Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de agent uit de zaak wilt verwijderen?"
+                },
+                "CIVILLIANS_INVOLVED": "Betrokken Burgers",
+                "NO_CIVILLIANS_INVOLVED": "Geen Betrokken Burgers",
+                "REMOVE_CIVILIAN": {
+                    "TITLE": "Burger Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de burger uit de zaak wilt verwijderen?"
+                },
+                "CRIMINALS_INVOLVED": "Betrokken Criminelen",
+                "NO_CRIMINALS_INVOLVED": "Geen Betrokken Criminelen",
+                "REMOVE_CRIMINAL": {
+                    "TITLE": "Crimineel Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de crimineel uit de zaak wilt verwijderen?"
+                },
+                "ADD_CHARGE": "Toevoegen Beschuldiging",
+                "RECOMMENDED_FINE": "Aanbevolen Boete ({currency})",
+                "RECOMMENDED_SENTENCE": "Aanbevolen Straf (in maanden)",
+                "FINE": "Boete ({currency})",
+                "SENTENCE": "Straf (in maanden)",
+
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "TITLE_LENGTH": "De titel moet minimaal 3 tekens lang zijn",
+                    "DESCRIPTION_LENGTH": "De beschrijving moet minimaal 10 tekens lang zijn",
+                    "OK": "OK"
+                }
+            },
+
+            "WARRANTS": {
+                "TITLE": "Bevelen",
+                "SEARCH": "Zoek Bevelen",
+
+                "HIGH_PRIORITY": "Hoge Prioriteit",
+                "MEDIUM_PRIORITY": "Gemiddelde Prioriteit",
+                "LOW_PRIORITY": "Lage Prioriteit",
+                "FOOTER": "{author} - Bevel-ID: {id}",
+                "TITLE_PLACEHOLDER": "Nieuw Bevel",
+                "DESCRIPTION": "Beschrijving",
+                "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in...",
+                "TYPE": "Type",
+                "STATUS": "Status",
+                "PRIORITY": "Prioriteit",
+                "GALLERY": "Galerij",
+                "NO_ATTACHMENTS": "Geen Bijlagen",
+                "LINKED_REPORTS": "Gekoppelde Rapporten",
+                "NO_LINKED_REPORTS": "Geen Gekoppelde Rapporten",
+                "SELECT_VEHICLE": "Selecteer voertuig",
+                "NO_VEHICLE_SELECTED": "Geen voertuig geselecteerd",
+                "SELECT_PERSON": "Selecteer persoon",
+                "NO_PERSON_SELECTED": "Geen persoon geselecteerd",
+                "REMOVE_REPORT": {
+                    "TITLE": "Rapport Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je het rapport uit het bevel wilt verwijderen?"
+                },
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "TITLE_LENGTH": "De titel moet minimaal 3 tekens lang zijn",
+                    "DESCRIPTION_LENGTH": "De beschrijving moet minimaal 10 tekens lang zijn",
+                    "NO_TYPE": "Je moet een beveltype selecteren",
+                    "NO_TARGET": "U moet een doel selecteren voor het bevelschrift",
+                    "OK": "OK"
+                }
+            },
+
+            "OFFENCES": {
+                "TITLE": "Overtredingen",
+                "SEARCH": "Zoek Overtredingen",
+                "MONTHS": "{amount} Maanden",
+                "FINE": "{amount} Boete",
+
+                "SELECT_SEVERITY": "Selecteer Ernst",
+                "SEVERITIES": {
+                    "INFRACTION": "Overtreding",
+                    "MISDEMEANOR": "Wangedrag",
+                    "FELONY": "Misdrijf"
+                },
+                "NO_OFFENCES_FOUND": "Geen Overtredingen Gevonden",
+                "ADD_OFFENCE": {
+                    "TITLE": "Overtreding Toevoegen",
+                    "DESCRIPTION": "Maak een nieuwe overtreding aan",
+                    "PLACEHOLDER": "Voer de titel van de overtreding in",
+                    "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in..."
+                },
+                "SET_JAILTIME": {
+                    "TITLE": "Aanbevolen Gevangenisstraf",
+                    "DESCRIPTION": "Stel de aanbevolen gevangenisstraf in voor de overtreding",
+                    "PLACEHOLDER": "Aanbevolen gevangenisstraf (in maanden) (0 voor alleen boete)"
+                },
+                "SET_FINE": {
+                    "TITLE": "Aanbevolen Boete",
+                    "DESCRIPTION": "Stel de aanbevolen boete in voor de overtreding",
+                    "PLACEHOLDER": "Aanbevolen boetebedrag (0 voor alleen gevangenisstraf)"
+                },
+
+                "DELETE_OFFENCE": {
+                    "TITLE": "Overtreding Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je deze overtreding wilt verwijderen?"
+                },
+                "ADD_CATEGORY": {
+                    "TITLE": "Categorie Toevoegen",
+                    "DESCRIPTION": "Voeg een nieuwe categorie toe aan de lijst met overtredingen",
+                    "PLACEHOLDER": "Voer de categorienaam in"
+                },
+                "DELETE_CATEGORY": {
+                    "TITLE": "Categorie Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je deze categorie wilt verwijderen?"
+                }
+            },
+
+            "EMPLOYEES": {
+                "TITLE": "Werknemers",
+                "SEARCH": "Zoek Werknemers"
+            },
+
+            "CHAT": {
+                "TITLE": "Chat",
+                "SEARCH": "Zoek Chats",
+                "PLACEHOLDER": "Stuur een bericht...",
+                "JOINED_CHATS": "Gejoined Chats",
+                "PUBLIC_CHATS": "Openbare Chats",
+                "JOINED": "Joined",
+                "PUBLIC": "Public",
+                "PRIVATE_CHATS": "Privéchats",
+                "ROOM_ID": "Room-ID: {id}",
+                "TOGGLE_PRIVATE": "Schakel Privé In/Uit",
+                "CHANGE_AVATAR": "Avatar Wijzigen",
+                "SET_AVATAR": "Avatar Instellen",
+                "REMOVE_AVATAR": "Avatar Verwijderen",
+                "MANAGE": "Beheren",
+                "LEAVE": {
+                    "TITLE": "Verlaten",
+                    "DESCRIPTION": "Weet je zeker dat je de chatroom wilt verlaten?"
+                },
+                "KICK": {
+                    "TITLE": "Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} uit de chatroom wilt verwijderen?"
+                },
+
+                "CREATE_CHATROOM": {
+                    "TITLE": "Chatroom Aanmaken",
+                    "DESCRIPTION": "Voer een naam in voor de chatroom",
+                    "PLACEHOLDER": "Naam Chatroom",
+                    "CREATE": "Aanmaken",
+                    "SET_VISIBILITY": "Stel Zichtbaarheid In",
+                    "PUBLIC": "Openbaar",
+                    "PRIVATE": "Privé"
+                },
+                "JOIN_CHAT": {
+                    "TITLE": "Chat Deelnemen",
+                    "DESCRIPTION": "Weet je zeker dat je wilt deelnemen aan {channel}?",
+                    "JOIN": "Deelnemen"
+                },
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "FAILED_JOIN": "Deelnemen aan de chatroom is mislukt",
+                    "FAILED_INVITE": "{name} uitnodigen voor de chatroom is mislukt",
+                    "FAILED_SET_AVATAR": "Chatroom-avatar instellen is mislukt",
+                    "FAILED_REMOVE_AVATAR": "Chatroom-avatar verwijderen is mislukt",
+                    "FAILED_GET_MEMBERS": "Kon chatroomleden niet ophalen",
+                    "FAILED_KICK": "{name} uit de chatroom verwijderen is mislukt",
+                    "FAILED_LEAVE": "Chatroom verlaten is mislukt"
+                },
+                "SUCCESS": {
+                    "TITLE": "Succes",
+                    "INVITED": "Je hebt {name} uitgenodigd voor de chatroom",
+                    "KICKED": "Je hebt {name} uit de chatroom verwijderd"
+                }
+            },
+
+            "PHONE": {
+                "TITLE": "Telefoon",
+                "TRIANGULATE": "Trianguleren",
+                "MESSAGES": "Berichten",
+                "CALLS": "Oproepen",
+                "UNLOCK": "Ontgrendelen"
+            },
+
+            "JAIL": {
+                "TITLE": "Gevangenis",
+                "SEARCH": "Zoek Geïncarceerden",
+                "JAILED_PERSON": "Geïncarceerde Persoon",
+                "JAILED_BY": "Geïncarceerd Door",
+                "JAILED_BY_NAME": "Geïncarceerd Door {name}",
+                "REMAINING_TIME": "Resterende Tijd",
+                "REMAINING_TIME_DATE": "Resterende tijd {time} ({date})",
+                "ORIGINAL_SENTENCE": "Originele Straf",
+                "RELEASE_DATE": "Vrijlatingsdatum",
+                "DESCRIPTION": "Beschrijving",
+                "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in...",
+                "RELEASED": "Vrijgelaten",
+                "LESS_THAN_MINUTE": "Minder dan een minuut",
+                "UNJAIL": "Vrijlaten",
+                "PROFILE": "Profiel",
+                "JAILED_AT": "Geïncarceerd op",
+                "LINKED_CASE": "Gekoppelde Zaak",
+                "NO_LINKED_CASE": "Geen Gekoppelde Zaak",
+                "REMOVE_LINKED_CASE": {
+                    "TITLE": "Gekoppelde Zaak Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de gekoppelde zaak wilt verwijderen?"
+                },
+                "JAIL_PERSON": {
+                    "TITLE": "Incarcereren",
+                    "DESCRIPTION": "Vul de onderstaande details in om {name} te incerneren",
+                    "SENTENCE_PLACEHOLDER": "Straf (in minuten)",
+                    "REASON_PLACEHOLDER": "Reden",
+                    "JAIL_WITH_CASE": "Incarcereren met gekoppeld incident",
+                    "JAIL_WITHOUT_CASE": "Incarcereren zonder gekoppeld incident",
+                    "PROCEED": "Doorgaan"
+                },
+                "UNJAIL_PERSON": {
+                    "TITLE": "Vrijlaten",
+                    "DESCRIPTION": "Weet je zeker dat je {name} wilt vrijlaten?",
+                    "PROCEED": "Doorgaan"
+                },
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "MISSING_DETAILS": "Je moet een straf en reden invoeren"
+                }
+            },
+
+            "LOGS": {
+                "TITLE": "Logs",
+                "SEARCH": "Zoek Logs",
+                "FILTER": "Filter",
+                "CREATED": "Aangemaakt",
+                "UPDATED": "Bijgewerkt",
+                "DELETED": "Verwijderd",
+                "VIEW_FOOTER": "Bekijk {type} ({id})",
+                "TAG_TYPES": {
+                    "PROFILE": "profiel",
+                    "VEHICLE": "voertuig",
+                    "REPORT": "rapport",
+                    "WARRANT": "bevel",
+                    "INCIDENT": "incident"
+                },
+
+                "CREATE_TAG_TITLE": "Tag Aangemaakt",
+                "CREATE_TAG_DESCRIPTION": "Aangemaakt {type} tag \"{name}\"",
+                "DELETE_TAG_TITLE": "Tag Verwijderd",
+                "DELETE_TAG_DESCRIPTION": "Verwijderde {type} tag \"{name}\"",
+                "UPDATE_PROFILE_TITLE": "Profiel Bijgewerkt",
+                "UPDATE_PROFILE_DESCRIPTION": "Bijgewerkt profiel van {name}",
+                "UPDATE_VEHICLE_TITLE": "Voertuig Bijgewerkt",
+                "UPDATE_VEHICLE_DESCRIPTION": "Bijgewerkt voertuig {plate}",
+                "UPDATE_PROPERTY_TITLE": "Eigendom Bijgewerkt",
+                "UPDATE_PROPERTY_DESCRIPTION": "Bijgewerkt eigendom",
+                "UPDATE_WEAPON_TITLE": "Wapen Bijgewerkt",
+                "UPDATE_WEAPON_DESCRIPTION": "Bijgewerkt wapen met serienummer {serial}",
+                "CREATE_REPORT_TITLE": "Rapport Aangemaakt",
+                "CREATE_REPORT_DESCRIPTION": "Aangemaakt {type} rapport met de titel \"{title}\"",
+                "UPDATE_REPORT_TITLE": "Rapport Bijgewerkt",
+                "UPDATE_REPORT_DESCRIPTION": "Bijgewerkt {type} rapport met de titel \"{title}\"",
+                "DELETE_REPORT_TITLE": "Rapport Verwijderd",
+                "DELETE_REPORT_DESCRIPTION": "Verwijderd rapport met het ID {id}",
+                "ISSUED_LICENSE_TITLE": "Licentie Verleend",
+                "ISSUED_LICENSE_DESCRIPTION": "Verleende de licentie {license} aan {name}",
+                "REVOKED_LICENSE_TITLE": "Licentie Ingetrokken",
+                "REVOKED_LICENSE_DESCRIPTION": "Introk de licentie {license} van {name}",
+                "PINNED_BULLETIN_TITLE": "Bulletinbericht Vastgepind",
+                "PINNED_BULLETIN_DESCRIPTION": "Vastgepind bulletinbericht met het ID {id}",
+                "UNPINNED_BULLETIN_TITLE": "Bulletinbericht Losgemaakt",
+                "UNPINNED_BULLETIN_DESCRIPTION": "Losgemaakt bulletinbericht met het ID {id}",
+                "CREATE_BULLETIN_TITLE": "Bulletinbericht Aangemaakt",
+                "CREATE_BULLETIN_DESCRIPTION": "Aangemaakt bulletinbericht met de titel \"{title}\"",
+                "DELETE_BULLETIN_TITLE": "Bulletinbericht Verwijderd",
+                "DELETE_BULLETIN_DESCRIPTION": "Verwijderd bulletinbericht met het ID {id}",
+                "CREATE_WARRANT_TITLE": "Bevel Aangemaakt",
+                "CREATE_WARRANT_DESCRIPTION": "Aangemaakt {type} bevel met de titel \"{title}\"",
+                "UPDATE_WARRANT_TITLE": "Bevel Bijgewerkt",
+                "UPDATE_WARRANT_DESCRIPTION": "Bijgewerkt bevel \"{title}\"",
+                "CREATE_CASE_TITLE": "Zaak Aangemaakt",
+                "CREATE_CASE_DESCRIPTION": "Aangemaakte zaak met de titel \"{title}\"",
+                "UPDATE_CASE_TITLE": "Zaak Bijgewerkt",
+                "UPDATE_CASE_DESCRIPTION": "Bijgewerkte zaak met de titel \"{title}\"",
+                "DELETE_CASE_TITLE": "Zaak Verwijderd",
+                "DELETE_CASE_DESCRIPTION": "Verwijderd zaak met het ID {id}"
+            },
+
+            "TAGS": {
+                "TITLE": "Tags",
+                "ADD": "Toevoegen",
+                "NO_TAGS": "Geen Tags",
+                "CREATE_TAG": {
+                    "TITLE": "Tag Aanmaken",
+                    "DESCRIPTION": "Voer een tagnaam in",
+                    "PLACEHOLDER": "Tagnaam",
+                    "CANCEL": "Annuleren",
+                    "NEXT": "Volgende",
+                    "SELECT_COLOR": "Selecteer een kleur"
+                },
+                "DELETE_TAG": {
+                    "TITLE": "Tag Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je deze tag wilt verwijderen?",
+                    "CANCEL": "Annuleren",
+                    "DELETE": "Verwijderen"
+                },
+                "REMOVE_TAG": {
+                    "TITLE": "Tag Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de tag '{tag}' wilt verwijderen?",
+                    "CANCEL": "Annuleren",
+                    "REMOVE": "Verwijderen"
+                }
+            },
+            "MISC": {
+                "SOON": "Binnenkort",
+                "UNKNOWN": "Onbekend",
+                "MINUTES": "{minutes}m",
+                "HOURS": "{hours}u",
+                "DAYS": "{days}d",
+                "FORMATTED_DATE": "{day} {month} {year} om {hours}:{minutes}",
+                "CHANGE_AVATAR": "Avatar Wijzigen",
+                "REMOVE_AVATAR": "Avatar Verwijderen",
+                "SET_CALLSIGN": "Roepnaam Instellen",
+                "CALLSIGN": {
+                    "TITLE": "Roepnaam",
+                    "DESCRIPTION": "Voer een roepnaam in",
+                    "CANCEL": "Annuleren",
+                    "PROCEED": "Doorgaan"
+                }
+            }
+        },
+        "AMBULANCE": {
+            "TITLE": "Ambulance",
+
+            "SEARCH": "Zoek",
+            "CANCEL": "Annuleren",
+            "CLOSE": "Sluiten",
+            "BACK": "Terug",
+            "EDIT": "Bewerken",
+            "DELETE": "Verwijderen",
+            "REMOVE": "Verwijderen",
+            "SAVE": "Opslaan",
+            "CREATE": "Aanmaken",
+            "PROCEED": "Doorgaan",
+            "OK": "OK",
+            "ADD": "Toevoegen",
+            "NEW": "Nieuw",
+
+            "SEARCH_FOR": "Zoek naar {query} om te beginnen",
+            "NO_RESULTS_FOR": "Geen resultaten gevonden voor '{query}'",
+            "CLEAR_HISTORY": "Geschiedenis Wissen",
+
+            "HOME": {
+                "TITLE": "Home",
+                "CREATE": "Aanmaken",
+
+                "RECENT_REPORTS": "Recente Rapporten",
+                "REPORT_FOOTER": "{timestamp} - {author}",
+                "BULLETIN_BOARD": "Bulletinbord",
+                "PIN": "Vastzetten",
+                "UNPIN": "Losmaken",
+                "SEARCH_BULLETIN": "Zoek Bulletin",
+                "SEARCH_UNITS": "Zoek Eenheden",
+                "ADD_BULLETIN": {
+                    "TITLE": "Bulletin Toevoegen",
+                    "DESCRIPTION": "Maak een nieuw bulletinbericht",
+                    "PLACEHOLDER": "Titel",
+                    "CONTENT": "Inhoud",
+                    "CANCEL": "Annuleren",
+                    "PROCEED": "Doorgaan"
+                },
+                "DELETE_BULLETIN": {
+                    "TITLE": "Bulletin Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je dit bulletinbericht wilt verwijderen?",
+                    "CANCEL": "Annuleren",
+                    "DELETE": "Verwijderen"
+                },
+                "ACTIVE_UNITS": "Actieve Eenheden"
+            },
+
+            "DISPATCH": {
+                "TITLE": "Meldkamer",
+                "TOGGLE_EMPLOYEES": "Medewerkers Aan/Uitzetten",
+                "TOGGLE_ALARMS": "Alarmen Aan/Uitzetten",
+                "EMPLOYEES": "Medewerkers",
+                "ALARMS": "Alarmen",
+
+                "RESPOND": "Reageren",
+                "RESPONDED": "Gereageerd",
+                "COLLAPSE": "Inklappen",
+                "EXPAND": "Uitklappen",
+                "DISMISS": "Afwijzen",
+                "VIEW_IN_TABLET": "Bekijken in Tablet",
+                "SET_WAYPOINT": "Waypoint Instellen",
+
+                "PRIORITY": {
+                    "HIGH": "Hoog",
+                    "MEDIUM": "Middel",
+                    "LOW": "Laag"
+                },
+
+                "JUST_NOW": "Zojuist",
+                "MINUTES_AGO": "{minutes} minuten geleden",
+                "HOURS_AGO": "{hours} uur geleden"
+            },
+
+            "JOURNALS": {
+                "TITLE": "Dossiers",
+                "PROFILES": "Profielen",
+                "PERSON": "Persoon",
+                "SEARCH": "Zoek Profielen",
+                "REMOVE_AVATAR": "Avatar Verwijderen",
+                "IDENTIFIER": "Identificatie",
+                "FINGERPRINT": "Vingerafdruk",
+                "DOB": "Geboortedatum",
+                "PHONE_NR": "Telefoonnummer",
+                "GENDER": "Geslacht",
+                "JOB": "Baan",
+                "MALE": "Man",
+                "FEMALE": "Vrouw",
+                "HEIGHT": "Lengte",
+                "HEIGHT_FORMAT": "{height}cm",
+                "BLOOD_TYPE": "Bloedgroep",
+                "NOTES": "Notities",
+                "NOTES_PLACEHOLDER": "Voer hier notities in...",
+                "DIAGNOSES_DISEASES": "Diagnoses / Ziekten",
+                "NO_DIAGNOSES": "Geen Diagnoses / Ziekten",
+                "REPORTS": "Rapporten",
+                "NO_REPORTS": "Geen Rapporten",
+
+                "ADD_AVATAR": {
+                    "TITLE": "Avatar Toevoegen",
+                    "SET_PHOTO": "Foto Instellen",
+                    "PASTE_URL": "URL Plakken",
+                    "PASTE_URL_DESCRIPTION": "Voer een URL in van een afbeelding",
+                    "PASTE_URL_PLACEHOLDER": "Afbeeldings-URL",
+
+                    "INVALID_URL": "Ongeldige URL",
+                    "INVALID_URL_DESCRIPTION": "De URL die je hebt ingevoerd is geen geldige afbeeldings-URL",
+                    "OK": "OK"
+                }
+            },
+
+            "REPORTS": {
+                "TITLE": "Rapporten",
+                "REPORT": "Rapport",
+                "SEARCH": "Zoek Rapporten",
+                "FOOTER": "{author} - Rapport-ID: {id}",
+                "NEW_REPORT_TITLE": "Nieuw Rapport",
+                "TYPE": "Type",
+                "DESCRIPTION": "Beschrijving",
+                "DESCRIPTION_PLACEHOLDER": "Voer een beschrijving in...",
+                "GALLERY": "Galerij",
+                "NO_ATTACHMENTS": "Geen Bijlagen",
+                "INJURIES_CONDITIONS": "Verwondingen / Condities",
+                "NO_INJURIES": "Geen Verwondingen / Condities",
+                "DOCTORS_INVOLVED": "Betrokken Artsen",
+                "NO_DOCTORS_INVOLVED": "Geen Betrokken Artsen",
+                "ADD_PATIENT": "Patiënt Toevoegen",
+
+                "REMOVE_INJURY": {
+                    "TITLE": "Verwonding Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je de verwonding wilt verwijderen uit het rapport?"
+                },
+                "REMOVE_DOCTOR": {
+                    "TITLE": "Arts Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} wilt verwijderen uit het rapport?"
+                },
+
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "NO_TYPE": "Je moet een rapporttype selecteren",
+                    "TITLE_LENGTH": "De titel moet minstens 3 tekens lang zijn",
+                    "DESCRIPTION_LENGTH": "De beschrijving moet minstens 10 tekens lang zijn"
+                }
+            },
+
+            "EMPLOYEES": {
+                "TITLE": "Medewerkers",
+                "SEARCH": "Zoek Medewerkers"
+            },
+
+            "CHAT": {
+                "TITLE": "Chat",
+                "SEARCH": "Zoek Chats",
+                "PLACEHOLDER": "Stuur een bericht...",
+                "JOINED_CHATS": "Deelgenomen Chats",
+                "PUBLIC_CHATS": "Openbare Chats",
+                "JOINED": "Deelgenomen",
+                "PUBLIC": "Openbaar",
+                "PRIVATE_CHATS": "Privé Chats",
+                "ROOM_ID": "Kamer-ID: {id}",
+                "TOGGLE_PRIVATE": "Privé Aan/Uitzetten",
+                "CHANGE_AVATAR": "Avatar Wijzigen",
+                "SET_AVATAR": "Avatar Instellen",
+                "REMOVE_AVATAR": "Avatar Verwijderen",
+                "MANAGE": "Beheren",
+                "LEAVE": {
+                    "TITLE": "Verlaten",
+                    "DESCRIPTION": "Weet je zeker dat je de chatroom wilt verlaten?"
+                },
+                "KICK": {
+                    "TITLE": "Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je {name} wilt verwijderen uit de chatroom?"
+                },
+
+                "CREATE_CHATROOM": {
+                    "TITLE": "Chatroom Aanmaken",
+                    "DESCRIPTION": "Voer een naam in voor de chatroom",
+                    "PLACEHOLDER": "Naam van de chatroom",
+                    "CREATE": "Aanmaken",
+                    "SET_VISIBILITY": "Zichtbaarheid Instellen",
+                    "PUBLIC": "Openbaar",
+                    "PRIVATE": "Privé"
+                },
+                "JOIN_CHAT": {
+                    "TITLE": "Deelnemen aan Chat",
+                    "DESCRIPTION": "Weet je zeker dat je wilt deelnemen aan {channel}?",
+                    "JOIN": "Deelnemen"
+                },
+                "ERROR": {
+                    "TITLE": "Fout",
+                    "FAILED_JOIN": "Kon niet deelnemen aan de chatroom",
+                    "FAILED_INVITE": "Kon {name} niet uitnodigen voor de chatroom",
+                    "FAILED_SET_AVATAR": "Kon de avatar van de chatroom niet instellen",
+                    "FAILED_REMOVE_AVATAR": "Kon de avatar van de chatroom niet verwijderen",
+                    "FAILED_GET_MEMBERS": "Kon chatroomleden niet ophalen",
+                    "FAILED_KICK": "Kon {name} niet verwijderen uit de chatroom",
+                    "FAILED_LEAVE": "Kon de chatroom niet verlaten"
+                },
+                "SUCCESS": {
+                    "TITLE": "Succes",
+                    "INVITED": "Je hebt {name} uitgenodigd voor de chatroom",
+                    "KICKED": "Je hebt {name} verwijderd uit de chatroom"
+                }
+            },
+
+            "CONDITIONS": {
+                "TITLE": "Condities",
+                "CONDITION": "Conditie",
+                "SEARCH": "Zoek Condities",
+
+                "SELECT_SEVERITY": "Selecteer Ernstigheid",
+                "SEVERITIES": {
+                    "MINOR": "Klein",
+                    "MODERATE": "Matig",
+                    "SEVERE": "Ernstig",
+                    "CRITICAL": "Kritiek"
+                },
+                "NO_CONDITIONS_FOUND": "Geen Condities Gevonden",
+                "ADD_CONDITION": {
+                    "TITLE": "Conditie Toevoegen",
+                    "DESCRIPTION": "Maak een nieuwe conditie",
+                    "PLACEHOLDER": "Voer de titel van de conditie in"
+                },
+                "DELETE_CONDITION": {
+                    "TITLE": "Conditie Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je deze conditie wilt verwijderen?"
+                },
+                "ADD_CATEGORY": {
+                    "TITLE": "Categorie Toevoegen",
+                    "DESCRIPTION": "Voeg een nieuwe categorie toe aan de lijst met condities",
+                    "PLACEHOLDER": "Voer de categorienaam in"
+                },
+                "DELETE_CATEGORY": {
+                    "TITLE": "Categorie Verwijderen",
+                    "DESCRIPTION": "Weet je zeker dat je deze categorie wilt verwijderen?"
+                }
+            },
+
+            "LOGS": {
+                "TITLE": "Logs"
+            }
+        },
+        "BROWSER": {
+            "TITLE": "Browser",
+            "SEARCH_PLACEHOLDER": "Zoek of typ URL",
+            "FAILED_LOAD_PAGE": "Kon de pagina niet laden, mogelijk ondersteunt deze geen iframing."
+        },
+        "REGISTRATION": {
+            "TITLE": "Registratie",
+            "SELECT_CHARACTER": "Selecteer Karakter",
+            "PLEASE_SELECT_CHARACTER": "Selecteer een karakter",
+            "CREATE_NEW": "Nieuw Aanmaken",
+            "EDIT": "Bewerken",
+            "SAVE": "Opslaan",
+            "DELETE": "Verwijderen",
+            "CANCEL": "Annuleren",
+            "DELETE_CHARACTER": "Karakter Verwijderen",
+            "DESCRIPTION": "Beschrijving",
+            "DESCRIPTION_PLACEHOLDER": "Dit is een beschrijving...",
+            "ADD": "Toevoegen",
+
+            "CHARACTER_INFO": "Karakter Info",
+            "REMOVE_AVATAR": "Avatar Verwijderen",
+            "FIRSTNAME": "Voornaam",
+            "LASTNAME": "Achternaam",
+            "DOB": "Geboortedatum",
+            "PHONE_NUMBER": "Telefoonnummer",
+            "GENDER": "Geslacht",
+            "MALE": "Man",
+            "FEMALE": "Vrouw",
+            "JOB": "Baan",
+            "HEIGHT": "Lengte",
+            "FORMATTED_HEIGHT": "{height}cm",
+
+            "VEHICLES": "Voertuigen",
+            "VEHICLE": "Voertuig",
+            "REMOVE_PICTURE": "Foto Verwijderen",
+            "SEARCH_VEHICLES": "Zoek Voertuigen",
+            "MODEL": "Model",
+            "PLATE": "Kenteken",
+            "COLOR": "Kleur",
+            "CREATE": "Aanmaken",
+            "DELETE_VEHICLE": "Voertuig Verwijderen",
+            "DELETE_VEHICLE_POPUP": {
+                "TITLE": "Voertuig Verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je dit voertuig wilt verwijderen?"
+            },
+
+            "LICENSES": "Licenties",
+            "ADD_LICENSE": "Licentie Toevoegen",
+            "DELETE_LICENSE_POPUP": {
+                "TITLE": "Licentie Verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je deze licentie wilt verwijderen?"
+            },
+
+            "PROPERTIES": "Eigenschappen",
+            "ADD_PROPERTY_POPUP": {
+                "TITLE": "Nieuw Eigendom",
+                "DESCRIPTION": "Maak een nieuw eigendom aan",
+                "LABEL": "Eigendom Label",
+                "ADDRESS": "Eigendom Adres"
+            },
+            "DELETE_PROPERTY_POPUP": {
+                "TITLE": "Eigendom Verwijderen",
+                "DESCRIPTION": "Weet je zeker dat je dit eigendom wilt verwijderen?"
+            },
+
+            "ERROR": {
+                "TITLE": "Hier ging iets mis",
+                "MISSING_FIELDS": "Je mist de volgende velden: {fields}",
+                "OK": "OK"
+            }
+        }
+    },
+    "COMPONENTS": {
+        "CONTEXT_MENU": {
+            "CANCEL": "Annuleren"
+        },
+        "IMAGE": {
+            "SAVE_TO_GALLERY": "Opslaan in Galerij"
+        },
+        "GALLERY": {
+            "CANCEL": "Annuleren",
+            "EXTERNAL_URL": "Externe URL",
+            "EXTERNAL_URL_BLACKLISTED": "Deze URL staat op de zwarte lijst",
+            "NO_IMAGES": "Geen afbeeldingen"
+        },
+        "NOTIFICATIONS": {
+            "SENT_PHOTO": "Verstuurde een foto",
+            "SENT_GIF": "Verstuurde een GIF",
+            "NOW": "nu"
+        },
+        "SHARE": {
+            "COPY_PHOTO": "Kopieer Foto",
+            "COPY_VIDEO": "Kopieer Video",
+            "USE_WALLPAPER": "Gebruik als Achtergrond",
+            "COPY_NUMBER": "Kopieer Nummer",
+            "COPY_LINK": "Kopieer Link",
+            "AIRDROP_SENT": "Verzonden",
+            "AIRDROP_ACCEPTED": "Geaccepteerd",
+            "AIRDROP_DECLINED": "Geweigerd",
+            "AIRDROP_NO_USERS": "Geen telefoons in de buurt",
+            "WALLPAPER_POPUP": {
+                "TITLE": "Gebruik als Achtergrond",
+                "TEXT": "Weet je zeker dat je deze afbeelding als achtergrond wilt instellen?",
+                "CANCEL": "Annuleren",
+                "PROCEED": "Doorgaan"
+            },
+            "COPY_POPUP": {
+                "TITLE": "Succes",
+                "DESCRIPTION": "Succesvol gekopieerd naar klembord",
+                "OK": "OK"
+            }
+        },
+        "AIRDROP": {
+            "TITLE": "AirShare",
+            "TEXT": "{sender} wil een {type} delen",
+            "VIDEO": "video",
+            "PHOTO": "foto",
+            "CONTACT": "contact",
+            "LOCATION": "locatie",
+            "NOTE": "notitie",
+            "VOICEMEMO": "spraakmemo",
+            "PLAYLIST": "afspeellijst",
+            "DECLINE": "Weigeren",
+            "ACCEPT": "Accepteren"
+        },
+
+        "BATTERY": {
+            "LOW_BATTERY": "Lage Batterij",
+            "BATTERY_REMAINING": "{percent}% batterij over",
+            "LOW_POWER_MODE": "Energiebesparingsmodus",
+            "CLOSE": "Sluiten"
+        },
+        "COLOR_PICKER": {
+            "COLOR": "Kleur"
+        }
+    },
+    "SETUP": {
+        "HELLO": "Hallo",
+        "SELECT_LANGUAGE": "Selecteer je taal",
+        "NEXT": "Klik om te openen",
+        "APPEARANCE": "Thema",
+        "APPEARANCE_TEXT": "Selecteer een donker of licht thema voor je apparaat",
+        "CONTINUE": "Doorgaan",
+        "WELCOME_TO": "Welkom bij",
+        "CLICK": "Klik om te beginnen"
+    },
+    "HOMESCREEN": {
+        "DONE": "Klaar",
+        "CLOSE_ALL": "Sluit Alles",
+        "REMOVE_APP_POPUP": {
+            "TITLE": "Verwijder '{app}'?",
+            "DESCRIPTION": "Het verwijderen van deze app zal de gegevens NIET verwijderen. De app kan later opnieuw worden geïnstalleerd vanuit de App Store.",
+            "CANCEL": "Annuleren",
+            "PROCEED": "Verwijderen"
+        }
+    },
+    "LOCKSCREEN": {
+        "DELETE": "Verwijderen",
+        "FONT_AND_COLOR": "Lettertype & Kleur"
+    },
+    "MISC": {
+        "AIRPLANE_MODE_POPUP": {
+            "TITLE": "Fout",
+            "DESCRIPTION": "Je probeert een actie uit te voeren die internettoegang vereist. Schakel vliegtuigmodus uit om door te gaan.",
+            "OK": "OK"
+        }
+    },
+    "BACKEND": {
+        "CAMERA": {
+            "TAKE_PHOTO": "{key} Vastleggen",
+            "FLIP_CAMERA": "{key} Omkeren",
+            "TOGGLE_FLASH": "{key} Flits",
+            "TOGGLE_CURSOR": "{key} Cursor",
+            "CHANGE_MODE": "{key} {key2} Modus",
+            "ROLL": "{key} {key2} Rollen",
+            "FREEZE": "{key} Bevriezen",
+            "UNFREEZE": "{key} Ontdooien",
+            "TOGGLE_TIP": "{key} Verbergen"
+        },
+        "SERVICES": {
+            "NEW_MESSAGE": "Nieuw Bericht",
+            "ANONYMOUS": "Anoniem"
+        },
+        "MISC": {
+            "X_TABLET": "{firstname}'s Tablet"
+        },
+        "MAIL": {
+            "AUTOMATIC_PASSWORD": {
+                "SENDER": "Systeem",
+                "SUBJECT": "Jouw Wachtwoord",
+                "MESSAGE": "Hoi,\n\nJe automatische e-mailadres is {address} en je wachtwoord is {password}"
+            }
+        },
+        "LOGS": {
+            "TOOK_PHOTO": "Maakte een foto",
+            "TOOK_VIDEO": "Maakte een video",
+            "NEW_DISPATCH": "Nieuw Dispatch Alert: {title}"
+        },
+        "POLICE": {
+            "EVIDENCE_LABEL": "Bewijs: Zaak {id}",
+            "NEW_BULLETIN_NOTIFICATION": {
+                "TITLE": "Nieuw Bulletin",
+                "CONTENT": "{title}"
+            },
+            "NEW_CASE_NOTIFICATION": {
+                "TITLE": "Nieuwe Zaak",
+                "CONTENT": "{title}"
+            },
+            "NEW_REPORT_NOTIFICATION": {
+                "TITLE": "Nieuw Rapport",
+                "CONTENT": "{title}"
+            },
+            "NEW_WARRANT_NOTIFICATION": {
+                "TITLE": "Nieuw Bevel",
+                "CONTENT": "{title}"
+            },
+            "NEW_CHAT_CHANNEL_NOTIFICATION": {
+                "TITLE": "Nieuwe Gespreksruimte",
+                "CONTENT": "{channel}"
+            },
+            "CHAT_MESSAGE_NOTIFICATION": {
+                "TITLE": "Nieuw Bericht in {channel}",
+                "CONTENT": "{message}"
+            },
+            "LOGS": {
+                "CREATE_OFFENCE_CATEGORY": {
+                    "TITLE": "Aangemaakt een categorie voor overtreding",
+                    "DESCRIPTION": "Aangemaakte de categorie '{name}'"
+                },
+                "DELETE_OFFENCE_CATEGORY": {
+                    "TITLE": "Verwijderde een categorie voor overtreding",
+                    "DESCRIPTION": "Verwijderde de categorie '{name}'"
+                },
+                "CREATE_OFFENCE": {
+                    "TITLE": "Aangemaakt een overtreding",
+                    "DESCRIPTION": "Aangemaakt een {class} overtreding '{name}' in '{category}'"
+                },
+                "DELETE_OFFENCE": {
+                    "TITLE": "Verwijderde een overtreding",
+                    "DESCRIPTION": "Verwijderde de overtreding '{name}' in '{category}'"
+                }
+            }
+        },
+        "AMBULANCE": {
+            "NOTIFICATIONS": {
+                "CHAT": {
+                    "NEW_CHANNEL": {
+                        "TITLE": "Nieuwe Gespreksruimte",
+                        "CONTENT": "{channel}"
+                    },
+                    "NEW_MESSAGE": {
+                        "TITLE": "Nieuw Bericht in {channel}",
+                        "CONTENT": "{message}"
+                    }
+                },
+                "NEW_BULLETIN": {
+                    "TITLE": "Nieuw Bulletin",
+                    "CONTENT": "{title}"
+                },
+                "NEW_REPORT": {
+                    "TITLE": "Nieuw Rapport",
+                    "CONTENT": "{title}"
+                }
+            },
+            "TAG_TYPES": {
+                "PROFILE": "profiel",
+                "REPORT": "rapport",
+                "PROPERTY": "property",
+                "WEAPON": "weapon"
+            },
+            "LOGS": {
+                "CREATE_CONDITION_CATEGORY": {
+                    "TITLE": "Aangemaakte categorie voor aandoening",
+                    "DESCRIPTION": "Aangemaakte categorie '{name}'"
+                },
+                "DELETE_CONDITION_CATEGORY": {
+                    "TITLE": "Verwijderde categorie voor aandoening",
+                    "DESCRIPTION": "Verwijderde categorie '{name}'"
+                },
+                "CREATE_CONDITION": {
+                    "TITLE": "Aangemaakte aandoening",
+                    "DESCRIPTION": "Aangemaakte {severity} aandoening '{name}' in '{category}'"
+                },
+                "DELETE_CONDITION": {
+                    "TITLE": "Verwijderde aandoening",
+                    "DESCRIPTION": "Verwijderde aandoening '{name}' in '{category}'"
+                },
+                "CREATE_BULLETIN": {
+                    "TITLE": "Aangemaakt bulletinbericht",
+                    "DESCRIPTION": "Aangemaakt bulletinbericht '{title}'"
+                },
+                "DELETE_BULLETIN": {
+                    "TITLE": "Verwijderd bulletinbericht",
+                    "DESCRIPTION": "Verwijderd bulletinbericht met id {id}"
+                },
+                "PIN_BULLETIN": {
+                    "TITLE": "Vastgepind bulletinbericht",
+                    "DESCRIPTION": "Vastgepind bulletinbericht met id {id}"
+                },
+                "UNPIN_BULLETIN": {
+                    "TITLE": "Losgemaakt bulletinbericht",
+                    "DESCRIPTION": "Losgemaakt bulletinbericht met id {id}"
+                },
+                "DELETE_TAG": {
+                    "TITLE": "Verwijderde tag",
+                    "DESCRIPTION": "Verwijderde tag '{name}'"
+                },
+                "UPDATE_PROFILE": {
+                    "TITLE": "Bijgewerkt profiel",
+                    "DESCRIPTION": "Bijgewerkt profiel van {name}"
+                },
+                "CREATE_REPORT": {
+                    "TITLE": "Aangemaakt rapport",
+                    "DESCRIPTION": "Aangemaakt {type} rapport '{title}' voor {patient} met id {id}"
+                },
+                "UPDATE_REPORT": {
+                    "TITLE": "Bijgewerkt rapport",
+                    "DESCRIPTION": "Bijgewerkt {type} rapport '{title}' met id {id}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "banking",
+  "name": "Banking",
+  "icon": "bank.png",
+  "default": true,
+  "client": "client.lua",
+  "ui": "ui/index.html"
+}

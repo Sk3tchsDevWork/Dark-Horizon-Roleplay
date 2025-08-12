@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>qb-banking</title>
+
+  <!-- Fuente e iconos -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3d2ef0c257.js" crossorigin="anonymous"></script>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Vue y Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Fondo semitransparente detrás de paneles -->
+    <div class="overlay-background" v-show="isBankOpen || isATMOpen || showPinPrompt"></div>
+
+    <!-- Transición para apertura/cierre del menú principal -->
+    <transition name="menu-fade" mode="out-in">
+      <div class="bank-panel" v-show="isBankOpen" key="bank">
+        <!-- Cabecera -->
+        <div class="bank-header">
+          <h2 class="panel-title">Dark Horizon Banking</h2>
+          <button class="panel-close" @click="closeApplication">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <!-- Información del usuario -->
+        <div class="bank-info">
+          <div class="info-row">
+            <span class="info-label">Name:</span>
+            <span class="info-value">{{ playerName }}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Cash:</span>
+            <span class="info-value">${{ formatCurrency(playerCash) }}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">CID:</span>
+            <span class="info-value">{{ accountNumber }}</span>
+          </div>
+        </div>
+
+        <!-- Lista de cuentas integrada -->
+        <div class="accounts-list">
+          <h3 class="accounts-title">My Accounts</h3>
+          <ul>
+            <li 
+              v-for="account in accounts" 
+              :key="account.name" 
+              :class="{ selected: account.name === selectedAccountStatement }"
+              @click="selectAccount(account)"
+            >
+              <div class="acc-name">{{ account.name }}</div>
+              <div class="acc-balance">${{ formatCurrency(account.balance) }}</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Secciones (Tabs) -->
+        <div class="bank-sections">
+          <div 
+            class="section-button" 
+            :class="{ active: activeView === 'home' }" 
+            @click="setActiveView('home')"
+          >
+            <i class="fas fa-home"></i> Home
+          </div>
+          <div 
+            class="section-button" 
+            :class="{ active: activeView === 'money' }" 
+            @click="setActiveView('money')"
+          >
+            <i class="fas fa-dollar-sign"></i> Money Management
+          </div>
+          <div 
+            class="section-button" 
+            :class="{ active: activeView === 'transfer' }" 
+            @click="setActiveView('transfer')"
+          >
+            <i class="fas fa-exchange-alt"></i> Transfer
+          </div>
+          <div 
+            class="section-button" 
+            :class="{ active: activeView === 'accountOptions' }" 
+            @click="setActiveView('accountOptions')"
+          >
+            <i class="fas fa-cog"></i> Options
+          </div>
+        </div>
+
+        <!-- Notificaciones -->
+        <div class="notification-container" v-if="notification">
+          <div :class="['notification', notification.type]">
+            {{ notification.message }}
+          </div>
+        </div>
+
+        <!-- Contenido principal de las vistas con transición -->
+        <transition name="fade-slide" mode="out-in">
+          <div class="bank-content" :key="activeView">
+            <!-- HOME: Transactions -->
+            <div class="content-view" v-if="activeView === 'home'">
+              <h3 class="content-title">Transactions ({{ selectedAccountStatement }})</h3>
+              <div class="movements-list">
+                <div 
+                  class="movement-item" 
+                  v-for="statement in statements[selectedAccountStatement]" 
+                  :key="statement.id"
+                >
+                  <div class="movement-date">{{ formatDate(statement.date) }}</div>
+                  <div class="movement-reason">{{ statement.reason }}</div>
+                  <div class="movement-user">CID: {{ statement.user }}</div>
+                  <div 
+                    class="movement-amount" 
+                    :class="balanceClass(statement.type)"
+                  >
+                    {{ statement.type === 'deposit' ? '+' : '-' }}${{ formatCurrency(statement.amount) }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- MONEY: Withdraw / Deposit -->
+            <div class="content-view" v-else-if="activeView === 'money'">
+              <h3 class="content-title">Money Management</h3>
+              <div class="money-form">
+                <label>Account:</label>
+                <select v-model="selectedMoneyAccount">
+                  <option 
+                    v-for="account in accounts" 
+                    :key="account.name" 
+                    :value="account"
+                  >
+                    {{ account.name }}
+                  </option>
+                </select>
+
+                <label>Amount:</label>
+                <input type="number" v-model="selectedMoneyAmount" />
+
+                <label>Reason:</label>
+                <input type="text" v-model="moneyReason" placeholder="(Opcional)" />
+
+                <div class="money-buttons">
+                  <button class="action-btn" @click="withdrawMoney">Withdraw</button>
+                  <button class="action-btn" @click="depositMoney">Deposit</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- TRANSFER: Internal / External -->
+            <div class="content-view" v-else-if="activeView === 'transfer'">
+              <h3 class="content-title">Transfers</h3>
+              <div class="transfer-type">
+                <button 
+                  class="transfer-btn" 
+                  :class="{ active: transferType === 'internal' }"
+                  @click="setTransferType('internal')"
+                >
+                  Internal
+                </button>
+                <button 
+                  class="transfer-btn" 
+                  :class="{ active: transferType === 'external' }"
+                  @click="setTransferType('external')"
+                >
+                  External
+                </button>
+              </div>
+
+              <!-- Transferencia Internal -->
+              <div class="transfer-form" v-if="transferType === 'internal'">
+                <label>From:</label>
+                <select v-model="internalFromAccount">
+                  <option 
+                    v-for="account in accounts" 
+                    :key="account.name" 
+                    :value="account"
+                  >
+                    {{ account.name }}
+                  </option>
+                </select>
+
+                <label>To:</label>
+                <select v-model="internalToAccount">
+                  <option 
+                    v-for="account in accounts" 
+                    :key="account.name" 
+                    :value="account"
+                  >
+                    {{ account.name }}
+                  </option>
+                </select>
+
+                <label>Amount:</label>
+                <input type="number" v-model="internalTransferAmount" />
+
+                <label>Reason:</label>
+                <input type="text" v-model="transferReason" placeholder="(Opcional)" />
+
+                <button class="action-btn" @click="internalTransfer">Transfer</button>
+              </div>
+
+              <!-- Transferencia External -->
+              <div class="transfer-form" v-else>
+                <label>Destination Account (CID):</label>
+                <input type="text" v-model="externalAccountNumber" />
+
+                <label>From:</label>
+                <select v-model="externalFromAccount">
+                  <option 
+                    v-for="account in accounts" 
+                    :key="account.name" 
+                    :value="account"
+                  >
+                    {{ account.name }}
+                  </option>
+                </select>
+
+                <label>Amount:</label>
+                <input type="number" v-model="externalTransferAmount" />
+
+                <label>Reason:</label>
+                <input type="text" v-model="transferReason" placeholder="(Opcional)" />
+
+                <button class="action-btn" @click="externalTransfer">Transfer</button>
+              </div>
+            </div>
+
+            <!-- ACCOUNT OPTIONS -->
+            <div class="content-view" v-else-if="activeView === 'accountOptions'">
+              <h3 class="content-title">Options de Cuenta</h3>
+              <div class="options-grid">
+                <!-- Order Card -->
+                <div class="option-box">
+                  <h4>Order Card</h4>
+                  <label>PIN:</label>
+                  <input type="number" v-model="debitPin" placeholder="4 digits" />
+                  <button class="action-btn" @click="orderDebitCard">Order</button>
+                </div>
+
+                <!-- Create Shared Account -->
+                <div class="option-box">
+                  <h4>Create Shared Account</h4>
+                  <label>Name:</label>
+                  <input type="text" v-model="createAccountName" placeholder="e.g. Family" />
+
+                  <label>Initial Deposit:</label>
+                  <input type="number" v-model="createAccountAmount" />
+
+                  <button class="action-btn" @click="openAccount">Create</button>
+                </div>
+
+                <!-- Editar / Delete Cuenta -->
+                <div class="option-box">
+                  <h4>Edit Account</h4>
+                  <label>Account:</label>
+                  <select v-model="editAccount">
+                    <option 
+                      v-for="account in accounts.filter(a => a.type === 'shared')" 
+                      :key="account.name" 
+                      :value="account"
+                    >
+                      {{ account.name }}
+                    </option>
+                  </select>
+
+                  <label>New Name:</label>
+                  <input type="text" v-model="editAccountName" />
+
+                  <div class="option-buttons">
+                    <button class="action-btn danger" @click="deleteAccount">Delete</button>
+                    <button class="action-btn" @click="renameAccount">Rename</button>
+                  </div>
+                </div>
+
+                <!-- Manage Users -->
+                <div class="option-box">
+                  <h4>Manage Users</h4>
+                  <label>Account:</label>
+                  <select v-model="manageAccountName">
+                    <option 
+                      v-for="account in accounts.filter(a => a.type === 'shared')" 
+                      :key="account.name" 
+                      :value="account"
+                    >
+                      {{ account.name }}
+                    </option>
+                  </select>
+
+                  <label>Citizen ID:</label>
+                  <div class="user-search">
+                    <input 
+                      type="text" 
+                      v-model="manageUserName" 
+                      @focus="showUsersDropdown = true" 
+                      @blur="hideDropdown" 
+                      @input="filterUsers"
+                    />
+                    <div class="dropdown-container" v-if="showUsersDropdown">
+                      <ul>
+                        <li v-for="user in filteredUsers" @click="selectUser(user)">
+                          {{ user }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="option-buttons">
+                    <button class="action-btn" @click="addUserToAccount">Add</button>
+                    <button class="action-btn danger" @click="removeUserFromAccount">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </transition>
+      </div>
+    </transition>
+
+    <!-- Transición para ATM -->
+    <transition name="menu-fade" mode="out-in">
+      <div class="atm-panel" v-show="isATMOpen" key="atm">
+        <div class="atm-header">
+          <h3>ATM</h3>
+          <button class="panel-close" @click="closeApplication">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="atm-content">
+          <div class="atm-info">
+            <span><strong>{{ playerName }}</strong></span>
+            <span>Cash: ${{ formatCurrency(playerCash) }}</span>
+            <span>CID: {{ accountNumber }}</span>
+          </div>
+          <div class="atm-withdraw">
+            <h4>Withdraw Dinero</h4>
+            <label>Account:</label>
+            <select v-model="selectedMoneyAccount">
+              <option 
+                v-for="account in accounts" 
+                :key="account.name" 
+                :value="account"
+              >
+                {{ account.name }}
+              </option>
+            </select>
+
+            <label>Amount:</label>
+            <input type="number" v-model="selectedMoneyAmount" />
+
+            <label>Reason:</label>
+            <input type="text" v-model="moneyReason" placeholder="(Opcional)" />
+
+            <button class="action-btn" @click="withdrawMoney">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </transition>
+
+    <!-- Prompt de PIN -->
+    <div class="pin-overlay" v-show="showPinPrompt">
+      <div class="pin-window">
+        <h3>Enter your PIN</h3>
+        <input type="password" v-model="enteredPin" readonly />
+        <div class="pin-pad">
+          <button v-for="n in 9" :key="n" @click="appendNumber(n)">{{n}}</button>
+          <button @click="appendNumber(0)">0</button>
+        </div>
+        <div class="pin-actions">
+          <button class="action-btn danger" @click="enteredPin = ''">Delete</button>
+          <button class="action-btn" @click="pinPrompt(enteredPin)">Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script principal (sin cambios) -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+    "apps": {
+        "Settings": {
+            "name": "Settings",
+            "removable": false
+        },
+        "Browser": {
+            "name": "Browser",
+            "removable": false
+        },
+        "Mail": {
+            "name": "Mail",
+            "removable": false
+        },
+        "Maps": {
+            "name": "Maps",
+            "removable": false
+        },
+        "Notes": {
+            "name": "Notes",
+            "removable": false
+        },
+        "Police": {
+            "name": "Police",
+            "icon": "./assets/img/icons/apps/Police.png",
+            "removable": false
+        },
+        "Ambulance": {
+            "name": "EMS",
+            "icon": "./assets/img/icons/apps/Ambulance.png",
+            "removable": false
+        },
+        "Registration": {
+            "name": "Registration",
+            "removable": false
+        },
+        "Calculator": {
+            "name": "Calculator",
+            "removable": false
+        },
+        "Apps": {
+            "name": "Apps",
+            "removable": false
+        },
+        "Camera": {
+            "name": "Camera",
+            "removable": false
+        },
+        "Photos": {
+            "name": "Photos",
+            "removable": false
+        },
+        "Services": {
+            "name": "Services",
+            "removable": true
+        },
+        "Clock": {
+            "name": "Clock",
+            "removable": false
+        },
+        "VoiceMemo": {
+            "name": "Voice Memo",
+            "removable": false
+        }
+    },
+    "Wallpapers": {
+        "default": "default.webp",
+        "cloud": "cloud.webp",
+        "cloud2": "cloud2.webp",
+        "cloud3": "cloud3.webp",
+        "cloud4": "cloud4.webp",
+        "cloud5": "cloud5.webp",
+        "cloud6": "cloud6.webp",
+        "cloud7": "cloud7.webp",
+        "cloud8": "cloud8.webp",
+        "cloud9": "cloud9.webp",
+        "cloud10": "cloud10.webp",
+        "cloud11": "cloud11.webp",
+        "cloud12": "cloud12.webp",
+        "mountain": "mountain_01.webp",
+        "mountain2": "mountain_02.webp",
+        "mountain3": "mountain_03.webp",
+        "mountain4": "mountain_04.webp",
+        "mountain5": "mountain_05.webp",
+        "mountain6": "mountain_06.webp",
+        "mountain7": "mountain_07.webp",
+        "desert": "desert_01.webp",
+        "desert2": "desert_02.webp",
+        "desert3": "desert_03.webp",
+        "desert4": "desert_04.webp",
+        "desert5": "desert_05.webp",
+        "rose": "rose.webp",
+        "rose2": "rose2.webp",
+        "rose3": "rose3.webp",
+        "wallpaper": "wallpaper.webp",
+        "wallpaper2": "wallpaper2.webp",
+        "wallpaper3": "wallpaper3.webp",
+        "wallpaper4": "wallpaper4.webp",
+        "wallpaper5": "wallpaper5.webp",
+        "wallpaper6": "wallpaper6.webp",
+        "wallpaper7": "wallpaper7.webp",
+        "wallpaper8": "wallpaper8.webp",
+        "wallpaper9": "wallpaper9.webp",
+        "wallpaper10": "wallpaper10.webp",
+        "wallpaper11": "wallpaper11.webp",
+        "wallpaper12": "wallpaper12.webp",
+        "wallpaper13": "wallpaper13.webp",
+        "wallpaper14": "wallpaper14.webp",
+        "wallpaper15": "wallpaper15.webp",
+        "wallpaper16": "wallpaper16.webp",
+        "wallpaper17": "wallpaper17.webp",
+        "wallpaper18": "wallpaper18.webp",
+        "wallpaper19": "wallpaper19.webp",
+        "wallpaper20": "wallpaper20.webp",
+        "wallpaper21": "wallpaper21.webp"
+    },
+    "WorldClockLocations": {
+        "New York": "America/New_York",
+        "London": "Europe/London",
+        "Paris": "Europe/Paris",
+        "Tokyo": "Asia/Tokyo",
+        "Sydney": "Australia/Sydney",
+        "Los Angeles": "America/Los_Angeles",
+        "New Delhi": "Asia/Kolkata",
+        "Hong Kong": "Asia/Hong_Kong",
+        "Rio de Janeiro": "America/Sao_Paulo",
+        "Mexico City": "America/Mexico_City",
+        "Cape Town": "Africa/Johannesburg",
+        "Stockholm": "Europe/Stockholm",
+        "Hawaii": "Pacific/Honolulu"
+    }
+}

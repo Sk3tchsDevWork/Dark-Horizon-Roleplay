@@ -1,0 +1,1928 @@
+{
+    "LABEL": "Deutsch",
+    "SEARCH": "Suchen",
+    "CANCEL": "Abbrechen",
+    "NOW": "jetzt",
+    "D": "T",
+    "H": "Std",
+    "M": "Min",
+    "S": "Sek",
+
+    "APP_NAMES": {
+        "Police": "Polizei",
+        "Ambulance": "Krankenhause",
+        "Registration": "Registrieren",
+        "Notes": "Notizen",
+        "Browser": "Browser",
+        "Settings": "Einstellungen",
+        "Photos": "Fotos",
+        "Camera": "Kamera",
+        "Calculator": "Taschenrechner",
+        "Apps": "Apps",
+        "Clock": "Uhr",
+        "Maps": "Karten",
+        "Mail": "E-Mail",
+        "Services": "Dienste",
+        "VoiceMemo": "Sprachmemos"
+    },
+
+    "APPS": {
+        "SETTINGS": {
+            "TITLE": "Einstellungen",
+            "BACK": "Zurück",
+            "DONE": "Fertig",
+            "EDIT": "Bearbeiten",
+            "AIRPLANE_MODE": "Flugmodus",
+            "AIRPLANE_MODE_DESCRIPTION": "Deaktiviert Anrufe, mobile Daten usw.",
+            "STREAMER_MODE": "Streamer-Modus",
+            "STREAMER_MODE_DESCRIPTION": "Verschleiert sensible Informationen",
+            "GENERAL": "Allgemein",
+            "GENERAL_DESCRIPTION": "Allgemeine Einstellungen für dein Tablet",
+            "ABOUT": "Über",
+            "NAME": "Name",
+            "VERSION": "Version",
+            "MODEL_NAME": "Modellname",
+            "SERIAL_NUMBER": "Seriennummer",
+            "DEVELOPED_BY": "Entwickelt von",
+            "PURCHASE_AT": "Gekauft bei",
+            "SONGS": "Lieder",
+            "VIDEOS": "Videos",
+            "PHOTOS": "Fotos",
+            "APPLICATIONS": "Anwendungen",
+            "CAPACITY": "Kapazität",
+            "AVAILABLE": "Verfügbar",
+            "SOFTWARE_UPDATE": "Software-Update",
+            "AUTOMATIC_UPDATES": "Automatische Updates",
+            "DATE_TIME": "Datum & Uhrzeit",
+            "24_HOUR_TIME": "24-Stunden-Zeit",
+            "SET_AUTOMATICALLY": "Automatisch einstellen",
+            "TIME_ZONE": "Zeitzone",
+            "LANGUAGE_REGION": "Sprache & Region",
+            "LANGUAGE": "Sprache",
+            "TEMPERATURE": "Temperatur",
+            "CELCIUS": "Celsius",
+            "FAHRENHEIT": "Fahrenheit",
+            "BATTERY": "Akku",
+            "BATTERY_DESCRIPTION": "Akku-Lebensdauer und -Nutzung anzeigen",
+            "SOUND_HAPTICS": "Ton & Haptik",
+            "SOUND_HAPTICS_DESCRIPTION": "Töne und Vibrationen ändern",
+            "SOUND_HAPTICS_PATTERNS": "Ton- und Haptikmuster",
+            "RINGTONE": "Klingelton",
+            "RINGTONE_VOLUME": "Klingelton Lautstärke",
+            "TEXT_TONE": "Textton",
+            "DEFAULT": "Standard",
+            "PHONE_STORAGE": "Tablet-Speicher",
+            "STORAGE": "Speicher",
+            "USED": "Verwendet",
+            "OF": "von",
+            "DISPLAY_BRIGHTNESS": "Anzeige & Helligkeit",
+            "DISPLAY_BRIGHTNESS_DESCRIPTION": "Anzeige & Helligkeit anpassen",
+            "DARK": "Dunkel",
+            "LIGHT": "Hell",
+            "APPEARANCE": "Aussehen",
+            "AUTOMATIC": "Automatisch",
+            "BRIGHTNESS": "Helligkeit",
+            "FRAME_COLOR": "Rahmenfarbe",
+            "TABLET_SCALE": "Tabletten Größe",
+            "WALLPAPER": "Hintergrundbild",
+            "WALLPAPER_DESCRIPTION": "Hintergrundbild und andere Hintergrundeinstellungen ändern",
+            "WALLPAPERS": "Hintergrundbilder",
+            "CHOOSE_NEW_WALLPAPER": "Neues Hintergrundbild auswählen",
+            "NOTIFICATIONS": "Benachrichtigungen",
+            "NOTIFICATIONS_DESCRIPTION": "Auswählen, welche Apps Benachrichtigungen senden dürfen",
+            "ALLOW_NOTIFICATIONS": "Benachrichtigungen erlauben",
+            "SOUNDS": "Töne",
+            "CLOUD_BACKUP": "Cloud-Backup",
+            "YOUR_PROFILE": "Dein Profil",
+            "SUCCESS": "Erfolg",
+            "SUCCESS_TEXT": "Tablet startet in 5 Sekunden neu...",
+            "OK": "OK",
+            "ON": "An",
+            "OFF": "Aus",
+
+            "RESET_POPUP": {
+                "TITLE": "Tablet zurücksetzen",
+                "TEXT": "Bist du sicher, dass du dein Tablet zurücksetzen möchtest? [DIES WIRD ALLES LÖSCHEN]",
+                "CANCEL": "Abbrechen",
+                "CONFIRM": "Zurücksetzen"
+            },
+            "UP_TO_DATE": "Dein Tablet ist auf dem neuesten Stand",
+            "BLUR_HOMESCREEN": "Startbildschirm verwischen"
+        },
+        "NOTES": {
+            "TITLE": "Notizen",
+            "SEARCH_PLACEHOLDER": "Suchen",
+            "FOOTER": "{amount} Notizen",
+            "NEW_NOTE": "Neue Notiz",
+            "LAST_EDITED": "Zuletzt bearbeitet: {date}",
+            "DELETE_TITLE": "{title} löschen",
+            "DELETE_TEXT": "Bist du sicher, dass du '{title}' löschen möchtest?",
+            "BUTTON_CANCEL": "Abbrechen",
+            "BUTTON_DELETE": "Löschen"
+        },
+        "CLOCK": {
+            "WORLDCLOCK": {
+                "TITLE": "Weltuhr",
+                "TODAY": "Heute",
+                "TOMORROW": "Morgen",
+                "YESTERDAY": "Gestern",
+                "LOCAL_TIME": "Ortszeit",
+                "HRS": "{time} Std"
+            },
+            "ALARM": {
+                "TITLE": "Wecker",
+                "ADD": "Wecker hinzufügen",
+                "CANCEL": "Abbrechen",
+                "EDIT": "Bearbeiten",
+                "DONE": "Fertig",
+                "SAVE": "Speichern",
+                "LABEL": "Bezeichnung",
+                "SOUND": "Ton",
+                "SNOOZE": "Schlummern",
+                "DELETE_TITLE": "Wecker löschen",
+                "DELETE_TEXT": "Bist du sicher, dass du diesen Wecker löschen möchtest?",
+                "BUTTON_CANCEL": "Abbrechen",
+                "BUTTON_DELETE": "Löschen",
+                "ALARMS": "Wecker",
+                "NEW_ALARM": "Neuer Wecker",
+                "EDIT_ALARM": "Wecker bearbeiten"
+            },
+            "STOPWATCH": {
+                "TITLE": "Stoppuhr",
+                "START": "Start",
+                "STOP": "Stopp",
+                "RESET": "Zurücksetzen",
+                "LAP": "Runde",
+                "TIME": "Zeit",
+                "TOTAL": "Gesamt",
+                "NO_LAPS": "Keine Runden"
+            },
+            "TIMER": {
+                "TITLE": "Timer",
+                "START": "Start",
+                "STOP": "Stopp",
+                "CANCEL": "Abbrechen",
+                "HOURS": "Stunden",
+                "MINUTES": "Minuten",
+                "SECONDS": "Sekunden",
+                "NO_RECENTS": "Keine letzten Timer"
+            },
+            "ALERT": {
+                "STOP": "Stopp",
+                "RESTART": "Neustart"
+            }
+        },
+        "CAMERA": {
+            "VIDEO": "Video",
+            "PHOTO": "Foto",
+            "LANDSCAPE": "Landschaft",
+            "UPLOADING": "Hochladen"
+        },
+        "APPSTORE": {
+            "TITLE": "Apps",
+            "SEARCH": "Suchen",
+            "GET": "Laden",
+            "OPEN": "Öffnen",
+            "TODAY": "Heute",
+            "POPULAR_APPS": "Beliebte Apps",
+            "GAMES": "Spiele",
+            "APPS": "Apps",
+            "WHAT_WE_PLAYING": "Was wir spielen",
+            "INFORMATION": "Informationen",
+            "PROVIDER": "Anbieter",
+            "SIZE": "Größe",
+            "COMPATIBILITY": "Kompatibilität",
+            "IN_APP_PURCHASES": "In-App-Käufe",
+            "WORKS_WITH_PHONE": "Funktioniert mit diesem Tablet",
+            "NO": "Nein",
+            "YES": "Ja",
+            "PURCHASE_APP_POPUP": {
+                "TITLE": "App kaufen",
+                "DESCRIPTION": "Möchtest du {app} für {price} kaufen?",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Kaufen"
+            }
+        },
+        "PHOTOS": {
+            "TITLE": "Fotos",
+            "SELECT": "Auswählen",
+            "CANCEL": "Abbrechen",
+            "EDIT": "Bearbeiten",
+            "DONE": "Fertig",
+            "DELETE": "Löschen",
+            "SELECT_ITEMS": "Elemente auswählen",
+            "SELECTED_COUNT": "{count} Elemente ausgewählt",
+
+            "PHOTOS": "Fotos",
+            "ALBUMS": "Alben",
+            "LIBRARY": "Bibliothek",
+            "GALLERY": "Galerie",
+            "MY_ALBUMS": "Meine Alben",
+            "MEDIA_TYPES": "Medientypen",
+            "NEW_ALBUM_POPUP": {
+                "TITLE": "Neues Album",
+                "DESCRIPTION": "Gib einen Namen für dieses Album ein",
+                "PLACEHOLDER": "Titel",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Speichern"
+            },
+            "REMOVE_ALBUM": {
+                "TITLE": "\"{name}\" entfernen",
+                "DESCRIPTION": "Möchtest du das Album \"{name}\" wirklich löschen? Die Fotos werden nicht gelöscht.",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Entfernen"
+            },
+            "RENAME_ALBUM_POPUP": {
+                "TITLE": "Album umbenennen",
+                "DESCRIPTION": "Gib einen neuen Namen für dieses Album ein",
+                "PLACEHOLDER": "Neuer Albumname",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "DELETE_IMAGE_POPUP": {
+                "TITLE": "Bild löschen",
+                "DESCRIPTION": "Bist du sicher, dass du dieses Bild löschen möchtest?",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Löschen"
+            },
+            "IMPORT_IMAGE_POPUP": {
+                "TITLE": "In Album importieren",
+                "DESCRIPTION": "Ein Bild in dieses Album importieren",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Importieren",
+                "PLACEHOLDER": "Bild-URL"
+            },
+
+            "NO_PHOTOS": "Keine Fotos oder Videos",
+            "NO_PHOTOS_INSTRUCTIONS": "Du kannst Fotos und Videos mit der Kamera aufnehmen",
+            "PHOTO_COUNT": "{amount} Fotos",
+            "VIDEO_COUNT": "{amount} Videos",
+
+            "DELETE_CONTEXT_TITLE": "Möchtest du {type} löschen oder aus diesem Album entfernen?",
+            "THESE_PHOTOS": "diese Fotos",
+            "THIS_PHOTO": "dieses Foto",
+            "REMOVE_FROM_ALBUM": "Aus Album entfernen",
+            "ADD_TO_ALBUM": "Zum Album hinzufügen",
+            "ADD_TO_FAVOURITES": "Zu Favoriten hinzufügen",
+            "REMOVE_FROM_FAVOURITES": "Aus Favoriten entfernen",
+            "VIDEOS": "Videos",
+            "SELFIES": "Selfies",
+            "SCREENSHOTS": "Screenshots",
+            "IMPORTS": "Importe",
+            "DUPLICATES": "Duplikate",
+            "YEARS": "Jahre",
+            "MONTHS": "Monate",
+            "DAYS": "Tage",
+            "ALL_PHOTOS": "Alle Fotos",
+
+            "FAVOURITES": "Favoriten",
+            "RECENTS": "Zuletzt"
+        },
+        "MAIL": {
+            "TITLE": "E-Mail",
+            "YOU": "Du",
+            "UPDATED_NOW": "Gerade eben aktualisiert",
+            "NEW_MESSAGE": "Neue Nachricht",
+            "INBOX": "Posteingang",
+            "TO": "An",
+            "FROM": "Von",
+            "SUBJECT": "Betreff",
+            "MESSAGE": "Nachricht",
+            "CANCEL": "Abbrechen",
+            "SEND": "Senden",
+            "EMAIL": "E-Mail",
+            "EMAIL_INVALID": "Ungültige E-Mail-Adresse",
+            "EMAIL_EXISTS": "E-Mail existiert bereits",
+            "PASSWORD": "Passwort",
+            "WRONG_PASSWORD": "Falsches Passwort",
+            "LOGIN": "Anmelden",
+            "NO_EMAIL": "Keine E-Mail-Adresse?",
+            "CREATE_ONE": "Erstellen",
+            "UNREAD": "Ungelesen",
+            "CREATE_MAIL": "E-Mail erstellen",
+            "ALREADY_HAVE": "Schon eine E-Mail-Adresse?",
+            "ADD_EMAIL": "E-Mail hinzufügen",
+            "RE": "Re: {subject}",
+            "CHANGE_ACCOUNT": "Konto wechseln",
+            "CHANGE_PASSWORD": "Passwort ändern",
+            "DELETE_ACCOUNT": "Konto löschen",
+            "SIGN_OUT_POPUP": {
+                "TITLE": "Abmelden",
+                "DESCRIPTION": "Möchtest du dich wirklich abmelden?",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "DELETE_MAIL_POPUP": {
+                "TITLE": "E-Mail löschen",
+                "DESCRIPTION": "Möchtest du diese E-Mail wirklich löschen?",
+                "CANCEL": "Abbrechen",
+                "DELETE": "Löschen"
+            }
+        },
+        "VOICEMEMO": {
+            "TITLE": "Sprachmemo",
+            "VOICE_RECORDINGS": "Sprachaufnahmen",
+            "SEARCH_RECORDINGS": "Aufnahmen durchsuchen",
+            "DEFAULT_NAME": "Neue Aufnahme",
+            "DELETE_POPUP": {
+                "TITLE": "Sprachmemo löschen",
+                "DESCRIPTION": "Möchtest du dieses Sprachmemo wirklich löschen?",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "NO_MICROPHONE_POPUP": {
+                "TITLE": "Kein Mikrofon",
+                "DESCRIPTION": "Wir haben keinen Zugriff auf dein Mikrofon. Stelle sicher, dass ein Mikrofon verbunden ist und akzeptiere das Popup oben rechts auf deinem Bildschirm.",
+                "OK": "OK"
+            },
+            "EMPTY_RECORDING_POPUP": {
+                "TITLE": "Leere Aufnahme",
+                "DESCRIPTION": "Du kannst keine Aufnahme ohne Audio speichern.",
+                "OK": "OK"
+            }
+        },
+        "SERVICES": {
+            "ACTIONS": "Aktionen",
+            "COMPANIES": "Unternehmen",
+            "MESSAGES": "Nachrichten",
+            "SETTINGS": "Einstellungen",
+
+            "CLOSED": "Geschlossen",
+            "YOUR_MESSAGES": "Deine Nachrichten",
+            "JOB_MESSAGES": "Job-Nachrichten",
+
+            "DUTY": "Dienst",
+            "DUTY_DESCRIPTION": "Wechsle deinen Dienststatus",
+            "GO_ON_DUTY": "Dienst antreten",
+            "GO_OFF_DUTY": "Dienst verlassen",
+            "JOB_CALLS": "Job-Anrufe",
+            "JOB_CALLS_DESCRIPTION": "{toggle}, Anrufe von Kunden zu empfangen.",
+
+            "ENABLE": "Aktivieren",
+            "DISABLE": "Deaktivieren",
+
+            "DISABLE_CALLS": "Anrufe deaktivieren",
+            "ENABLE_CALLS": "Anrufe aktivieren",
+            "BALANCE": "Konto",
+            "CURRENT_BALANCE": "Aktuelle Bilanz des Unternehmens",
+            "MANAGE_EMPLOYEES": "Mitarbeiter verwalten",
+            "HIRE": "Einstellen",
+            "SET_GRADE": "Rang festlegen",
+            "UNEMPLOYED": "Du bist arbeitslos",
+
+            "ALL": "Alle",
+            "AVAILABLE": "Verfügbar",
+            "SEARCH_EMPLOYEES": "Mitarbeiter suchen",
+
+            "PERSONAL": "Persönlich",
+            "JOB": "Job",
+            "PLACEHOLDER": "Textnachricht",
+            "NOT_DELIVERED": "Nicht zugestellt",
+            "SENT_LOCATION": "Hat seinen Standort geteilt, klicken Sie, um ihn in Maps zu öffnen",
+            "SENT_LOCATION_SHORT": "Hat seinen Standort geteilt",
+            "SEND_LOCATION_POPUP": {
+                "TITLE": "Standort teilen",
+                "TEXT": "Möchten Sie Ihren Standort teilen?",
+                "CANCEL": "Abbrechen",
+                "SEND": "Senden"
+            },
+            "DELETE_CONVERSATION": {
+                "TITLE": "Konversation löschen",
+                "DESCRIPTION": "Sind Sie sicher, dass Sie diese Konversation löschen möchten?",
+                "CANCEL": "Abbrechen",
+                "DELETE": "Löschen"
+            },
+
+            "DEPOSIT_POPUP": {
+                "TITLE": "Einzahlen",
+                "DESCRIPTION": "Geld auf das Unternehmenskonto einzahlen",
+                "AMOUNT": "Betrag",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "WITHDRAW_POPUP": {
+                "TITLE": "Abheben",
+                "DESCRIPTION": "Geld vom Unternehmenskonto abheben",
+                "NOT_ENOUGH_MONEY": "Nicht genug Geld auf dem Unternehmenskonto",
+                "AMOUNT": "Betrag",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "HIRE_POPUP": {
+                "TITLE": "Einstellen",
+                "DESCRIPTION": "Einen neuen Mitarbeiter einstellen",
+                "PLACEHOLDER": "ID",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "FIRE_POPUP": {
+                "TITLE": "Entlassen",
+                "DESCRIPTION": "Möchtest du {name} wirklich entlassen?",
+                "PLACEHOLDER": "ID",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            }
+        },
+        "POLICE": {
+            "CANCEL": "Abbrechen",
+            "CLOSE": "Schließen",
+            "BACK": "Zurück",
+            "EDIT": "Bearbeiten",
+            "DELETE": "Löschen",
+            "REMOVE": "Entfernen",
+            "SAVE": "Speichern",
+            "CREATE": "Erstellen",
+            "OK": "OK",
+            "ADD": "Hinzufügen",
+            "NEW": "Neu",
+            "PROCEED": "Fortfahren",
+            "YES": "Yes",
+            "NO": "No",
+            "ALL": "Alle",
+            "ADD_TAB": "Tab Hinzufügen",
+
+            "SEARCH": "Suchen",
+            "SEARCH_FOR": "Suche nach {query}, um zu starten",
+            "NO_RESULTS_FOR": "Keine Ergebnisse gefunden für '{query}'",
+            "CLEAR_HISTORY": "Verlauf löschen",
+
+            "HOME": {
+                "TITLE": "Startseite",
+                "CREATE": "Erstellen",
+
+                "RECENT_REPORTS": "Neueste Berichte",
+                "REPORT_FOOTER": "{timestamp} - {author}",
+                "BULLETIN_BOARD": "Schwarzes Brett",
+                "PIN": "Anheften",
+                "UNPIN": "Lösen",
+                "SEARCH_BULLETIN": "Schwarzes Brett durchsuchen",
+                "SEARCH_UNITS": "Einheiten durchsuchen",
+                "DELETE_BULLETIN": {
+                    "TITLE": "Bulletin löschen",
+                    "DESCRIPTION": "Möchten Sie diesen Bulletin-Beitrag wirklich löschen?",
+                    "CANCEL": "Abbrechen",
+                    "DELETE": "Löschen"
+                },
+                "RECENT_WARRANTS": "Neueste Haftbefehle",
+                "ACTIVE_UNITS": "Aktive Einheiten"
+            },
+            "BULLETIN": {
+                "TITLE": "Bulletin",
+                "LABEL": "Bulletin Board",
+                "SEARCH": "Bulletin suchen",
+                "SEARCH_PLACEHOLDER": "Bulletin suchen",
+                "SEARCH_FOR": "Suchen Sie nach {query}, um loszulegen",
+                "NO_RESULTS_FOR": "Keine Ergebnisse gefunden für '{query}'",
+                "NEW_BULLETIN": "Neues Bulletin",
+
+                "DELETE_BULLETIN": {
+                    "TITLE": "Bulletin löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie dieses Bulletin löschen wollen?"
+                }
+            },
+
+            "DISPATCH": {
+                "TITLE": "Leitstelle",
+                "SEARCH_ALARMS": "Alarme suchen",
+                "SHOW_OFFICERS": "Beamte anzeigen",
+                "SHOW_EMPLOYEES": "Mitarbeiter anzeigen",
+                "SHOW_ALARMS": "Alarme anzeigen",
+                "SHOW_POPUPS": "Popups anzeigen",
+                "OPTIONS": "Options",
+                "OFFICERS": "Beamte",
+                "ALARMS": "Alarme",
+                "MAP": "Karte",
+                "LIST": "Liste",
+
+                "RESPOND": "Reagieren",
+                "RESPONDED": "Antwortet",
+                "COLLAPSE": "Einklappen",
+                "EXPAND": "Erweitern",
+                "DISMISS": "Verwerfen",
+                "VIEW_IN_TABLET": "Im Tablet anzeigen",
+                "SET_WAYPOINT": "Wegpunkt setzen",
+                "LOS_SANTOS": "Los Santos",
+                "CAYO_PERICO": "Cayo Perico",
+                "OLD_NOTIFICATION": "{count} alte Meldung",
+                "OLD_NOTIFICATIONS": "{count} alte Meldungen",
+                "NEW_NOTIFICATION": "{count} neue Meldung",
+                "NEW_NOTIFICATIONS": "{count} neue Meldungen",
+
+                "PRIORITY_LEVELS": {
+                    "HIGH": "Hoch",
+                    "MEDIUM": "Mittel",
+                    "LOW": "Niedrig"
+                },
+                "PRIORITY": "Priorität",
+                "TIME": "Zeit",
+                "CODE": "Code",
+                "LOCATION": "Ort",
+                "RESPONDERS": "Antwortende",
+                "ACTIONS": "Handlungen",
+                "NONE": "Kein",
+                "REMOVE": "Abziehen",
+                "REMOVE_ALL": "Alle Abziehen",
+                "VIEW": "Siehe",
+
+                "JUST_NOW": "Gerade eben",
+                "MINUTES_AGO": "Vor {minutes} Minuten",
+                "HOURS_AGO": "Vor {hours} Stunden",
+                "REMOVE_ALARM": {
+                    "TITLE": "Alarm löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie den Alarm löschen wollen? (Dadurch wird die Meldung für alle Mitarbeiter entfernt)",
+                    "CANCEL": "Abbrechen",
+                    "REMOVE": "Abziehen"
+                },
+                "REMOVE_ALL_ALARMS": {
+                    "TITLE": "Alle Alarme beseitigen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie alle Alarme entfernen wollen? (Dadurch wird die Meldung für alle Mitarbeiter entfernt)"
+                },
+
+                "REMOVE_FOR_YOURSELF": "Für sich selbst entfernen",
+                "REMOVE_FOR_EVERYONE": "Für alle entfernen"
+            },
+            "UNITS": {
+                "TITLE": "Einheit",
+                "AVALIABLE_OFFICERS": "Verfügbare Beamte",
+                "SEARCH_OFFICERS": "Beamte suchen",
+                "DROP_OFFICER": "Beamten hier ablegen",
+                "DROP_OFFICER_AVAILABLE": "Hier ablegen, um Beamten verfügbar zu machen",
+                "OFFICER": "Beamter",
+                "OFFICERS": "Beamte",
+                "NO_UNITS": "Fügen Sie eine Einheit hinzu, um zu beginnen",
+                "ADD_UNIT": {
+                    "TITLE": "Einheit hinzufügen",
+                    "DESCRIPTION": "Neue Einheit erstellen",
+                    "PLACEHOLDER": "Einheitsname"
+                },
+                "RENAME_UNIT": {
+                    "TITLE": "Einheit umbenennen",
+                    "DESCRIPTION": "Einheit umbenennen",
+                    "PLACEHOLDER": "Einheitsname"
+                },
+                "DELETE_UNIT": {
+                    "TITLE": "Einheit löschen",
+                    "DESCRIPTION": "Möchten Sie diese Einheit wirklich löschen?"
+                }
+            },
+
+            "PROFILES": {
+                "TITLE": "Profile",
+                "PERSON": "Person",
+                "SEARCH": "Profile suchen",
+                "REMOVE_AVATAR": "Avatar entfernen",
+                "IDENTIFIER": "Bezeichner",
+                "FINGERPRINT": "Fingerabdruck",
+                "DOB": "Geburtsdatum",
+                "PHONE_NR": "Telefonnummer",
+                "GENDER": "Geschlecht",
+                "JOB": "Beruf",
+                "MALE": "Männlich",
+                "FEMALE": "Weiblich",
+                "NOTES": "Notizen",
+                "NOTES_PLACEHOLDER": "Notizen hier eingeben...",
+
+                "LICENSES": {
+                    "TITLE": "Lizenzen",
+                    "ADD_LICENSE": "Lizenz hinzufügen",
+                    "ADD": "Hinzufügen",
+                    "NO_LICENSES": "Keine Lizenzen",
+                    "REVOKE_LICENSE": {
+                        "TITLE": "Lizenz entziehen",
+                        "DESCRIPTION": "Möchten Sie die Lizenz {license} wirklich entziehen?",
+                        "CANCEL": "Abbrechen",
+                        "REVOKE": "Entziehen"
+                    }
+                },
+
+                "ADD_AVATAR": {
+                    "TITLE": "Avatar hinzufügen",
+                    "SET_PHOTO": "Foto festlegen",
+                    "PASTE_URL": "URL einfügen",
+                    "PASTE_URL_DESCRIPTION": "Geben Sie eine URL zu einem Bild ein",
+                    "PASTE_URL_PLACEHOLDER": "Bild-URL",
+
+                    "INVALID_URL": "Ungültige URL",
+                    "INVALID_URL_DESCRIPTION": "Die eingegebene URL ist keine gültige Bild-URL",
+                    "OK": "OK"
+                },
+
+                "VEHICLES": "Fahrzeuge",
+                "NO_VEHICLES": "Keine Fahrzeuge",
+                "PROPERTIES": "Immobilien",
+                "NO_PROPERTIES": "Keine Immobilien",
+                "REPORTS": "Berichte",
+                "NO_REPORTS": "Keine Berichte",
+                "CASES": "Fälle",
+                "NO_CASES": "Keine Fälle",
+                "WEAPONS": "Waffen",
+                "NO_WEAPONS": "Keine Waffen",
+                "WARRANTS": "Haftbefehle",
+                "NO_WARRANTS": "Keine Haftbefehle",
+                "ACTIVE_WARRANTS": "Aktive Haftbefehle",
+                "INVOLVED": "Involviert",
+                "CHARGES": "Anklagen",
+                "NO_CHARGES": "Keine Anklagen"
+            },
+
+            "VEHICLES": {
+                "TITLE": "Fahrzeuge",
+                "VEHICLE": "Fahrzeug",
+                "SEARCH": "Fahrzeuge suchen",
+                "REMOVE_PICTURE": "Bild entfernen",
+                "DETAILS": "Details",
+
+                "ADD_PHOTO": {
+                    "TITLE": "Foto hinzufügen",
+                    "SELECT_PHOTO": "Foto auswählen",
+                    "PASTE_URL": "URL einfügen",
+                    "PASTE_URL_DESCRIPTION": "Geben Sie eine URL zu einem Bild ein",
+                    "PASTE_URL_PLACEHOLDER": "Bild-URL",
+
+                    "INVALID_URL": "Ungültige URL",
+                    "INVALID_URL_DESCRIPTION": "Die eingegebene URL ist keine gültige Bild-URL",
+                    "OK": "OK"
+                },
+                "MODEL": "Modell",
+                "PLATE": "Kennzeichen",
+                "COLOR": "Farbe",
+                "LOCATION": "Standort",
+                "OWNER": "Eigentümer",
+                "NOTES": "Notizen",
+                "NOTES_PLACEHOLDER": "Notizen hier eingeben...",
+                "SET_WAYPOINT": "Wegpunkt setzen",
+                "OPEN_IN_MAPS": "In Karten öffnen",
+                "WAYPOINT_SET": "Wegpunkt gesetzt",
+                "WAYPOINT_SET_DESCRIPTION": "Der Wegpunkt wurde auf den Standort des Fahrzeugs gesetzt",
+                "CASES": "Fälle",
+                "NO_CASES": "Keine Fälle",
+                "WARRANTS": "Haftbefehle",
+                "NO_WARRANTS": "Keine Haftbefehle",
+                "ACTIVE_WARRANTS": "Aktive Haftbefehle"
+            },
+            "PROPERTIES": {
+                "TITLE": "Immobilien",
+                "PROPERTY": "Immobilien",
+                "SEARCH": "Immobilien suchen",
+                "REMOVE_PICTURE": "Bild entfernen",
+                "DETAILS": "Details",
+                "ADD_PHOTO": {
+                    "TITLE": "Foto hinzufügen",
+                    "SELECT_PHOTO": "Foto auswählen",
+                    "PASTE_URL": "URL einfügen",
+                    "PASTE_URL_DESCRIPTION": "Geben Sie eine URL zu einem Bild ein",
+                    "PASTE_URL_PLACEHOLDER": "Bild-URL",
+            
+                    "INVALID_URL": "Ungültige URL",
+                    "INVALID_URL_DESCRIPTION": "Die eingegebene URL ist keine gültige Bild-URL",
+                    "OK": "OK"
+                },
+                "LABEL": "Bezeichnung",
+                "ADDRESS": "Adresse",
+                "OWNER": "Eigentümer",
+                "LOCATION": "Standort",
+                "OPEN_IN_MAPS": "In Karten öffnen",
+                "NOTES": "Notizen",
+                "NOTES_PLACEHOLDER": "Notizen hier eingeben..."
+            },
+            "WEAPONS": {
+                "TITLE": "Waffen",
+                "WEAPON": "Waffe",
+                "SEARCH": "Waffen suchen",
+                "REMOVE_PICTURE": "Bild entfernen",
+                "DETAILS": "Details",
+                "ADD_PHOTO": {
+                    "TITLE": "Foto hinzufügen",
+                    "SELECT_PHOTO": "Foto auswählen",
+                    "PASTE_URL": "URL einfügen",
+                    "PASTE_URL_DESCRIPTION": "Geben Sie eine URL zu einem Bild ein",
+                    "PASTE_URL_PLACEHOLDER": "Bild-URL",
+
+                    "INVALID_URL": "Ungültige URL",
+                    "INVALID_URL_DESCRIPTION": "Die eingegebene URL ist keine gültige Bild-URL",
+                    "OK": "OK"
+                },
+                "MODEL_MAKE": "Modell / Hersteller",
+                "SERIAL_NUMBER": "Seriennummer",
+                "NOTES": "Notizen",
+                "NOTES_PLACEHOLDER": "Notizen hier eingeben...",
+                "LINKED_REPORTS": "Verknüpfte Berichte",
+                "NO_LINKED_REPORTS": "Keine verknüpften Berichte",
+                "LINKED_CASES": "Verknüpfte Fälle",
+                "NO_LINKED_CASES": "Keine verknüpften Fälle",
+                "UNREGISTERED": "Nicht registriert",
+                "OWNER": "Besitzer",
+                "SELECT_MODEL": "Modell wählen",
+                "SELECT_OWNER": "Besitzer auswählen",
+                "DELETE_WEAPON": {
+                    "TITLE": "Waffe löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie diese Waffe löschen wollen?"
+                }
+            },
+
+            "REPORTS": {
+                "TITLE": "Berichte",
+                "REPORT": "Bericht",
+                "SEARCH": "Berichte suchen",
+                "FOOTER": "{author} - Bericht ID: {id}",
+                "NEW_REPORT_TITLE": "Neuer Bericht",
+                "TYPE": "Typ",
+                "DESCRIPTION": "Beschreibung",
+                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
+                "GALLERY": "Galerie",
+                "NO_ATTACHMENTS": "Keine Anhänge",
+                "WEAPONS_INVOLVED": "Beteiligte Waffen",
+                "NO_WEAPONS_INVOLVED": "Keine Waffen beteiligt",
+                "REMOVE_WEAPON": {
+                    "TITLE": "Waffe entfernen",
+                    "DESCRIPTION": "Bist du sicher, dass du die Waffe aus dem Bericht entfernen möchtest?"
+                },
+                "OFFICERS_INVOLVED": "Beteiligte Beamte",
+                "NO_OFFICERS_INVOLVED": "Keine Beamten beteiligt",
+                "REMOVE_OFFICER": {
+                    "TITLE": "Beamten entfernen",
+                    "DESCRIPTION": "Möchten Sie {name} wirklich aus dem Bericht entfernen?"
+                },
+                "CIVILLIANS_INVOLVED": "Beteiligte Zivilisten",
+                "NO_CIVILLIANS_INVOLVED": "Keine Zivilisten beteiligt",
+                "REMOVE_CIVILIAN": {
+                    "TITLE": "Zivilisten entfernen",
+                    "DESCRIPTION": "Möchten Sie {name} wirklich aus dem Bericht entfernen?"
+                },
+                "SUSPECTS_INVOLVED": "Beteiligte Verdächtige",
+                "NO_SUSPECTS_INVOLVED": "Keine Verdächtigen beteiligt",
+                "REMOVE_SUSPECT": {
+                    "TITLE": "Verdächtigen entfernen",
+                    "DESCRIPTION": "Möchten Sie {name} wirklich aus dem Bericht entfernen?"
+                },
+                "DELETE_REPORT": {
+                    "TITLE": "Bericht löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie diesen Bericht löschen möchten?"
+                },
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "NO_TYPE": "Sie müssen einen Berichtstyp auswählen",
+                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
+                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein"
+                }
+            },
+
+            "CASES": {
+                "TITLE": "Fälle",
+                "SEARCH": "Fälle suchen",
+                "CASE": "Fall",
+                "FOOTER": "{author} - Fall ID: {id}",
+                "TITLE_PLACEHOLDER": "Neuer Fall",
+                "DESCRIPTION": "Beschreibung",
+                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
+                "EVIDENCE": "Beweismittel",
+                "NO_EVIDENCE": "Keine angehängten Beweismittel",
+                "OPEN_STASH": "Lager öffnen",
+                "VEHICLES_INVOLVED": "Beteiligte Fahrzeuge",
+                "NO_VEHICLES_INVOLVED": "Keine Fahrzeuge beteiligt",
+                "VIEW_PROFILE": "Profil ansehen",
+                "CHARGES": "{amount} Anklagen",
+                "NO_CHARGES": "Keine Anklagen",
+                "REMOVE_VEHICLE": {
+                    "TITLE": "Fahrzeug entfernen",
+                    "DESCRIPTION": "Möchten Sie das Fahrzeug wirklich aus dem Fall entfernen?"
+                },
+
+                "REMOVE_WARRANT": {
+                    "TITLE": "Haftbefehl aufheben",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie den Haftbefehl aus dem Fall entfernen wollen?"
+                },
+                "OFFICERS_INVOLVED": "Beteiligte Beamte",
+                "NO_OFFICERS_INVOLVED": "Keine Beamten beteiligt",
+                "REMOVE_OFFICER": {
+                    "TITLE": "Beamten entfernen",
+                    "DESCRIPTION": "Möchten Sie den Beamten wirklich aus dem Fall entfernen?"
+                },
+                "CIVILLIANS_INVOLVED": "Beteiligte Zivilisten",
+                "NO_CIVILLIANS_INVOLVED": "Keine Zivilisten beteiligt",
+                "REMOVE_CIVILIAN": {
+                    "TITLE": "Zivilisten entfernen",
+                    "DESCRIPTION": "Möchten Sie den Zivilisten wirklich aus dem Fall entfernen?"
+                },
+                "CRIMINALS_INVOLVED": "Beteiligte Kriminelle",
+                "NO_CRIMINALS_INVOLVED": "Keine Kriminellen beteiligt",
+                "REMOVE_CRIMINAL": {
+                    "TITLE": "Kriminellen entfernen",
+                    "DESCRIPTION": "Möchten Sie den Kriminellen wirklich aus dem Fall entfernen?"
+                },
+                "ADD_CHARGE": "Anklage hinzufügen",
+                "FINE": "Geldstrafe ({amount} empfohlen)",
+                "SENTENCE": "Strafe ({amount} empfohlene Monate)",
+                "SEND_FINE": {
+                    "TITLE": "Bußgeld senden",
+                    "DESCRIPTION": "Möchten Sie ein Bußgeld in Höhe von {fine} an {name} senden?"
+                },
+                "JAIL_PLAYER": {
+                    "TITLE": "Spieler inhaftieren",
+                    "DESCRIPTION": "Möchten Sie {name} für {sentence} Monate ins Gefängnis schicken?",
+                    "JAILED_DESCRIPTION": "Automatisch inhaftiert wegen {charges}"
+                },
+                "DELETE_CASE": {
+                    "TITLE": "Fall löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie diesen Fall löschen möchten?"
+                },
+
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
+                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+                    "OK": "OK"
+                }
+            },
+
+            "WARRANTS": {
+                "TITLE": "Haftbefehle",
+                "SEARCH": "Haftbefehle suchen",
+
+                "HIGH_PRIORITY": "Hohe Priorität",
+                "MEDIUM_PRIORITY": "Mittlere Priorität",
+                "LOW_PRIORITY": "Niedrige Priorität",
+                "FOOTER": "{author} - Haftbefehl ID: {id}",
+                "TITLE_PLACEHOLDER": "Neuer Haftbefehl",
+                "DESCRIPTION": "Beschreibung",
+                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
+                "TYPE": "Typ",
+                "STATUS": "Status",
+                "PRIORITY": "Priorität",
+                "GALLERY": "Galerie",
+                "NO_ATTACHMENTS": "Keine Anhänge",
+                "LINKED_REPORTS": "Verknüpfte Berichte",
+                "NO_LINKED_REPORTS": "Keine verknüpften Berichte",
+                "SELECT_VEHICLE": "Fahrzeug auswählen",
+                "NO_VEHICLE_SELECTED": "Kein Fahrzeug gewählt",
+                "SELECT_PERSON": "Person auswählen",
+                "NO_PERSON_SELECTED": "Keine Person gewählt",
+                "ACTIVE": "Aktiv",
+                "INACTIVE": "Inaktiv",
+                "CLOSED": "Geschlossen",
+                "REMOVE_REPORT": {
+                    "TITLE": "Bericht entfernen",
+                    "DESCRIPTION": "Möchten Sie den Bericht wirklich vom Haftbefehl entfernen?"
+                },
+                "DELETE_WARRANT": {
+                    "TITLE": "Haftbefehl löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie diesen Haftbefehl löschen wollen?"
+                },
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
+                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein",
+                    "NO_TYPE": "Sie müssen einen Haftbefehls-Typ auswählen",
+                    "NO_TARGET": "Sie müssen ein Ziel für den Haftbefehl auswählen",
+                    "OK": "OK"
+                }
+            },
+            "EVIDENCE": {
+                "TITLE": "Beweismittel"
+            },
+
+            "OFFENCES": {
+                "TITLE": "Vergehen",
+                "SEARCH": "Vergehen suchen",
+                "MONTHS": "{amount} Monate",
+                "FINE": "{amount} Geldstrafe",
+
+                "SELECT_SEVERITY": "Schweregrad auswählen",
+                "SEVERITIES": {
+                    "INFRACTION": "Verstoß",
+                    "MISDEMEANOR": "Ordnungswidrigkeit",
+                    "FELONY": "Verbrechen"
+                },
+                "NO_OFFENCES_FOUND": "Keine Vergehen gefunden",
+                "ADD_OFFENCE": {
+                    "TITLE": "Vergehen hinzufügen",
+                    "DESCRIPTION": "Erstellen Sie ein neues Vergehen",
+                    "PLACEHOLDER": "Titel des Vergehens eingeben",
+                    "DESCRIPTION_PLACEHOLDER": "Geben Sie eine Beschreibung ein..."
+                },
+                "EDIT_OFFENCE": {
+                    "TITLE": "Vergehen bearbeiten",
+                    "DESCRIPTION": "Bearbeiten Sie die Vergehendetails"
+                },
+                "SET_JAILTIME": {
+                    "TITLE": "Empfohlene Haftstrafe",
+                    "DESCRIPTION": "Setzen Sie die empfohlene Haftstrafe für das Vergehen",
+                    "PLACEHOLDER": "Empfohlene Haftstrafe (in Monaten) (0 für nur Geldstrafe)"
+                },
+                "SET_FINE": {
+                    "TITLE": "Empfohlene Geldstrafe",
+                    "DESCRIPTION": "Setzen Sie die empfohlene Geldstrafe für das Vergehen",
+                    "PLACEHOLDER": "Empfohlene Geldstrafe (0 für nur Haftstrafe)"
+                },
+
+                "DELETE_OFFENCE": {
+                    "TITLE": "Vergehen löschen",
+                    "DESCRIPTION": "Möchten Sie dieses Vergehen wirklich löschen?"
+                },
+                "ADD_CATEGORY": {
+                    "TITLE": "Kategorie hinzufügen",
+                    "DESCRIPTION": "Fügen Sie eine neue Kategorie zur Vergehensliste hinzu",
+                    "PLACEHOLDER": "Kategorietitel eingeben"
+                },
+                "EDIT_CATEGORY": {
+                    "TITLE": "Kategorie bearbeiten",
+                    "DESCRIPTION": "Bearbeiten Sie die Kategoriedetails",
+                    "PLACEHOLDER": "Geben Sie den neuen Kategorienamen ein"
+                },
+                "DELETE_CATEGORY": {
+                    "TITLE": "Kategorie löschen",
+                    "DESCRIPTION": "Möchten Sie diese Kategorie wirklich löschen?"
+                }
+            },
+
+            "EMPLOYEES": {
+                "TITLE": "Mitarbeiter",
+                "SEARCH": "Mitarbeiter suchen"
+            },
+
+            "CHAT": {
+                "TITLE": "Chat",
+                "SEARCH": "Chats suchen",
+                "PLACEHOLDER": "Nachricht senden...",
+                "JOINED_CHATS": "Beigetretene Chats",
+                "PUBLIC_CHATS": "Öffentliche Chats",
+                "JOINED": "Beitritt",
+                "PUBLIC": "Öffentlich",
+                "PRIVATE_CHATS": "Private Chats",
+                "ROOM_ID": "Raum ID: {id}",
+                "TOGGLE_PRIVATE": "Privat umschalten",
+                "CHANGE_AVATAR": "Avatar ändern",
+                "SET_AVATAR": "Avatar festlegen",
+                "REMOVE_AVATAR": "Avatar entfernen",
+                "MANAGE": "Verwalten",
+                "LEAVE": {
+                    "TITLE": "Verlassen",
+                    "DESCRIPTION": "Möchten Sie den Chatraum wirklich verlassen?"
+                },
+                "KICK": {
+                    "TITLE": "Rausschmeißen",
+                    "DESCRIPTION": "Möchten Sie {name} wirklich aus dem Chatraum werfen?"
+                },
+
+                "CREATE_CHATROOM": {
+                    "TITLE": "Chatraum erstellen",
+                    "DESCRIPTION": "Geben Sie einen Namen für den Chatraum ein",
+                    "PLACEHOLDER": "Chatraum Name",
+                    "CREATE": "Erstellen",
+                    "SET_VISIBILITY": "Sichtbarkeit festlegen",
+                    "PUBLIC": "Öffentlich",
+                    "PRIVATE": "Privat"
+                },
+                "JOIN_CHAT": {
+                    "TITLE": "Chat beitreten",
+                    "DESCRIPTION": "Möchten Sie wirklich {channel} beitreten?",
+                    "JOIN": "Beitreten"
+                },
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "FAILED_JOIN": "Beitritt zum Chatraum fehlgeschlagen",
+                    "FAILED_INVITE": "Einladen von {name} in den Chatraum fehlgeschlagen",
+                    "FAILED_SET_AVATAR": "Avatar für den Chatraum festlegen fehlgeschlagen",
+                    "FAILED_REMOVE_AVATAR": "Avatar für den Chatraum entfernen fehlgeschlagen",
+                    "FAILED_GET_MEMBERS": "Chatraum-Mitglieder konnten nicht abgerufen werden",
+                    "FAILED_KICK": "Rausschmeißen von {name} aus dem Chatraum fehlgeschlagen",
+                    "FAILED_LEAVE": "Verlassen des Chatraums fehlgeschlagen"
+                },
+                "SUCCESS": {
+                    "TITLE": "Erfolg",
+                    "INVITED": "Sie haben {name} in den Chatraum eingeladen",
+                    "KICKED": "Sie haben {name} aus dem Chatraum geworfen"
+                }
+            },
+
+            "PHONE": {
+                "TITLE": "Telefon",
+                "MESSAGES": "Nachrichten",
+
+                "TRIANGULATE": {
+                    "TITLE": "Triangulieren",
+                    "DESCRIPTION": "Geben Sie die Telefonnummer ein, die Sie triangulieren möchten",
+                    "PLACEHOLDER": "Telefonnummer",
+
+                    "SUCCESS": {
+                        "TITLE": "Triangulation erfolgreich",
+                        "DESCRIPTION": "Die Telefonnummer, die Sie triangulieren möchten, ist bei einem nahegelegenen Sendemast registriert. Überprüfen Sie die Karte für den Standort."
+                    },
+                    "FAILED": {
+                        "TITLE": "Triangulation fehlgeschlagen",
+                        "DESCRIPTION": "Die Telefonnummer, die Sie triangulieren möchten, ist bei keinem Sendemast in der Umgebung registriert."
+                    }
+                },
+                "CALLS": {
+                    "TITLE": "Anrufe",
+                    "CALL_HISTORY": "Anrufverlauf",
+                    "CALL_STATUS": "Anrufstatus",
+                    "SEARCH": "Anrufe suchen",
+                    "NO_CALLER_ID": "Keine Anrufer-ID",
+                    "UNKNOWN": "Unbekannt",
+                    "INCOMING": "Eingehender",
+                    "OUTGOING": "Ausgehender",
+                    "IN_CALL": "Im Gespräch",
+                    "NOT_IN_CALL": "Nicht im Gespräch",
+                    "SUBSCRIBED": "Abonniert",
+                    "NOT_SUBSCRIBED": "Nicht abonniert",
+                    "YES": "Ja",
+                    "NO": "Nein",
+                    "GET_NOTIFIED": "Benachrichtigt werden",
+                    "LISTEN_TO_CALL": "Anruf abhören",
+                    "LISTEN_TO_CALL_DESCRIPTION": "Sind Sie sicher, dass Sie diesen Anruf abhören möchten?",
+                    "STOP_LISTENING": "Abhören beenden",
+                    "STOP_LISTENING_DESCRIPTION": "Sind Sie sicher, dass Sie das Abhören dieses Anrufs beenden möchten?",
+                    "SUBSCRIBE_TO_CALLS": "Anrufe abonnieren",
+                    "SUBSCRIBE_TO_CALLS_DESCRIPTION": "Sind Sie sicher, dass Sie Anrufe abonnieren möchten?",
+                    "UNSUBSCRIBE_FROM_CALLS": "Anrufe abbestellen",
+                    "UNSUBSCRIBE_FROM_CALLS_DESCRIPTION": "Sind Sie sicher, dass Sie Anrufe abbestellen möchten?",
+                    "FOOTER": "von {name}",
+
+                    "WIRETAP_PHONENUMBER": {
+                        "TITLE": "Telefonnummer überwachen",
+                        "DESCRIPTION": "Geben Sie die Telefonnummer ein, die Sie überwachen möchten",
+                        "PLACEHOLDER": "Telefonnummer"
+                    },
+                    "REMOVE_WIRETAP": {
+                        "TITLE": "Überwachung entfernen",
+                        "DESCRIPTION": "Sind Sie sicher, dass Sie die Überwachung von der Telefonnummer {phoneNumber} entfernen möchten?"
+                    },
+
+                    "CALL_ENDED": {
+                        "TITLE": "Anruf beendet",
+                        "DESCRIPTION": "Der Anruf, den Sie überwacht haben, wurde beendet."
+                    }
+                },
+                "UNLOCK": {
+                    "TITLE": "Entsperren",
+                    "NO_PHONES": "Es befinden sich keine Telefone in Ihrem Inventar",
+                    "SEARCH": "Telefon suchen",
+                    "SELECT_PHONE": "Telefon auswählen",
+                    "PHONE": "Telefon",
+                    "PROCESSED": "Verarbeitet",
+                    "PROCESSING": "Wird verarbeitet",
+                    "LOCKED": "Gesperrt",
+                    "PROCESS_PHONE": "Telefon verarbeiten",
+                    "PHONE_PROCESSED": "Telefon verarbeitet",
+                    "REMAINING_TIME": "Verbleibend: {time}",
+                    "PROCESSING_PHONE": "Verarbeite {phone}...",
+                    "ATTEMPTS": "Versuche: {attempts}/{maxAttempts}",
+                    "RESET_PIN": {
+                        "TITLE": "PIN zurücksetzen",
+                        "SUCCESS": "PIN des Telefons erfolgreich zurückgesetzt."
+                    },
+                    "SUCCESS": {
+                        "TITLE": "Telefon verarbeitet",
+                        "DESCRIPTION": "Das Telefon wurde erfolgreich verarbeitet."
+                    },
+                    "FAILED": {
+                        "TITLE": "Verarbeitung fehlgeschlagen",
+                        "DESCRIPTION": "Das Telefon konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut."
+                    }
+                }
+            },
+
+            "JAIL": {
+                "TITLE": "Gefängnis",
+                "SEARCH": "Häftling suchen",
+                "JAILED_PERSON": "Eingesperrte Person",
+                "JAILED_BY": "Eingesperrt von",
+                "JAILED_BY_NAME": "Eingesperrt von {name}",
+                "REMAINING_TIME": "Verbleibende Zeit",
+                "REMAINING_TIME_DATE": "Verbleibende Zeit {time} ({date})",
+                "ORIGINAL_SENTENCE": "Ursprüngliche Strafe",
+                "RELEASE_DATE": "Freigabedatum",
+                "DESCRIPTION": "Beschreibung",
+                "DESCRIPTION_PLACEHOLDER": "Geben Sie eine Beschreibung ein...",
+                "RELEASED": "Freigelassen",
+                "LESS_THAN_MINUTE": "Weniger als eine Minute",
+                "UNJAIL": "Befreiung",
+                "PROFILE": "Profil",
+                "JAILED_AT": "Gefängnisdatum",
+                "LINKED_CASE": "Verknüpfter Fall",
+                "NO_LINKED_CASE": "Kein verknüpfter Fall",
+                "REMOVE_LINKED_CASE": {
+                    "TITLE": "Verknüpften Fall entfernen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie den verknüpften Fall entfernen möchten?"
+                },
+                "JAIL_PERSON": {
+                    "TITLE": "Einsperren",
+                    "DESCRIPTION": "Füllen Sie die folgenden Details aus, um {name} einzusperren",
+                    "SENTENCE_PLACEHOLDER": "Strafe (in Minuten)",
+                    "REASON_PLACEHOLDER": "Grund",
+                    "JAIL_WITH_CASE": "Einsperren mit verknüpftem Vorfall",
+                    "JAIL_WITHOUT_CASE": "Einsperren ohne verknüpften Vorfall",
+                    "PROCEED": "Fortfahren"
+                },
+                "UNJAIL_PERSON": {
+                    "TITLE": "Befreiung",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie {name} befreien möchten?",
+                    "PROCEED": "Fortfahren"
+                },
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "MISSING_DETAILS": "Sie müssen eine Strafe und einen Grund eingeben"
+                }
+            },
+
+            "LOGS": {
+                "TITLE": "Protokolle",
+                "SEARCH": "Protokolle durchsuchen",
+                "FILTER": "Filter",
+                "CREATED": "Erstellt",
+                "UPDATED": "Aktualisiert",
+                "DELETED": "Gelöscht",
+                "VIEW_FOOTER": "Anzeige {type} ({id})",
+                "TAG_TYPES": {
+                    "PROFILE": "Profil",
+                    "VEHICLE": "Fahrzeug",
+                    "REPORT": "Bericht",
+                    "WARRANT": "Durchsuchungsbefehl",
+                    "INCIDENT": "Vorfall"
+                },
+
+                "CREATE_TAG_TITLE": "Tag erstellt",
+                "CREATE_TAG_DESCRIPTION": "Ein {type}-Tag \"{name}\" wurde erstellt",
+                "DELETE_TAG_TITLE": "Tag gelöscht",
+                "DELETE_TAG_DESCRIPTION": "Der {type}-Tag \"{name}\" wurde gelöscht",
+                "UPDATE_PROFILE_TITLE": "Profil aktualisiert",
+                "UPDATE_PROFILE_DESCRIPTION": "Das Profil von {name} wurde aktualisiert",
+                "UPDATE_VEHICLE_TITLE": "Fahrzeug aktualisiert",
+                "UPDATE_VEHICLE_DESCRIPTION": "Das Fahrzeug mit dem Kennzeichen {plate} wurde aktualisiert",
+                "UPDATE_PROPERTY_TITLE": "Eigenschaft aktualisiert",
+                "UPDATE_PROPERTY_DESCRIPTION": "Eine Eigenschaft wurde aktualisiert",
+                "UPDATE_WEAPON_TITLE": "Waffe aktualisiert",
+                "UPDATE_WEAPON_DESCRIPTION": "Die Waffe mit der Seriennummer {serial} wurde aktualisiert",
+                "CREATE_REPORT_TITLE": "Bericht erstellt",
+                "CREATE_REPORT_DESCRIPTION": "Ein {type}-Bericht mit dem Titel \"{title}\" wurde erstellt",
+                "UPDATE_REPORT_TITLE": "Bericht aktualisiert",
+                "UPDATE_REPORT_DESCRIPTION": "Der {type}-Bericht mit dem Titel \"{title}\" wurde aktualisiert",
+                "DELETE_REPORT_TITLE": "Bericht gelöscht",
+                "DELETE_REPORT_DESCRIPTION": "Ein Bericht mit der ID {id} wurde gelöscht",
+                "ISSUED_LICENSE_TITLE": "Lizenz ausgestellt",
+                "ISSUED_LICENSE_DESCRIPTION": "Die Lizenz {license} wurde an {name} ausgestellt",
+                "REVOKED_LICENSE_TITLE": "Lizenz entzogen",
+                "REVOKED_LICENSE_DESCRIPTION": "Die Lizenz {license} wurde von {name} entzogen",
+                "PINNED_BULLETIN_TITLE": "Bulletin-Eintrag angeheftet",
+                "PINNED_BULLETIN_DESCRIPTION": "Ein Bulletin-Eintrag mit der ID {id} wurde angeheftet",
+                "UNPINNED_BULLETIN_TITLE": "Bulletin-Eintrag gelöst",
+                "UNPINNED_BULLETIN_DESCRIPTION": "Der Bulletin-Eintrag mit der ID {id} wurde gelöst",
+                "CREATE_BULLETIN_TITLE": "Bulletin-Eintrag erstellt",
+                "CREATE_BULLETIN_DESCRIPTION": "Ein Bulletin-Eintrag mit dem Titel \"{title}\" wurde erstellt",
+                "UPDATE_BULLETIN_TITLE": "Aktualisiertes Bulletin",
+                "UPDATE_BULLETIN_DESCRIPTION": "Den Beitrag mit dem Titel \"{title}\" aktualisiert.",
+                "DELETE_BULLETIN_TITLE": "Bulletin-Eintrag gelöscht",
+                "DELETE_BULLETIN_DESCRIPTION": "Der Bulletin-Eintrag mit der ID {id} wurde gelöscht",
+                "CREATE_WARRANT_TITLE": "Haftbefehl erstellt",
+                "CREATE_WARRANT_DESCRIPTION": "Ein {type}-Haftbefehl mit dem Titel \"{title}\" wurde erstellt",
+                "UPDATE_WARRANT_TITLE": "Haftbefehl aktualisiert",
+                "UPDATE_WARRANT_DESCRIPTION": "Der Haftbefehl \"{title}\" wurde aktualisiert",
+                "CREATE_CASE_TITLE": "Fall erstellt",
+                "CREATE_CASE_DESCRIPTION": "Ein Fall mit dem Titel \"{title}\" wurde erstellt",
+                "UPDATE_CASE_TITLE": "Fall aktualisiert",
+                "UPDATE_CASE_DESCRIPTION": "Der Fall mit dem Titel \"{title}\" wurde aktualisiert",
+                "DELETE_CASE_TITLE": "Fall gelöscht",
+                "DELETE_CASE_DESCRIPTION": "Ein Fall mit der ID {id} wurde gelöscht"
+            },
+
+            "TAGS": {
+                "TITLE": "Tags",
+                "ADD": "Hinzufügen",
+                "NO_TAGS": "Keine Tags",
+                "CREATE_TAG": {
+                    "TITLE": "Tag erstellen",
+                    "DESCRIPTION": "Geben Sie einen Tag-Namen ein",
+                    "PLACEHOLDER": "Tag-Name",
+                    "CANCEL": "Abbrechen",
+                    "NEXT": "Weiter",
+                    "SELECT_COLOR": "Wählen Sie eine Farbe"
+                },
+                "DELETE_TAG": {
+                    "TITLE": "Tag löschen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie dieses Tag löschen möchten?",
+                    "CANCEL": "Abbrechen",
+                    "DELETE": "Löschen"
+                },
+                "REMOVE_TAG": {
+                    "TITLE": "Tag entfernen",
+                    "DESCRIPTION": "Sind Sie sicher, dass Sie das Tag '{tag}' entfernen möchten?",
+                    "CANCEL": "Abbrechen",
+                    "REMOVE": "Entfernen"
+                }
+            },
+            "MISC": {
+                "SOON": "Bald",
+                "UNKNOWN": "Unbekannt",
+                "MINUTES": "{minutes}m",
+                "HOURS": "{hours}h",
+                "DAYS": "{days}d",
+                "FORMATTED_DATE": "{day} {month} {year} um {hours}:{minutes}",
+                "CHANGE_AVATAR": "Avatar ändern",
+                "REMOVE_AVATAR": "Avatar entfernen",
+                "SET_CALLSIGN": "Callsign festlegen",
+                "CALLSIGN": {
+                    "TITLE": "Callsign",
+                    "DESCRIPTION": "Geben Sie ein Callsign ein",
+                    "CANCEL": "Abbrechen",
+                    "PROCEED": "Fortfahren",
+                    "ERROR": {
+                        "TITLE": "Fehler",
+                        "DESCRIPTION": "Das von Ihnen eingegebene Rufzeichen entspricht nicht dem erforderlichen Format ({format}). Bitte versuchen Sie es erneut."
+                    }
+                }
+            }
+        },
+        "AMBULANCE": {
+            "TITLE": "SAFR",
+
+            "SEARCH": "Suche",
+            "CANCEL": "Abbrechen",
+            "CLOSE": "Schließen",
+            "BACK": "Zurück",
+            "EDIT": "Bearbeiten",
+            "DELETE": "Löschen",
+            "REMOVE": "Entfernen",
+            "SAVE": "Speichern",
+            "CREATE": "Erstellen",
+            "PROCEED": "Fortfahren",
+            "OK": "OK",
+            "ADD": "Hinzufügen",
+            "NEW": "Neu",
+
+            "SEARCH_FOR": "Suche nach {query}, um zu beginnen",
+            "NO_RESULTS_FOR": "Keine Ergebnisse für '{query}' gefunden",
+            "CLEAR_HISTORY": "Verlauf löschen",
+
+            "HOME": {
+                "TITLE": "Startseite",
+                "CREATE": "Erstellen",
+
+                "RECENT_REPORTS": "Neueste Berichte",
+                "REPORT_FOOTER": "{timestamp} - {author}",
+                "BULLETIN_BOARD": "Schwarzes Brett",
+                "PIN": "Anheften",
+                "UNPIN": "Lösen",
+                "SEARCH_BULLETIN": "Bulletin durchsuchen",
+                "SEARCH_UNITS": "Einheiten durchsuchen",
+                "ADD_BULLETIN": {
+                    "TITLE": "Bulletin hinzufügen",
+                    "DESCRIPTION": "Erstelle einen neuen Bulletin-Post",
+                    "PLACEHOLDER": "Titel",
+                    "CONTENT": "Inhalt",
+                    "CANCEL": "Abbrechen",
+                    "PROCEED": "Fortfahren"
+                },
+                "DELETE_BULLETIN": {
+                    "TITLE": "Bulletin löschen",
+                    "DESCRIPTION": "Bist du sicher, dass du diesen Bulletin-Post löschen möchtest?",
+                    "CANCEL": "Abbrechen",
+                    "DELETE": "Löschen"
+                },
+                "ACTIVE_UNITS": "Aktive Einheiten"
+            },
+            "BULLETIN": {
+                "TITLE": "Bulletin"
+            },
+            "DISPATCH": {
+                "TITLE": "Einsatzleitung",
+                "TOGGLE_EMPLOYEES": "Mitarbeiter ein-/ausblenden",
+                "TOGGLE_ALARMS": "Alarme ein-/ausblenden",
+                "EMPLOYEES": "Mitarbeiter",
+                "ALARMS": "Alarme",
+
+                "RESPOND": "Antworten",
+                "RESPONDED": "Antwortet",
+                "COLLAPSE": "Zusammenklappen",
+                "EXPAND": "Erweitern",
+                "DISMISS": "Ablehnen",
+                "VIEW_IN_TABLET": "In Tablet anzeigen",
+                "SET_WAYPOINT": "Wegpunkt setzen",
+                "OLD_NOTIFICATION": "{count} alte Meldung",
+                "OLD_NOTIFICATIONS": "{count} alte Meldungen",
+                "NEW_NOTIFICATION": "{count} neue Meldung",
+                "NEW_NOTIFICATIONS": "{count} neue Meldungen",
+
+                "PRIORITY_LEVELS": {
+                    "HIGH": "Hoch",
+                    "MEDIUM": "Mittel",
+                    "LOW": "Niedrig"
+                },
+
+                "JUST_NOW": "Gerade eben",
+                "MINUTES_AGO": "Vor {minutes} Minuten",
+                "HOURS_AGO": "Vor {hours} Stunden"
+            },
+            "UNITS": {
+                "TITLE": "Einheiten",
+                "EMPLOYEE": "Mitarbeiter",
+                "EMPLOYEES": "Mitarbeiter",
+                "AVALIABLE_EMPLOYEES": "Verfügbare Mitarbeiter",
+                "SEARCH_EMPLOYEES": "Mitarbeiter suchen",
+                "DROP_EMPLOYEE": "Mitarbeiter ablegen",
+                "DROP_EMPLOYEE_AVAILABLE": "Mitarbeiter hier ablegen, um ihn verfügbar zu machen"
+            },
+
+            "JOURNALS": {
+                "TITLE": "Journal",
+                "PROFILES": "Profile",
+                "PERSON": "Person",
+                "SEARCH": "Profile durchsuchen",
+                "REMOVE_AVATAR": "Avatar entfernen",
+                "IDENTIFIER": "Bezeichner",
+                "FINGERPRINT": "Fingerabdruck",
+                "DOB": "Geburtsdatum",
+                "PHONE_NR": "Telefonnummer",
+                "GENDER": "Geschlecht",
+                "JOB": "Job",
+                "MALE": "Männlich",
+                "FEMALE": "Weiblich",
+                "HEIGHT": "Größe",
+                "HEIGHT_FORMAT": "{height}cm",
+                "BLOOD_TYPE": "Blutgruppe",
+                "NOTES": "Notizen",
+                "NOTES_PLACEHOLDER": "Notizen hier eingeben...",
+                "DIAGNOSES_DISEASES": "Diagnosen / Krankheiten",
+                "NO_DIAGNOSES": "Keine Diagnosen / Krankheiten",
+                "REPORTS": "Berichte",
+                "NO_REPORTS": "Keine Berichte",
+
+                "ADD_AVATAR": {
+                    "TITLE": "Avatar hinzufügen",
+                    "SET_PHOTO": "Foto festlegen",
+                    "PASTE_URL": "URL einfügen",
+                    "PASTE_URL_DESCRIPTION": "Gib eine URL zu einem Bild ein",
+                    "PASTE_URL_PLACEHOLDER": "Bild-URL",
+
+                    "INVALID_URL": "Ungültige URL",
+                    "INVALID_URL_DESCRIPTION": "Die eingegebene URL ist keine gültige Bild-URL",
+                    "OK": "OK"
+                }
+            },
+
+            "REPORTS": {
+                "TITLE": "Berichte",
+                "REPORT": "Bericht",
+                "SEARCH": "Berichte durchsuchen",
+                "FOOTER": "{author} - Bericht ID: {id}",
+                "NEW_REPORT_TITLE": "Neuer Bericht",
+                "TYPE": "Typ",
+                "DESCRIPTION": "Beschreibung",
+                "DESCRIPTION_PLACEHOLDER": "Beschreibung eingeben...",
+                "GALLERY": "Galerie",
+                "NO_ATTACHMENTS": "Keine Anhänge",
+                "INJURIES_CONDITIONS": "Verletzungen / Erkrankungen",
+                "NO_INJURIES": "Keine Verletzungen / Erkrankungen",
+                "DOCTORS_INVOLVED": "Beteiligte Ärzte",
+                "NO_DOCTORS_INVOLVED": "Keine beteiligten Ärzte",
+                "ADD_PATIENT": "Patient hinzufügen",
+
+                "REMOVE_INJURY": {
+                    "TITLE": "Verletzung entfernen",
+                    "DESCRIPTION": "Bist du sicher, dass du die Verletzung aus dem Bericht entfernen möchtest?"
+                },
+                "REMOVE_DOCTOR": {
+                    "TITLE": "Arzt entfernen",
+                    "DESCRIPTION": "Bist du sicher, dass du {name} aus dem Bericht entfernen möchtest?"
+                },
+
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "NO_TYPE": "Du musst einen Berichtstyp auswählen",
+                    "TITLE_LENGTH": "Der Titel muss mindestens 3 Zeichen lang sein",
+                    "DESCRIPTION_LENGTH": "Die Beschreibung muss mindestens 10 Zeichen lang sein"
+                }
+            },
+
+            "EMPLOYEES": {
+                "TITLE": "Mitarbeiter",
+                "SEARCH": "Mitarbeiter durchsuchen"
+            },
+
+            "CHAT": {
+                "TITLE": "Chat",
+                "SEARCH": "Chats durchsuchen",
+                "PLACEHOLDER": "Nachricht senden...",
+                "JOINED_CHATS": "Beigetretene Chats",
+                "PUBLIC_CHATS": "Öffentliche Chats",
+                "JOINED": "Eingetreten",
+                "PUBLIC": "Öffentlich",
+                "PRIVATE_CHATS": "Private Chats",
+                "ROOM_ID": "Raum-ID: {id}",
+                "TOGGLE_PRIVATE": "Private umschalten",
+                "CHANGE_AVATAR": "Avatar ändern",
+                "SET_AVATAR": "Avatar festlegen",
+                "REMOVE_AVATAR": "Avatar entfernen",
+                "MANAGE": "Verwalten",
+                "LEAVE": {
+                    "TITLE": "Verlassen",
+                    "DESCRIPTION": "Bist du sicher, dass du den Chatraum verlassen möchtest?"
+                },
+                "KICK": {
+                    "TITLE": "Kicken",
+                    "DESCRIPTION": "Bist du sicher, dass du {name} aus dem Chatraum kicken möchtest?"
+                },
+
+                "CREATE_CHATROOM": {
+                    "TITLE": "Chatraum erstellen",
+                    "DESCRIPTION": "Gib einen Namen für den Chatraum ein",
+                    "PLACEHOLDER": "Chatraumname",
+                    "CREATE": "Erstellen",
+                    "SET_VISIBILITY": "Sichtbarkeit festlegen",
+                    "PUBLIC": "Öffentlich",
+                    "PRIVATE": "Privat"
+                },
+                "JOIN_CHAT": {
+                    "TITLE": "Chat beitreten",
+                    "DESCRIPTION": "Bist du sicher, dass du {channel} beitreten möchtest?",
+                    "JOIN": "Beitreten"
+                },
+                "ERROR": {
+                    "TITLE": "Fehler",
+                    "FAILED_JOIN": "Fehler beim Beitreten des Chatraums",
+                    "FAILED_INVITE": "Fehler beim Einladen von {name} in den Chatraum",
+                    "FAILED_SET_AVATAR": "Fehler beim Festlegen des Chatraum-Avatars",
+                    "FAILED_REMOVE_AVATAR": "Fehler beim Entfernen des Chatraum-Avatars",
+                    "FAILED_GET_MEMBERS": "Fehler beim Abrufen der Chatraum-Mitglieder",
+                    "FAILED_KICK": "Fehler beim Kicken von {name} aus dem Chatraum",
+                    "FAILED_LEAVE": "Fehler beim Verlassen des Chatraums"
+                },
+                "SUCCESS": {
+                    "TITLE": "Erfolg",
+                    "INVITED": "Du hast {name} in den Chatraum eingeladen",
+                    "KICKED": "Du hast {name} aus dem Chatraum gekickt"
+                }
+            },
+
+            "CONDITIONS": {
+                "TITLE": "Bedingungen",
+                "CONDITION": "Bedingung",
+                "SEARCH": "Bedingungen durchsuchen",
+
+                "SELECT_SEVERITY": "Schweregrad auswählen",
+                "SEVERITIES": {
+                    "MINOR": "Leicht",
+                    "MODERATE": "Mäßig",
+                    "SEVERE": "Schwer",
+                    "CRITICAL": "Kritisch"
+                },
+                "NO_CONDITIONS_FOUND": "Keine Bedingungen gefunden",
+                "ADD_CONDITION": {
+                    "TITLE": "Bedingung hinzufügen",
+                    "DESCRIPTION": "Erstelle eine neue Bedingung",
+                    "PLACEHOLDER": "Gib den Titel der Bedingung ein"
+                },
+                "DELETE_CONDITION": {
+                    "TITLE": "Bedingung löschen",
+                    "DESCRIPTION": "Bist du sicher, dass du diese Bedingung löschen möchtest?"
+                },
+                "ADD_CATEGORY": {
+                    "TITLE": "Kategorie hinzufügen",
+                    "DESCRIPTION": "Füge eine neue Kategorie zur Bedingungen-Liste hinzu",
+                    "PLACEHOLDER": "Gib den Namen der Kategorie ein"
+                },
+                "DELETE_CATEGORY": {
+                    "TITLE": "Kategorie löschen",
+                    "DESCRIPTION": "Bist du sicher, dass du diese Kategorie löschen möchtest?"
+                }
+            },
+
+            "LOGS": {
+                "TITLE": "Logbuch"
+            }
+        },
+        "BROWSER": {
+            "TITLE": "Browser",
+            "SEARCH_PLACEHOLDER": "Suche oder URL eingeben",
+            "FAILED_LOAD_PAGE": "Fehler beim Laden der Seite, vielleicht wird das Einbetten in ein iframe nicht unterstützt?"
+        },
+        "REGISTRATION": {
+            "TITLE": "Registrierung",
+            "SELECT_CHARACTER": "Charakter auswählen",
+            "PLEASE_SELECT_CHARACTER": "Bitte wählen Sie einen Charakter aus",
+            "CREATE_NEW": "Neu erstellen",
+            "EDIT": "Bearbeiten",
+            "SAVE": "Speichern",
+            "DELETE": "Löschen",
+            "CANCEL": "Abbrechen",
+            "DELETE_CHARACTER": "Charakter löschen",
+            "DESCRIPTION": "Beschreibung",
+            "DESCRIPTION_PLACEHOLDER": "Dies ist eine Beschreibung...",
+            "ADD": "Hinzufügen",
+
+            "CHARACTER_INFO": "Charakter-Informationen",
+            "REMOVE_AVATAR": "Avatar entfernen",
+            "FIRSTNAME": "Vorname",
+            "LASTNAME": "Nachname",
+            "DOB": "Geburtsdatum",
+            "PHONE_NUMBER": "Telefonnummer",
+            "GENDER": "Geschlecht",
+            "MALE": "Männlich",
+            "FEMALE": "Weiblich",
+            "JOB": "Beruf",
+            "HEIGHT": "Größe",
+            "FORMATTED_HEIGHT": "{height}cm",
+
+            "VEHICLES": "Fahrzeuge",
+            "VEHICLE": "Fahrzeug",
+            "REMOVE_PICTURE": "Bild entfernen",
+            "SEARCH_VEHICLES": "Fahrzeuge suchen",
+            "MODEL": "Modell",
+            "PLATE": "Kennzeichen",
+            "COLOR": "Farbe",
+            "CREATE": "Erstellen",
+            "DELETE_VEHICLE": "Fahrzeug löschen",
+            "DELETE_VEHICLE_POPUP": {
+                "TITLE": "Fahrzeug löschen",
+                "DESCRIPTION": "Sind Sie sicher, dass Sie dieses Fahrzeug löschen möchten?"
+            },
+
+            "LICENSES": "Lizenzen",
+            "ADD_LICENSE": "Lizenz hinzufügen",
+            "DELETE_LICENSE_POPUP": {
+                "TITLE": "Lizenz löschen",
+                "DESCRIPTION": "Sind Sie sicher, dass Sie diese Lizenz löschen möchten?"
+            },
+
+            "PROPERTIES": "Immobilien",
+            "ADD_PROPERTY_POPUP": {
+                "TITLE": "Neue Immobilien",
+                "DESCRIPTION": "Eine neue Immobilien erstellen",
+                "LABEL": "Bezeichnung der Immobilien",
+                "ADDRESS": "Adresse der Immobilien"
+            },
+            "DELETE_PROPERTY_POPUP": {
+                "TITLE": "Immobilien löschen",
+                "DESCRIPTION": "Sind Sie sicher, dass Sie diese Immobilien löschen möchten?"
+            },
+
+            "ERROR": {
+                "TITLE": "Fehler",
+                "MISSING_FIELDS": "Es fehlen die folgenden Felder: {fields}",
+                "OK": "OK"
+            }
+        },
+        "MAPS": {
+            "GO": "Go"
+        }
+    },
+    "COMPONENTS": {
+        "CONTEXT_MENU": {
+            "CANCEL": "Abbrechen"
+        },
+        "IMAGE": {
+            "SAVE_TO_GALLERY": "In Galerie speichern"
+        },
+        "GALLERY": {
+            "CANCEL": "Abbrechen",
+            "EXTERNAL_URL": "Externe URL",
+            "EXTERNAL_URL_BLACKLISTED": "Diese URL ist auf der schwarzen Liste",
+            "NO_IMAGES": "Keine Bilder"
+        },
+        "NOTIFICATIONS": {
+            "SENT_PHOTO": "Foto gesendet",
+            "SENT_GIF": "GIF gesendet",
+            "NOW": "jetzt"
+        },
+        "SHARE": {
+            "COPY_PHOTO": "Foto kopieren",
+            "COPY_VIDEO": "Video kopieren",
+            "USE_WALLPAPER": "Als Hintergrundbild verwenden",
+            "COPY_NUMBER": "Nummer kopieren",
+            "COPY_LINK": "Link kopieren",
+            "AIRDROP_SENT": "Gesendet",
+            "AIRDROP_ACCEPTED": "Akzeptiert",
+            "AIRDROP_DECLINED": "Abgelehnt",
+            "AIRDROP_NO_USERS": "Keine Telefone in der Nähe",
+            "WALLPAPER_POPUP": {
+                "TITLE": "Als Hintergrundbild verwenden",
+                "TEXT": "Bist du sicher, dass du dieses Bild als Hintergrundbild festlegen möchtest?",
+                "CANCEL": "Abbrechen",
+                "PROCEED": "Fortfahren"
+            },
+            "COPY_POPUP": {
+                "TITLE": "Erfolg",
+                "DESCRIPTION": "Erfolgreich in die Zwischenablage kopiert",
+                "OK": "OK"
+            }
+        },
+        "AIRDROP": {
+            "TITLE": "AirShare",
+            "TEXT": "{sender} möchte ein {type} teilen",
+            "VIDEO": "Video",
+            "PHOTO": "Foto",
+            "CONTACT": "Kontakt",
+            "LOCATION": "Standort",
+            "NOTE": "Notiz",
+            "VOICEMEMO": "Sprachnotiz",
+            "PLAYLIST": "Playlist",
+            "DECLINE": "Ablehnen",
+            "ACCEPT": "Akzeptieren"
+        },
+
+        "BATTERY": {
+            "LOW_BATTERY": "Geringer Akku",
+            "BATTERY_REMAINING": "{percent}% Akku verbleibend",
+            "LOW_POWER_MODE": "Energiesparmodus",
+            "CLOSE": "Schließen"
+        },
+        "COLOR_PICKER": {
+            "COLOR": "Farbe"
+        }
+    },
+    "SETUP": {
+        "HELLO": "Hallo",
+        "SELECT_LANGUAGE": "Wählen Sie Ihre Sprache",
+        "NEXT": "Klicken Sie, um zu öffnen",
+        "APPEARANCE": "Design",
+        "APPEARANCE_TEXT": "Wählen Sie ein dunkles oder helles Design für Ihr Gerät",
+        "CONTINUE": "Fortfahren",
+        "WELCOME_TO": "Willkommen bei",
+        "CLICK": "Klicken Sie, um zu beginnen"
+    },
+    "HOMESCREEN": {
+        "DONE": "Fertig",
+        "CLOSE_ALL": "Alle schließen",
+        "REMOVE_APP_POPUP": {
+            "TITLE": "Entfernen '{app}'?",
+            "DESCRIPTION": "Das Löschen dieser App löscht NICHT deren Daten. Die App kann später aus dem App Store neu installiert werden.",
+            "CANCEL": "Abbrechen",
+            "PROCEED": "Löschen"
+        }
+    },
+    "LOCKSCREEN": {
+        "DELETE": "Löschen",
+        "FONT_AND_COLOR": "Schriftart & Farbe"
+    },
+    "MISC": {
+        "GENDERS": {
+            "MALE": "Mann",
+            "FEMALE": "Frau"
+        },
+        "AIRPLANE_MODE_POPUP": {
+            "TITLE": "Fehler",
+            "DESCRIPTION": "Sie versuchen eine Aktion auszuführen, die Internetzugang erfordert. Deaktivieren Sie den Flugmodus, um fortzufahren.",
+            "OK": "OK"
+        }
+    },
+    "BACKEND": {
+        "CAMERA": {
+            "TAKE_PHOTO": "{key} Aufnehmen",
+            "FLIP_CAMERA": "{key} Kamera umschalten",
+            "TOGGLE_FLASH": "{key} Blitz",
+            "TOGGLE_CURSOR": "{key} Cursor",
+            "CHANGE_MODE": "{key} {key2} Modus",
+            "ROLL": "{key} {key2} Drehung",
+            "FREEZE": "{key} Anhalten",
+            "UNFREEZE": "{key} Wieder aufnehmen",
+            "TOGGLE_TIP": "{key} Tipp ausblenden"
+        },
+        "SERVICES": {
+            "NEW_MESSAGE": "Neue Nachricht",
+            "ANONYMOUS": "Anonym"
+        },
+        "MISC": {
+            "X_TABLET": "Tablet von {firstname}"
+        },
+        "MAIL": {
+            "AUTOMATIC_PASSWORD": {
+                "SENDER": "System",
+                "SUBJECT": "Ihr Passwort",
+                "MESSAGE": "Hallo,\n\nIhre automatische E-Mail-Adresse lautet {address} und Ihr Passwort ist {password}"
+            }
+        },
+        "LOGS": {
+            "TOOK_PHOTO": "Hat ein Foto gemacht",
+            "TOOK_VIDEO": "Hat ein Video aufgenommen",
+            "NEW_DISPATCH": "Neue Einsatz: {title}"
+        },
+        "BASE_DISPATCH": {
+            "VEHICLE_CLASSES": {
+                "0": "Kompakt",
+                "1": "Limousine",
+                "2": "SUV",
+                "3": "Coupé",
+                "4": "Muscle-Car",
+                "5": "Klassischer Sportwagen",
+                "6": "Sportwagen",
+                "7": "Supersportwagen",
+                "8": "Motorrad",
+                "9": "Geländewagen",
+                "10": "Industriefahrzeug",
+                "11": "Nutzfahrzeug",
+                "12": "Van",
+                "13": "Fahrrad",
+                "14": "Boot",
+                "15": "Hubschrauber",
+                "16": "Flugzeug",
+                "17": "Servicefahrzeug",
+                "18": "Einsatzfahrzeug",
+                "19": "Militärfahrzeug",
+                "20": "Nutzfahrzeug (kommerziell)",
+                "21": "Zug",
+                "22": "Formelrennwagen"
+            },
+            "VEHICLE_DATA": {
+                "BODY_TYPE": "Fahrzeugtyp",
+                "MANUFACTURER": "Hersteller",
+                "MODEL": "Modell",
+                "COLOR": "Farbe",
+                "PLATE": "Kennzeichen"
+            },
+            "VEHICLE_THEFT": {
+                "CODE": "10-31",
+                "TITLE": "Fahrzeugdiebstahl – {plate}",
+                "DESCRIPTION": "Eine {gender_lower} wurde dabei gesehen, wie sie ein {color_lower}es {class} der Marke {manufacturer} ({model}) mit dem Kennzeichen {plate} gestohlen hat."
+            },
+            "VEHICLE_JACKING": {
+                "CODE": "10-31",
+                "TITLE": "Carjacking – {plate}",
+                "DESCRIPTION": "Eine {gender_lower} wurde dabei gesehen, wie sie ein {color_lower}es {class} der Marke {manufacturer} ({model}) mit dem Kennzeichen {plate} carjackt hat."
+            },
+            "WEAPON_TYPES": {
+                "DIGISCANNER": "Digitalscanner",
+                "FIREEXTINGUISHER": "Feuerlöscher",
+                "HACKINGDEVICE": "Hackgerät",
+                "HEAVY": "Schwere Waffen",
+                "MELEE": "Nahkampf",
+                "METALDETECTOR": "Metalldetektor",
+                "MG": "Maschinengewehr",
+                "NIGHTVISION": "Nachtsichtgerät",
+                "PARACHUTE": "Fallschirm",
+                "PETROLCAN": "Benzinkanister",
+                "PISTOL": "Pistole",
+                "RIFLE": "Gewehr",
+                "SHOTGUN": "Schrotflinte",
+                "SMG": "MP (Maschinenpistole)",
+                "SNIPER": "Scharfschütze",
+                "STUNGUN": "Taser",
+                "THROWN": "Wurfwaffen",
+                "TRANQILIZER": "Betäubungswaffe",
+                "UNARMED": "Unbewaffnet",
+                "UNKNOWN": "Schusswaffe"
+            },
+            "GUNSHOT": {
+                "CODE": "10-31",
+                "TITLE": "Schusswaffengebrauch – {location}",
+                "DESCRIPTION": "Eine {gender_lower} wurde dabei gesehen, wie sie mit einer {weapon_type_lower} bei {location} geschossen hat."
+            },
+            "EXPLOSION": {
+                "TITLE": "Explosion",
+                "DESCRIPTION": "Bei {location} wurde eine Explosion gemeldet.",
+                "CODE": "10-31"
+            },
+            "ARMED": {
+                "TITLE": "Bewaffnete/r {gender}",
+                "DESCRIPTION": "Eine {gender_lower} wurde bewaffnet mit einer {weapon_type_lower} bei {location} gesehen.",
+                "CODE": "10-31"
+            }
+        },
+        "POLICE": {
+            "EVIDENCE_LABEL": "Beweismittel: Fall {id}",
+            "NEW_BULLETIN_NOTIFICATION": {
+                "TITLE": "Neues Bulletin",
+                "CONTENT": "{title}"
+            },
+            "NEW_CASE_NOTIFICATION": {
+                "TITLE": "Neuer Fall",
+                "CONTENT": "{title}"
+            },
+            "NEW_REPORT_NOTIFICATION": {
+                "TITLE": "Neuer Bericht",
+                "CONTENT": "{title}"
+            },
+            "NEW_WARRANT_NOTIFICATION": {
+                "TITLE": "Neuer Haftbefehl",
+                "CONTENT": "{title}"
+            },
+            "NEW_CHAT_CHANNEL_NOTIFICATION": {
+                "TITLE": "Neues Gespräch",
+                "CONTENT": "{channel}"
+            },
+            "CHAT_MESSAGE_NOTIFICATION": {
+                "TITLE": "Neue Nachricht in {channel}",
+                "CONTENT": "{message}"
+            },
+            "LOGS": {
+                "CREATE_OFFENCE_CATEGORY": {
+                    "TITLE": "Erstellte eine Straftatskategorie",
+                    "DESCRIPTION": "Erstellte die Kategorie '{name}'"
+                },
+                "DELETE_OFFENCE_CATEGORY": {
+                    "TITLE": "Gelöschte eine Straftatskategorie",
+                    "DESCRIPTION": "Gelöschte die Kategorie '{name}'"
+                },
+                "UPDATE_OFFENCE_CATEGORY": {
+                    "TITLE": "Aktualisierung einer Deliktskategorie",
+                    "DESCRIPTION": "Umbenennung der Deliktskategorie '{oldName}' zu {newName}"
+                },
+                "CREATE_OFFENCE": {
+                    "TITLE": "Erstellte eine Straftat",
+                    "DESCRIPTION": "Erstellte eine {class} Straftat '{name}' in '{category}'"
+                },
+                "DELETE_OFFENCE": {
+                    "TITLE": "Gelöschte eine Straftat",
+                    "DESCRIPTION": "Gelöschte die Straftat '{name}' in '{category}'"
+                },
+                "UPDATE_OFFENCE": {
+                    "TITLE": "Aktualisiert ein Vergehen",
+                    "DESCRIPTION": "Aktualisiert das Vergehen '{name}' in '{category}'"
+                }
+            },
+            "WIRETAP_NOTIFICATION": {
+                "TITLE": "Abgehörter Anruf",
+                "CONTENT": "Die abgehörte Telefonnummer {number} befindet sich in einem Anruf."
+            }
+        },
+        "AMBULANCE": {
+            "NOTIFICATIONS": {
+                "CHAT": {
+                    "NEW_CHANNEL": {
+                        "TITLE": "Neues Gespräch",
+                        "CONTENT": "{channel}"
+                    },
+                    "NEW_MESSAGE": {
+                        "TITLE": "Neue Nachricht in {channel}",
+                        "CONTENT": "{message}"
+                    }
+                },
+                "NEW_BULLETIN": {
+                    "TITLE": "Neues Bulletin",
+                    "CONTENT": "{title}"
+                },
+                "NEW_REPORT": {
+                    "TITLE": "Neuer Bericht",
+                    "CONTENT": "{title}"
+                }
+            },
+            "TAG_TYPES": {
+                "PROFILE": "Profil",
+                "REPORT": "Bericht",
+                "PROPERTY": "Immobilien",
+                "WEAPON": "Waffen"
+            },
+            "LOGS": {
+                "CREATE_CONDITION_CATEGORY": {
+                    "TITLE": "Erstellte eine Krankheitskategorie",
+                    "DESCRIPTION": "Erstellte die Kategorie '{name}'"
+                },
+                "DELETE_CONDITION_CATEGORY": {
+                    "TITLE": "Gelöschte eine Krankheitskategorie",
+                    "DESCRIPTION": "Gelöschte die Kategorie '{name}'"
+                },
+                "UPDATE_CONDITION_CATEGORY": {
+                    "TITLE": "Aktualisierte einen Krankheitskategorie",
+                    "DESCRIPTION": "Umbenennung der Krankheitskategorie '{oldName}' zu {newName}"
+                },
+                "CREATE_CONDITION": {
+                    "TITLE": "Erstellte eine Krankheit",
+                    "DESCRIPTION": "Erstellte eine {severity} Krankheit '{name}' in '{category}'"
+                },
+                "DELETE_CONDITION": {
+                    "TITLE": "Gelöschte eine Krankheit",
+                    "DESCRIPTION": "Gelöschte die Krankheit '{name}' in '{category}'"
+                },
+                "UPDATE_CONDITION": {
+                    "TITLE": "Aktualisierte eine Krankheit",
+                    "DESCRIPTION": "Aktualisierte die Krankheit '{name}' in '{category}'"
+                },
+                "CREATE_BULLETIN": {
+                    "TITLE": "Erstellte einen Bulletin-Beitrag",
+                    "DESCRIPTION": "Erstellte einen Bulletin-Beitrag '{title}'"
+                },
+                "UPDATE_BULLETIN": {
+                    "TITLE": "Aktualisiertes Bulletin",
+                    "DESCRIPTION": "Aktualisierte das Bulletin Post '{title}'"
+                },
+                "DELETE_BULLETIN": {
+                    "TITLE": "Gelöschte einen Bulletin-Beitrag",
+                    "DESCRIPTION": "Gelöschte den Bulletin-Beitrag mit der ID {id}"
+                },
+                "PIN_BULLETIN": {
+                    "TITLE": "Pinnte einen Bulletin-Beitrag",
+                    "DESCRIPTION": "Pinnte einen Bulletin-Beitrag mit der ID {id}"
+                },
+                "UNPIN_BULLETIN": {
+                    "TITLE": "Entpinnte einen Bulletin-Beitrag",
+                    "DESCRIPTION": "Entpinnte den Bulletin-Beitrag mit der ID {id}"
+                },
+                "DELETE_TAG": {
+                    "TITLE": "Gelöschte ein Tag",
+                    "DESCRIPTION": "Gelöschte das Tag '{name}'"
+                },
+                "UPDATE_PROFILE": {
+                    "TITLE": "Aktualisierte ein Profil",
+                    "DESCRIPTION": "Aktualisierte {name}'s Profil"
+                },
+                "CREATE_REPORT": {
+                    "TITLE": "Erstellte einen Bericht",
+                    "DESCRIPTION": "Erstellte einen {type} Bericht '{title}' für {patient} mit der ID {id}"
+                },
+                "UPDATE_REPORT": {
+                    "TITLE": "Aktualisierte einen Bericht",
+                    "DESCRIPTION": "Aktualisierte den {type} Bericht '{title}' mit der ID {id}"
+                }
+            }
+        }
+    }
+}
